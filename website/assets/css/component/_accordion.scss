@@ -1,0 +1,19 @@
+.accordion-div {
+  .accordion-item {
+    a {
+      width: 100%;
+      background-color: black;
+      &.accordion-button::after {
+        color: white;
+      }
+    }
+    .accordion-body {
+      background-color: black;
+      ul {
+        li {
+          padding: 20px 0;
+        }
+      }
+    }
+  }
+}

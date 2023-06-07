@@ -1,10 +1,45 @@
 #burger-menu {
+  position: fixed;
+  // top: 0;
+  right: 0;
   width: 25%;
   height: 100vh;
-  background-color: blue;
+  background-color: black;
+  padding: 50px 20px;
   .basket-fav-profile {
     @include flexbox;
+    ul {
+      @include flexbox;
+      gap: 10px;
+      li {
+        a {
+          color: white;
+          svg {
+            &:hover {
+              fill: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  nav {
+    .nav-ul {
+      @include flexbox(center,flex-start);
+      flex-direction: column;
+      gap: 30px;
+      li {
+        a {
+          color: white;
+          box-shadow: inset 0 0 0 0 white;
+          padding: 2px 10px;
+          transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+          &:hover {
+            box-shadow: inset 100px 0 0 0 white;
+            color: black;
+          }
+        }
+      }
+    }
   }
 }
-
-
