@@ -115,4 +115,20 @@ header .header .basket-fav-profile ul li a svg:hover {
 }
 header .header .basket-fav-profile ul li.menu {
   display: none;
+}
+@media only screen and (max-width: 991px) {
+  header .header nav {
+    display: none;
+  }
+  header .header .basket-fav-profile ul li.menu {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header .header ul li {
+    display: none;
+  }
+  header .header ul li.menu {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */
