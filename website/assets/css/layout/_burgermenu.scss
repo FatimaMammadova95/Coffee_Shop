@@ -1,0 +1,10 @@
+#burger-menu {
+  width: 25%;
+  height: 100vh;
+  background-color: blue;
+  .basket-fav-profile {
+    @include flexbox;
+  }
+}
+
+

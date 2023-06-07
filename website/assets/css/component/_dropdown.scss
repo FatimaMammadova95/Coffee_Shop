@@ -1,13 +1,11 @@
 .dropdown {
-  #dropdownHover {
-    ul {
-      background-color: black;
-      max-width: 200px;
-      li {
-        padding: 5px 50px;
-        a {
-          padding: 5px;
-        }
+  .dropdown-menu {
+    background-color: black;
+    // max-width: 200px;
+    li {
+      // padding: 5px 50px;
+      a {
+        padding: 5px;
       }
     }
   }

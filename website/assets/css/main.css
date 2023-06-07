@@ -62,14 +62,10 @@ table {
   margin: auto;
 }
 
-.dropdown #dropdownHover ul {
+.dropdown .dropdown-menu {
   background-color: black;
-  max-width: 200px;
 }
-.dropdown #dropdownHover ul li {
-  padding: 5px 50px;
-}
-.dropdown #dropdownHover ul li a {
+.dropdown .dropdown-menu li a {
   padding: 5px;
 }
 
@@ -131,4 +127,15 @@ header .header .basket-fav-profile ul li.menu {
   header .header ul li.menu {
     display: block;
   }
+}
+
+#burger-menu {
+  width: 25%;
+  height: 100vh;
+  background-color: blue;
+}
+#burger-menu .basket-fav-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
