@@ -1,0 +1,21 @@
+#happiest {
+  background-image: url("../../../../photo/background/pariwat-pannium-wKDhYQjZrcY-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  .happiest {
+    padding: 50px 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    p {
+      color: white;
+      padding: 20px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    background-position: left center;
+  }
+}

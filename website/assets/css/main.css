@@ -342,4 +342,28 @@ header .header .basket-fav-profile ul li.menu {
   #capabilities .capabilities .row .text-col.text-col-right {
     margin-top: 50px;
   }
+}
+
+#happiest {
+  background-image: url("../../../../photo/background/pariwat-pannium-wKDhYQjZrcY-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+#happiest .happiest {
+  padding: 50px 0;
+}
+#happiest .happiest img {
+  width: 100%;
+  height: auto;
+}
+#happiest .happiest p {
+  color: white;
+  padding: 20px;
+}
+@media only screen and (max-width: 991px) {
+  #happiest {
+    background-position: left center;
+  }
 }/*# sourceMappingURL=main.css.map */
