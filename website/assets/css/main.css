@@ -57,12 +57,6 @@ table {
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 1200px;
-  padding: 0 5%;
-  margin: auto;
-}
-
 .dropdown .dropdown-menu {
   background-color: black;
 }
@@ -85,7 +79,10 @@ table {
 }
 
 header {
-  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 header .header {
   padding: 15px 0;
@@ -199,4 +196,77 @@ header .header .basket-fav-profile ul li.menu {
   #burger-menu .basket-fav-profile {
     display: flex;
   }
+}
+
+#hero .hero .swiper .swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#hero .hero .swiper .swiper-slide .emblem {
+  max-width: 200px;
+  max-height: 200px;
+}
+#hero .hero .swiper .swiper-slide h1 {
+  font-size: 68px;
+  color: white;
+  letter-spacing: 5px;
+}
+#hero .hero .swiper .swiper-slide p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 24px;
+}
+#hero .hero .swiper .swiper-slide.slide-1 {
+  background-image: url("../../../../photo/background/home-1-slider-image-1.jpg");
+}
+#hero .hero .swiper .swiper-slide.slide-2 {
+  background-image: url("../../../../photo/background/home-1-slider-image-2.jpg");
+}
+#hero .hero .swiper .swiper-slide.slide-3 {
+  background-image: url("../../../../photo/background/home-1-slider-image-3.jpg");
+}
+@media only screen and (max-width: 991px) {
+  #hero .hero .swiper .swiper-slide {
+    height: 100%;
+    gap: 25px;
+  }
+  #hero .hero .swiper .swiper-slide .emblem {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  #hero .hero .swiper .swiper-slide h1 {
+    font-size: 48px;
+  }
+  #hero .hero .swiper .swiper-slide p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #hero .hero .swiper .swiper-slide {
+    gap: 15px;
+  }
+  #hero .hero .swiper .swiper-slide .emblem {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  #hero .hero .swiper .swiper-slide h1 {
+    font-size: 32px;
+  }
+  #hero .hero .swiper .swiper-slide p {
+    font-size: 14px;
+  }
+}
+#hero .hero .swiper .swiper-button-next {
+  color: white;
+}
+#hero .hero .swiper .swiper-button-prev {
+  color: white;
 }/*# sourceMappingURL=main.css.map */

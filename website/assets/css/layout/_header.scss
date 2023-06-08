@@ -1,5 +1,8 @@
 header {
-  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
   .header {
     padding: 15px 0;
     @include flexbox;

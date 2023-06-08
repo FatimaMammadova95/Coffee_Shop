@@ -10,3 +10,22 @@ menu.addEventListener("click", function (e) {
     burgerMenu.style.display = "none";
   }
 });
+
+// Swipper
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  effect: "fade",
+  zoom: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
