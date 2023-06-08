@@ -30,7 +30,7 @@ header {
     .basket-fav-profile {
       ul {
         @include flexbox;
-        gap: 15px;
+        gap: 25px;
         li {
           a {
             color: white;

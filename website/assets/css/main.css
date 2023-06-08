@@ -113,7 +113,7 @@ header .header .basket-fav-profile ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 15px;
+  gap: 25px;
 }
 header .header .basket-fav-profile ul li a {
   color: white;
@@ -269,4 +269,76 @@ header .header .basket-fav-profile ul li.menu {
 }
 #hero .hero .swiper .swiper-button-prev {
   color: white;
+}
+
+#capabilities {
+  padding: 100px 0;
+}
+#capabilities .capabilities .row {
+  display: flex;
+  justify-content: center;
+}
+#capabilities .capabilities .row .text-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+#capabilities .capabilities .row .text-col #row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#capabilities .capabilities .row .text-col #row img {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#capabilities .capabilities .row .text-col #row .text {
+  max-width: 280px;
+}
+#capabilities .capabilities .row .text-col #row .text h1 {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+#capabilities .capabilities .row .text-col #row .text p {
+  padding: 10px 0;
+  line-height: 20px;
+}
+#capabilities .capabilities .row .text-col.text-col-left #row {
+  display: flex;
+  justify-content: flex-start;
+}
+#capabilities .capabilities .row .text-col.text-col-left #row .text h1 {
+  text-align: right;
+}
+#capabilities .capabilities .row .text-col.text-col-left #row .text p {
+  text-align: right;
+}
+#capabilities .capabilities .row .text-col.text-col-right #row {
+  display: flex;
+  justify-content: flex-end;
+}
+#capabilities .capabilities .row .text-col.text-col-right #row .text h1 {
+  text-align: left;
+}
+#capabilities .capabilities .row .text-col.text-col-right #row .text p {
+  text-align: left;
+}
+@media only screen and (max-width: 991px) {
+  #capabilities .capabilities .row .text-col {
+    gap: 200px;
+  }
+  #capabilities .capabilities .row .text-col.text-col-right {
+    margin-top: 200px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #capabilities .capabilities .row .text-col {
+    gap: 25px;
+  }
+  #capabilities .capabilities .row .text-col.text-col-right {
+    margin-top: 50px;
+  }
 }/*# sourceMappingURL=main.css.map */
