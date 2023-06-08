@@ -1,10 +1,11 @@
 #burger-menu {
   position: fixed;
+  z-index: 99;
   right: 0;
   width: 40%;
   height: 100vh;
   background-color: black;
-  padding: 50px 20px 0 100px;
+  padding: 100px 20px 0 100px;
   @include flexbox(flex-start, flex-start);
   flex-direction: column;
   gap: 50px;
