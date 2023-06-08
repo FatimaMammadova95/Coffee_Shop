@@ -1,31 +1,28 @@
 #burger-menu {
   position: fixed;
-  // top: 0;
   right: 0;
-  width: 25%;
+  width: 40%;
   height: 100vh;
   background-color: black;
-  padding: 50px 20px;
+  padding: 50px 20px 0 100px;
+  @include flexbox(flex-start, flex-start);
+  flex-direction: column;
+  gap: 50px;
   .basket-fav-profile {
-    @include flexbox;
+    display: none;
     ul {
       @include flexbox;
-      gap: 10px;
+      gap: 25px;
       li {
         a {
           color: white;
-          svg {
-            &:hover {
-              fill: white;
-            }
-          }
         }
       }
     }
   }
   nav {
     .nav-ul {
-      @include flexbox(center,flex-start);
+      @include flexbox(center, flex-start);
       flex-direction: column;
       gap: 30px;
       li {
@@ -42,4 +39,12 @@
       }
     }
   }
+  @media only screen and (max-width: 767px) {
+    width: 50%;
+    padding-left: 50px;
+    .basket-fav-profile{
+      display: flex;
+    }
+  }
+  display: none;
 }

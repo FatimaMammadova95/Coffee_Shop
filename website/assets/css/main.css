@@ -116,18 +116,19 @@ header .header .basket-fav-profile ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 header .header .basket-fav-profile ul li a {
   color: white;
-}
-header .header .basket-fav-profile ul li a svg:hover {
-  fill: white;
+  font-size: 18px;
 }
 header .header .basket-fav-profile ul li.menu {
   display: none;
 }
 @media only screen and (max-width: 991px) {
+  header .header .logo {
+    max-width: 100px;
+  }
   header .header nav {
     display: none;
   }
@@ -136,10 +137,13 @@ header .header .basket-fav-profile ul li.menu {
   }
 }
 @media only screen and (max-width: 767px) {
-  header .header ul li {
+  header .header .logo {
+    max-width: 80px;
+  }
+  header .header .basket-fav-profile ul li {
     display: none;
   }
-  header .header ul li.menu {
+  header .header .basket-fav-profile ul li.menu {
     display: block;
   }
 }
@@ -147,27 +151,28 @@ header .header .basket-fav-profile ul li.menu {
 #burger-menu {
   position: fixed;
   right: 0;
-  width: 25%;
+  width: 40%;
   height: 100vh;
   background-color: black;
-  padding: 50px 20px;
+  padding: 50px 20px 0 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 50px;
+  display: none;
 }
 #burger-menu .basket-fav-profile {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: none;
 }
 #burger-menu .basket-fav-profile ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
 }
 #burger-menu .basket-fav-profile ul li a {
   color: white;
-}
-#burger-menu .basket-fav-profile ul li a svg:hover {
-  fill: white;
 }
 #burger-menu nav .nav-ul {
   display: flex;
@@ -185,4 +190,13 @@ header .header .basket-fav-profile ul li.menu {
 #burger-menu nav .nav-ul li a:hover {
   box-shadow: inset 100px 0 0 0 white;
   color: black;
+}
+@media only screen and (max-width: 767px) {
+  #burger-menu {
+    width: 50%;
+    padding-left: 50px;
+  }
+  #burger-menu .basket-fav-profile {
+    display: flex;
+  }
 }/*# sourceMappingURL=main.css.map */

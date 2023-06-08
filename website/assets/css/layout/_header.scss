@@ -27,15 +27,11 @@ header {
     .basket-fav-profile {
       ul {
         @include flexbox;
-        gap: 10px;
+        gap: 15px;
         li {
           a {
             color: white;
-            svg {
-              &:hover {
-                fill: white;
-              }
-            }
+            font-size: 18px;
           }
           &.menu {
             display: none;
@@ -44,6 +40,9 @@ header {
       }
     }
     @media only screen and (max-width: 991px) {
+      .logo {
+        max-width: 100px;
+      }
       nav {
         display: none;
       }
@@ -58,11 +57,16 @@ header {
       }
     }
     @media only screen and (max-width: 767px) {
-      ul {
-        li {
-          display: none;
-          &.menu {
-            display: block;
+      .logo {
+        max-width: 80px;
+      }
+      .basket-fav-profile {
+        ul {
+          li {
+            display: none;
+            &.menu {
+              display: block;
+            }
           }
         }
       }
