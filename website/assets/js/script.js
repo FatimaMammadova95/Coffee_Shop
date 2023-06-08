@@ -1,5 +1,8 @@
 const menuIcon = document.querySelector("#menu");
 const burgerMenu = document.querySelector("#burger-menu");
+const header = document.querySelector("header")
+
+// Menu click
 
 menu.addEventListener("click", function (e) {
   if (this.classList.contains("fa-bars")) {
@@ -10,6 +13,20 @@ menu.addEventListener("click", function (e) {
     burgerMenu.style.display = "none";
   }
 });
+
+// Scroll nav
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    header.style.background = "#000";
+  } else {
+    header.style.background = "";
+  }
+}
+window.addEventListener("scroll", scrollFunction);
 
 // Swipper
 var swiper = new Swiper(".mySwiper", {
