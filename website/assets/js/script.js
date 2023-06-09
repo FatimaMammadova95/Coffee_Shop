@@ -1,6 +1,6 @@
 const menuIcon = document.querySelector("#menu");
 const burgerMenu = document.querySelector("#burger-menu");
-const header = document.querySelector("header")
+const header = document.querySelector("header");
 
 // Menu click
 
@@ -29,14 +29,29 @@ function scrollFunction() {
 window.addEventListener("scroll", scrollFunction);
 
 // Swipper
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper("#hero-swiper", {
   spaceBetween: 30,
   effect: "fade",
+  loop: true,
   zoom: true,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+var swiper = new Swiper("#product-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
