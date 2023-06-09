@@ -411,7 +411,8 @@ header .header .basket-fav-profile ul li.menu {
   gap: 20px;
 }
 #product .product #product-swiper .swiper-slide img {
-  max-width: 350px;
+  max-width: 100%;
+  height: auto;
   border-bottom: 1px solid #888d9c;
   padding-bottom: 15px;
 }
