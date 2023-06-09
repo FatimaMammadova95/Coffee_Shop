@@ -445,4 +445,28 @@ header .header .basket-fav-profile ul li.menu {
   border-color: #c29e7b;
   background-color: #c29e7b;
   color: white;
+}
+
+#counter .counter {
+  padding: 100px 0;
+}
+#counter .counter .row .col-12 {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#counter .counter .row .col-12 .count {
+  color: #BE9C79;
+  font-size: 56px;
+}
+#counter .counter .row .col-12 h1 {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+#counter .counter .row .col-12 p {
+  text-align: center;
+  color: #888d9c;
 }/*# sourceMappingURL=main.css.map */
