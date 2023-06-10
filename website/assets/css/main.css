@@ -508,82 +508,36 @@ header .header .basket-fav-profile ul li.menu {
   height: fit-content;
 }
 
-#product {
-  background-image: url("../../../../photo/background/new-new-h1-bacground-img-3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-#product .product {
-  padding: 150px 0;
-}
-#product .product .heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  border-bottom: 1px solid #888d9c;
-}
-#product .product .heading h1 {
-  font-size: 48px;
-  text-align: center;
-}
-#product .product .heading .links {
-  display: flex;
-  gap: 30px;
-}
-#product .product .heading .links a {
-  color: #888d9c;
-}
-#product .product .heading .links a.active {
-  border-bottom: 1px solid black;
-  padding: 0 0 15px 0;
-}
-#product .product #product-swiper {
+#partners .partners {
   padding: 50px 0;
 }
-#product .product #product-swiper .swiper-slide {
+
+footer {
+  background-color: #5d4335;
+}
+footer .footer .up-footer {
+  padding: 100px 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #c29e7b;
 }
-#product .product #product-swiper .swiper-slide img {
-  max-width: 100%;
-  height: auto;
-  border-bottom: 1px solid #888d9c;
-  padding-bottom: 15px;
+footer .footer .up-footer ul {
+  color: #c29e7b;
+  font-size: 24px;
 }
-#product .product #product-swiper .swiper-slide h4 {
-  font-size: 20px;
+footer .footer .up-footer ul li {
+  padding: 10px 0;
 }
-#product .product #product-swiper .swiper-button-next {
-  color: #888d9c;
-  padding: 30px;
-  border: 1px solid #888d9c;
-  border-radius: 50%;
-}
-#product .product #product-swiper .swiper-button-next:after {
-  font-size: 20px;
-}
-#product .product #product-swiper .swiper-button-next:hover {
-  border-color: #c29e7b;
-  background-color: #c29e7b;
+footer .footer .up-footer ul li a {
   color: white;
+  font-size: 16px;
 }
-#product .product #product-swiper .swiper-button-prev {
-  color: #888d9c;
-  padding: 30px;
-  border: 1px solid #888d9c;
-  border-radius: 50%;
+footer .footer .up-footer ul li.opening a {
+  display: flex;
+  justify-content: space-between;
 }
-#product .product #product-swiper .swiper-button-prev:after {
-  font-size: 20px;
-}
-#product .product #product-swiper .swiper-button-prev:hover {
-  border-color: #c29e7b;
-  background-color: #c29e7b;
-  color: white;
+footer .footer .down-footer {
+  padding: 25px;
+  color: #c29e7b;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
