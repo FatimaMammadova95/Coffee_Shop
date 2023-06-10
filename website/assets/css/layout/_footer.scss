@@ -9,6 +9,16 @@ footer {
       ul {
         color: #c29e7b;
         font-size: 24px;
+
+        .account {
+          display: flex;
+          justify-content: space-around;
+          li {
+            a {
+              font-size: 20px;
+            }
+          }
+        }
         li {
           padding: 10px 0;
           a {

@@ -525,6 +525,13 @@ footer .footer .up-footer ul {
   color: #c29e7b;
   font-size: 24px;
 }
+footer .footer .up-footer ul .account {
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer .up-footer ul .account li a {
+  font-size: 20px;
+}
 footer .footer .up-footer ul li {
   padding: 10px 0;
 }
