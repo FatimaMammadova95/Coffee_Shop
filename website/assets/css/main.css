@@ -151,7 +151,7 @@ header .header .basket-fav-profile ul li.menu {
   right: 0;
   width: 40%;
   height: 100vh;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.451);
   padding: 100px 20px 0 100px;
   display: flex;
   justify-content: flex-start;
@@ -460,7 +460,7 @@ header .header .basket-fav-profile ul li.menu {
   gap: 20px;
 }
 #counter .counter .row .col-12 .count {
-  color: #BE9C79;
+  color: #be9c79;
   font-size: 56px;
 }
 #counter .counter .row .col-12 h1 {
@@ -470,4 +470,40 @@ header .header .basket-fav-profile ul li.menu {
 #counter .counter .row .col-12 p {
   text-align: center;
   color: #888d9c;
+}
+
+#mini-menu .mini-menu .our-menu {
+  text-align: center;
+  font-size: 48px;
+  padding: 20px 0;
+  color: #5d4335;
+}
+#mini-menu .mini-menu .menu-row .col-6 {
+  padding: 20px 0;
+}
+#mini-menu .mini-menu .menu-row .col-6 .col-12 {
+  padding: 30px;
+  max-width: 90%;
+}
+#mini-menu .mini-menu .menu-row .col-6 .col-12 .coffee-name {
+  display: flex;
+}
+#mini-menu .mini-menu .menu-row .col-6 .col-12 .coffee-name h1 {
+  font-size: 28px;
+  color: #5d4335;
+}
+#mini-menu .mini-menu .menu-row .col-6 .col-12 .coffee-name .line {
+  flex-grow: 1;
+  border-bottom: 3px dotted #dadada;
+}
+#mini-menu .mini-menu .menu-row .col-6 .col-12 .coffee-name .price {
+  color: #5d4335;
+}
+#mini-menu .mini-menu .menu-row .col-6 .col-12 .description {
+  padding: 10px 0;
+}
+#mini-menu .mini-menu .menu-row .col-3 img {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
 }/*# sourceMappingURL=main.css.map */

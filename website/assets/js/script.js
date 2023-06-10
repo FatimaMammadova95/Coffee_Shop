@@ -21,7 +21,7 @@ function scrollFunction() {
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
-    header.style.background = "#000";
+    header.style.background = "rgba(0, 0, 0, 0.451)";
   } else {
     header.style.background = "";
   }
@@ -83,3 +83,4 @@ var swiper = new Swiper("#product-swiper", {
     clickable: true,
   },
 });
+

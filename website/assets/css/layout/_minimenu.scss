@@ -1,0 +1,42 @@
+#mini-menu {
+  .mini-menu {
+    .our-menu {
+      text-align: center;
+      font-size: 48px;
+      padding: 20px 0;
+      color: #5d4335;
+    }
+    .menu-row {
+      .col-6 {
+        padding: 20px 0;
+        .col-12 {
+          padding: 30px;
+          max-width: 90%;
+          .coffee-name {
+            display: flex;
+            h1 {
+              font-size: 28px;
+              color: #5d4335;
+            }
+            .line {
+              flex-grow: 1;
+              border-bottom: 3px dotted #dadada;
+            }
+            .price {
+              color: #5d4335;
+            }
+          }
+          .description {
+            padding: 10px 0;
+          }
+        }
+      }
+      .col-3 {
+        img {
+          width: 100%;
+          height: fit-content;
+        }
+      }
+    }
+  }
+}
