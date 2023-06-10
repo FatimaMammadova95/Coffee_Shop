@@ -506,4 +506,84 @@ header .header .basket-fav-profile ul li.menu {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+#product {
+  background-image: url("../../../../photo/background/new-new-h1-bacground-img-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#product .product {
+  padding: 150px 0;
+}
+#product .product .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  border-bottom: 1px solid #888d9c;
+}
+#product .product .heading h1 {
+  font-size: 48px;
+  text-align: center;
+}
+#product .product .heading .links {
+  display: flex;
+  gap: 30px;
+}
+#product .product .heading .links a {
+  color: #888d9c;
+}
+#product .product .heading .links a.active {
+  border-bottom: 1px solid black;
+  padding: 0 0 15px 0;
+}
+#product .product #product-swiper {
+  padding: 50px 0;
+}
+#product .product #product-swiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#product .product #product-swiper .swiper-slide img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #888d9c;
+  padding-bottom: 15px;
+}
+#product .product #product-swiper .swiper-slide h4 {
+  font-size: 20px;
+}
+#product .product #product-swiper .swiper-button-next {
+  color: #888d9c;
+  padding: 30px;
+  border: 1px solid #888d9c;
+  border-radius: 50%;
+}
+#product .product #product-swiper .swiper-button-next:after {
+  font-size: 20px;
+}
+#product .product #product-swiper .swiper-button-next:hover {
+  border-color: #c29e7b;
+  background-color: #c29e7b;
+  color: white;
+}
+#product .product #product-swiper .swiper-button-prev {
+  color: #888d9c;
+  padding: 30px;
+  border: 1px solid #888d9c;
+  border-radius: 50%;
+}
+#product .product #product-swiper .swiper-button-prev:after {
+  font-size: 20px;
+}
+#product .product #product-swiper .swiper-button-prev:hover {
+  border-color: #c29e7b;
+  background-color: #c29e7b;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

@@ -51,7 +51,7 @@ $(window).scroll(function () {
 });
 
 // Swipper
-var swiper = new Swiper("#hero-swiper", {
+let heroSwiper = new Swiper("#hero-swiper", {
   spaceBetween: 30,
   effect: "fade",
   loop: true,
@@ -70,7 +70,7 @@ var swiper = new Swiper("#hero-swiper", {
   },
 });
 
-var swiper = new Swiper("#product-swiper", {
+let productSwiper = new Swiper("#product-swiper", {
   slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
@@ -82,5 +82,11 @@ var swiper = new Swiper("#product-swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+});
+
+let partnersSwiper = new Swiper("#partners-swiper", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  loop: true,
 });
 
