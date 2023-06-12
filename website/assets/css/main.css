@@ -447,6 +447,37 @@ header .header .basket-fav-profile ul li.menu {
   background-color: #c29e7b;
   color: white;
 }
+@media only screen and (max-width: 991px) {
+  #product .product .heading h1 {
+    font-size: 36px;
+  }
+  #product .product .heading .links a {
+    font-size: 14px;
+  }
+  #product .product #product-swiper .swiper-slide {
+    gap: 15px;
+  }
+  #product .product #product-swiper .swiper-button-next {
+    display: none;
+  }
+  #product .product #product-swiper .swiper-button-prev {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #product .product .heading h1 {
+    font-size: 30px;
+  }
+  #product .product .heading .links a {
+    font-size: 12px;
+  }
+  #product .product #product-swiper .swiper-slide {
+    gap: 10px;
+  }
+  #product .product #product-swiper .swiper-slide h4 {
+    font-size: 16px;
+  }
+}
 
 #counter .counter {
   padding: 100px 0;
