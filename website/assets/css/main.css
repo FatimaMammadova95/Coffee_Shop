@@ -511,6 +511,10 @@ header .header .basket-fav-profile ul li.menu {
 #partners .partners {
   padding: 50px 0;
 }
+#partners .partners img {
+  max-width: 100%;
+  height: auto;
+}
 
 footer {
   background-color: #5d4335;
