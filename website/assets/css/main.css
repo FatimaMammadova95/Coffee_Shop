@@ -471,6 +471,28 @@ header .header .basket-fav-profile ul li.menu {
   text-align: center;
   color: #888d9c;
 }
+@media only screen and (max-width: 991px) {
+  #counter .counter .row .col-12 {
+    gap: 10px;
+  }
+  #counter .counter .row .col-12 .count {
+    font-size: 48px;
+  }
+  #counter .counter .row .col-12 h1 {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #counter .counter .row .col-12 {
+    gap: 5px;
+  }
+  #counter .counter .row .col-12 .count {
+    font-size: 36px;
+  }
+  #counter .counter .row .col-12 h1 {
+    font-size: 20px;
+  }
+}
 
 #mini-menu .mini-menu .our-menu {
   text-align: center;
