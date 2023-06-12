@@ -1,9 +1,13 @@
+// Base
 @import "./base/reset";
 @import "./base/global";
+// Utils
 @import "./utils/mixin";
 @import "./utils/variables";
+// Component
 @import "./component/dropdown";
 @import "./component/accordion";
+// Layout
 @import "./layout/header";
 @import "./layout/burgermenu";
 @import "./layout/hero";
@@ -14,3 +18,5 @@
 @import "./layout/minimenu";
 @import "./layout/partners";
 @import "./layout/footer";
+// Pages
+@import "./pages/shop"

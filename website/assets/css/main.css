@@ -604,4 +604,17 @@ footer .footer .down-footer {
   padding: 25px;
   color: #c29e7b;
   text-align: center;
+}
+
+#page-heading {
+  background-image: url("../../../../photo/background/h1-bacground-img-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+#page-heading .page-heading h1 {
+  font-size: 48px;
+  color: white;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
