@@ -90,3 +90,14 @@ let partnersSwiper = new Swiper("#partners-swiper", {
   loop: true,
 });
 
+// Scroll Reveal
+ScrollReveal().reveal(".slide-up", {
+  duration: 2000,
+  origin: "bottom",
+  distance: "100px",
+  easing: "cubic-bezier(.37,.01,.74,1)",
+  opacity: 0.3,
+  scale: 0.5
+});
+
+
