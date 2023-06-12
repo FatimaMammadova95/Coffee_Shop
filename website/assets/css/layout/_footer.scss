@@ -3,24 +3,16 @@ footer {
   .footer {
     .up-footer {
       padding: 100px 0;
-      display: flex;
-      justify-content: space-between;
       border-bottom: 1px solid #c29e7b;
       ul {
         color: #c29e7b;
         font-size: 24px;
-
-        .account {
-          display: flex;
-          justify-content: space-around;
-          li {
-            a {
-              font-size: 20px;
-            }
-          }
-        }
+        padding: 20px 0;
         li {
-          padding: 10px 0;
+          padding: 0 0 5px 0;
+          &:first-child{
+            padding-top: 10px;
+          }
           a {
             color: white;
             font-size: 16px;
@@ -29,9 +21,13 @@ footer {
             a {
               display: flex;
               justify-content: space-between;
+              // gap: 50px;
             }
           }
         }
+      }
+      @media only screen and (max-width: 991px) {
+        flex-direction: column;
       }
     }
     .down-footer {
