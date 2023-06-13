@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -636,6 +637,7 @@ footer .footer .down-footer {
   padding: 10px;
 }
 #products .products .col-9 .product-cards .col-12 .card {
+  background-color: rgba(194, 159, 123, 0.2549019608);
   padding: 10px;
   position: relative;
 }
@@ -663,6 +665,22 @@ footer .footer .down-footer {
   justify-content: center;
   align-items: center;
   gap: 5px;
+}
+#products .products .col-9 .product-cards .col-12 .card .card-text .stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: 25px;
+  font-family: Times;
+  line-height: 1;
+}
+#products .products .col-9 .product-cards .col-12 .card .card-text .stars::before {
+  content: "★★★★★";
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #fc0 var(--percent), #fff var(--percent));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 #products .products .col-9 .product-cards .col-12 .card .favorite {
   position: absolute;
