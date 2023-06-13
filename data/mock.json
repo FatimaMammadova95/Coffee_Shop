@@ -1,0 +1,56 @@
+{
+  "coffee": [
+    {
+      "name": "Espresso",
+      "description": "The basic drink from which other milk and non-milk coffee drinks are based.",
+      "volume": "25-30 ml (0.85-1.01 US fl oz)",
+      "nutrition": {
+        "energy": "8.4 kJ (2.0 kcal)",
+        "carbohydrates": "0",
+        "fat": "0.2",
+        "protein": "0.1",
+        "vitamins": {
+          "riboflavin": "0.2 mg",
+          "niacin": "5.2 mg"
+        },
+        "minerals": {
+          "magnesium": "80 mg"
+        },
+        "Other constituents": {
+          "water": "97.8 g",
+          "theobromine": "0 mg",
+          "caffeine": "212 mg"
+        }
+      },
+      "price": 12,
+      "popularity": 0,
+      "id": 1
+    }
+  ],
+  "product": [
+    {
+      "name": "Ethiopia coffee",
+      "description": "A mild, easy drinking coffee, perfect for a gentle, morning boost. A whimsical blend of cinnamon, vanil.",
+      "feature": {
+        "roasting level": 3,
+        "body": 3,
+        "sweetness": 4,
+        "acidity": 4
+      },
+      "additional information": {
+        "weight": 1,
+        "dimensions": {
+          "length": 20,
+          "width": 10,
+          "height": 30
+        }
+      },
+      "catagory": "fresh coffee",
+      "tags": ["black", "casual", "classic"],
+      "rating": 3.5,
+      "reviews": [],
+      "price": 6,
+      "sku": "PR111"
+    }
+  ]
+}
