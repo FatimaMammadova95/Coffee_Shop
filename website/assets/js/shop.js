@@ -111,10 +111,21 @@ range.forEach((input) => {
   input.addEventListener("change", (e) => {
     let minRange = parseInt(range[0].value);
     let maxRange = parseInt(range[1].value);
-    copyArr = copyArr.filter((item) =>
-      item.price >= minRange && item.price <= maxRange ? item : ""
+
+    let rangedArr = dataArr.filter(
+      (item) => item.price >= minRange && item.price <= maxRange
     );
-    createCard(sliceArr(copyArr));
+    console.log(rangedArr);
+    createCard(sliceArr(rangedArr));
+
+    // axios.get(`${BASE_URL}product`).then((response) => {
+    //   copyArr = response.data.filter((item) =>
+    //     item.price >= minRange && item.price <= maxRange
+    //   );
+    //   console.log(copyArr);
+    //   createCard(sliceArr(copyArr));
+    // });
+
     if (maxRange - minRange < gap) {
       if (e.target.className === "range-min") {
         range[0].value = maxRange - gap;
