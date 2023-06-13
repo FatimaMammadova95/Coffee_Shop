@@ -27,3 +27,47 @@ function scrollFunction() {
   }
 }
 window.addEventListener("scroll", scrollFunction);
+
+// Swipper
+let heroSwiper = new Swiper("#hero-swiper", {
+  spaceBetween: 30,
+  effect: "fade",
+  loop: true,
+  zoom: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+let productSwiper = new Swiper("#product-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+let partnersSwiper = new Swiper("#partners-swiper", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
