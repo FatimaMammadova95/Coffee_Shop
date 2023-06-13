@@ -9,8 +9,8 @@ let sortBtn = document.querySelector("#sort");
 let load = document.querySelector(".load-more");
 let productInterval = document.querySelector(".product-interval");
 let allProductLength = document.querySelector(".all-product-length");
-let categories = document.querySelectorAll(".categories li");
-let tags = document.querySelectorAll(".tags a");
+let categories = document.querySelectorAll(".categories a");
+let tags = document.querySelectorAll(".tags li");
 
 let dataArr = [];
 let copyArr = [];
@@ -53,7 +53,7 @@ async function getData() {
   dataArr = res.data;
   copyArr = searchInput.value || copyArr.length ? copyArr : res.data;
   productInterval.innerHTML = `1-${max}`;
-  allProductLength.innerHTML = dataArr.length;
+  allProductLength.innerHTML = copyArr.length;
   createCard(sliceArr(copyArr));
 }
 getData();
@@ -83,6 +83,16 @@ searchInput.addEventListener("input", function (e) {
     item.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
   );
   createCard(sliceArr(copyArr));
+});
+
+// Categories
+categories.forEach((category) => {
+  category.addEventListener("click", function () {
+    copyArr = dataArr.filter(
+      (item) => item.category == category.innerHTML.toLocaleLowerCase() && item
+    );
+    createCard(sliceArr(copyArr));
+  });
 });
 
 // Tags
