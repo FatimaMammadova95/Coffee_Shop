@@ -57,17 +57,25 @@ function sliceArr(arr) {
 }
 
 load.addEventListener("click", function () {
-    max = max + 3;
-    if (max >= dataArr.length) {
-      load.style.display = "none";
-    }
-    if (!sorted) {
-      createCard(sliceArr(copyArr));
-    } else {
-      createCard(sliceArr(sortedArr));
-    }
-  });
+  max = max + 3;
+  if (max >= dataArr.length) {
+    load.style.display = "none";
+  }
+  if (!sorted) {
+    createCard(sliceArr(copyArr));
+  } else {
+    createCard(sliceArr(sortedArr));
+  }
+});
 
+searchInput.addEventListener("input", function (e) {    
+    load.style.display = "block";
+    copyArr = sortedArr.length ? sortedArr : dataArr;
+    copyArr = copyArr.filter((item) =>
+      item.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
+    );
+    createCard(sliceArr(copyArr));
+  });
 // Range
 range.forEach((input) => {
   input.addEventListener("input", (e) => {
