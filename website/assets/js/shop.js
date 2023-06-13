@@ -9,6 +9,8 @@ let sortBtn = document.querySelector("#sort");
 let load = document.querySelector(".load-more");
 let productInterval = document.querySelector(".product-interval");
 let allProductLength = document.querySelector(".all-product-length");
+let categories = document.querySelectorAll(".categories li");
+let tags = document.querySelectorAll(".tags a");
 
 let dataArr = [];
 let copyArr = [];
@@ -17,8 +19,6 @@ let sortedArr = [];
 let gap = 0.1;
 let max = 6;
 let sorted = false;
-
-productInterval.innerHTML = `1-${max}`;
 
 function createCard(arr) {
   row.innerHTML = "";
@@ -52,8 +52,8 @@ async function getData() {
   let res = await axios(`${BASE_URL}product`);
   dataArr = res.data;
   copyArr = searchInput.value || copyArr.length ? copyArr : res.data;
+  productInterval.innerHTML = `1-${max}`;
   allProductLength.innerHTML = dataArr.length;
-
   createCard(sliceArr(copyArr));
 }
 getData();
@@ -64,7 +64,7 @@ function sliceArr(arr) {
 
 load.addEventListener("click", function () {
   max = max + 3;
-productInterval.innerHTML = `1-${max}`;
+  productInterval.innerHTML = `1-${max}`;
 
   if (max >= dataArr.length) {
     load.style.display = "none";
@@ -84,6 +84,18 @@ searchInput.addEventListener("input", function (e) {
   );
   createCard(sliceArr(copyArr));
 });
+
+// Tags
+tags.forEach((tag) => {
+  tag.addEventListener("click", function (e) {
+    e.preventDefault();
+    copyArr = dataArr.filter((item) =>
+      item.tags.includes(tag.innerHTML.toLocaleLowerCase())
+    );
+    createCard(sliceArr(copyArr));
+  });
+});
+
 // Range
 range.forEach((input) => {
   input.addEventListener("change", (e) => {
