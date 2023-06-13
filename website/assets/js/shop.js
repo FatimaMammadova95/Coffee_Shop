@@ -68,20 +68,23 @@ load.addEventListener("click", function () {
   }
 });
 
-searchInput.addEventListener("input", function (e) {    
-    load.style.display = "block";
-    copyArr = sortedArr.length ? sortedArr : dataArr;
-    copyArr = copyArr.filter((item) =>
-      item.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
-    );
-    createCard(sliceArr(copyArr));
-  });
+searchInput.addEventListener("input", function (e) {
+  load.style.display = "block";
+  copyArr = sortedArr.length ? sortedArr : dataArr;
+  copyArr = copyArr.filter((item) =>
+    item.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
+  );
+  createCard(sliceArr(copyArr));
+});
 // Range
 range.forEach((input) => {
-  input.addEventListener("input", (e) => {
+  input.addEventListener("change", (e) => {
     let minRange = parseInt(range[0].value);
     let maxRange = parseInt(range[1].value);
-
+    copyArr = copyArr.filter((item) =>
+    item.price >= minRange && item.price <= maxRange ? item : ""
+  );
+  createCard(sliceArr(copyArr));
     if (maxRange - minRange < gap) {
       if (e.target.className === "range-min") {
         range[0].value = maxRange - gap;
