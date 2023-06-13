@@ -56,6 +56,18 @@ function sliceArr(arr) {
   return arr.slice(0, max);
 }
 
+load.addEventListener("click", function () {
+    max = max + 3;
+    if (max >= dataArr.length) {
+      load.style.display = "none";
+    }
+    if (!sorted) {
+      createCard(sliceArr(copyArr));
+    } else {
+      createCard(sliceArr(sortedArr));
+    }
+  });
+
 // Range
 range.forEach((input) => {
   input.addEventListener("input", (e) => {
