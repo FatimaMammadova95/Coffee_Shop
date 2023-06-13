@@ -752,7 +752,10 @@ footer .footer .down-footer {
   border: none;
   background-color: transparent;
 }
-#products .products .col-3 .search .ms-n5 {
+#products .products .col-3 .search-div {
+  padding-top: 0;
+}
+#products .products .col-3 .search-div .ms-n5 {
   margin-left: -40px;
 }
 #products .products .col-3 .categories h1 {
