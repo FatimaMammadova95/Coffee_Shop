@@ -7,14 +7,18 @@ let row = document.querySelector(".card-row");
 let searchInput = document.querySelector("#search");
 let sortBtn = document.querySelector("#sort");
 let load = document.querySelector(".load-more");
+let productInterval = document.querySelector(".product-interval");
+let allProductLength = document.querySelector(".all-product-length");
 
 let dataArr = [];
 let copyArr = [];
 let sortedArr = [];
 
 let gap = 0.1;
-let max = 9;
+let max = 6;
 let sorted = false;
+
+productInterval.innerHTML = `1-${max}`;
 
 function createCard(arr) {
   row.innerHTML = "";
@@ -48,6 +52,8 @@ async function getData() {
   let res = await axios(`${BASE_URL}product`);
   dataArr = res.data;
   copyArr = searchInput.value || copyArr.length ? copyArr : res.data;
+  allProductLength.innerHTML = dataArr.length;
+
   createCard(sliceArr(copyArr));
 }
 getData();
@@ -58,6 +64,8 @@ function sliceArr(arr) {
 
 load.addEventListener("click", function () {
   max = max + 3;
+productInterval.innerHTML = `1-${max}`;
+
   if (max >= dataArr.length) {
     load.style.display = "none";
   }
@@ -82,9 +90,9 @@ range.forEach((input) => {
     let minRange = parseInt(range[0].value);
     let maxRange = parseInt(range[1].value);
     copyArr = copyArr.filter((item) =>
-    item.price >= minRange && item.price <= maxRange ? item : ""
-  );
-  createCard(sliceArr(copyArr));
+      item.price >= minRange && item.price <= maxRange ? item : ""
+    );
+    createCard(sliceArr(copyArr));
     if (maxRange - minRange < gap) {
       if (e.target.className === "range-min") {
         range[0].value = maxRange - gap;
