@@ -612,7 +612,7 @@ footer .footer .down-footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 200px 0;
 }
 #page-heading .page-heading h1 {
   font-size: 48px;
@@ -777,4 +777,57 @@ footer .footer .down-footer {
 }
 #products .products .col-3 .tags p a {
   color: #888d9c;
+}
+
+#page-heading {
+  background-image: url("../../../photo/background/pexels-emre-can-acer-2079438.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+}
+#page-heading .page-heading h1 {
+  font-size: 48px;
+  color: white;
+  text-align: center;
+}
+
+#galery .galery {
+  padding: 100px 0;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
+  grid-auto-flow: dense;
+}
+#galery .galery div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#galery .galery div img:hover {
+  opacity: 0.4;
+}
+#galery .galery div.wide {
+  grid-column: span 2;
+}
+#galery .galery div.tall {
+  grid-row: span 2;
+}
+#galery .galery div.big {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+@media only screen and (max-width: 767px) {
+  #galery .galery div.wide {
+    grid-column: span 1;
+  }
+  #galery .galery div.tall {
+    grid-row: span 1;
+  }
+  #galery .galery div.big {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
 }/*# sourceMappingURL=main.css.map */
