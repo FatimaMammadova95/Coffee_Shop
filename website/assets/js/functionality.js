@@ -4,7 +4,7 @@ const header = document.querySelector("header");
 
 // Menu click
 
-menu.addEventListener("click", function (e) {
+menuIcon.addEventListener("click", function (e) {
   if (this.classList.contains("fa-bars")) {
     this.classList = "fa-solid fa-xmark";
     burgerMenu.style.display = "flex";

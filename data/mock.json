@@ -1,10 +1,11 @@
 {
-  "coffee": [
+  "menu": [
     {
       "name": "Espresso",
       "description": "The basic drink from which other milk and non-milk coffee drinks are based.",
-      "image": "",
+      "image": "../photo/menu-photo/coffee-1.jpg",
       "volume": "25-30 ml (0.85-1.01 US fl oz)",
+      "ingredient": ["espresso"],
       "nutrition": {
         "energy": "8.4 kJ (2.0 kcal)",
         "carbohydrates": "0",
@@ -26,6 +27,176 @@
       "price": 12,
       "popularity": 0,
       "id": 1
+    },
+    {
+      "name": "Latte",
+      "description": "The basic drink from which other milk and non-milk coffee drinks are based.",
+      "image": "../photo/menu-photo/coffee-2.jpg",
+      "volume": "25-30 ml (0.85-1.01 US fl oz)",
+      "ingredient": ["espresso", "steamed milk"],
+
+      "nutrition": {
+        "energy": "8.4 kJ (2.0 kcal)",
+        "carbohydrates": "0",
+        "fat": "0.2",
+        "protein": "0.1",
+        "vitamins": {
+          "riboflavin": "0.2 mg",
+          "niacin": "5.2 mg"
+        },
+        "minerals": {
+          "magnesium": "80 mg"
+        },
+        "Other constituents": {
+          "water": "97.8 g",
+          "theobromine": "0 mg",
+          "caffeine": "212 mg"
+        }
+      },
+      "price": 12,
+      "popularity": 0,
+      "id": 2
+    },
+    {
+      "name": "Cappuccino",
+      "description": "The basic drink from which other milk and non-milk coffee drinks are based.",
+      "image": "../photo/menu-photo/coffee-3.jpg",
+      "volume": "25-30 ml (0.85-1.01 US fl oz)",
+      "ingredient": ["espresso", "steamed milk", "foam"],
+
+      "nutrition": {
+        "energy": "8.4 kJ (2.0 kcal)",
+        "carbohydrates": "0",
+        "fat": "0.2",
+        "protein": "0.1",
+        "vitamins": {
+          "riboflavin": "0.2 mg",
+          "niacin": "5.2 mg"
+        },
+        "minerals": {
+          "magnesium": "80 mg"
+        },
+        "Other constituents": {
+          "water": "97.8 g",
+          "theobromine": "0 mg",
+          "caffeine": "212 mg"
+        }
+      },
+      "price": 12,
+      "popularity": 0,
+      "id": 3
+    },
+    {
+      "name": "Americano",
+      "description": "The basic drink from which other milk and non-milk coffee drinks are based.",
+      "image": "../photo/menu-photo/coffee-4.jpg",
+      "volume": "25-30 ml (0.85-1.01 US fl oz)",
+      "ingredient": ["espresso", "hot water"],
+      "nutrition": {
+        "energy": "8.4 kJ (2.0 kcal)",
+        "carbohydrates": "0",
+        "fat": "0.2",
+        "protein": "0.1",
+        "vitamins": {
+          "riboflavin": "0.2 mg",
+          "niacin": "5.2 mg"
+        },
+        "minerals": {
+          "magnesium": "80 mg"
+        },
+        "Other constituents": {
+          "water": "97.8 g",
+          "theobromine": "0 mg",
+          "caffeine": "212 mg"
+        }
+      },
+      "price": 12,
+      "popularity": 0,
+      "id": 4
+    },
+    {
+      "name": "Macchiato",
+      "description": "The basic drink from which other milk and non-milk coffee drinks are based.",
+      "image": "../photo/menu-photo/coffee-5.jpg",
+      "volume": "25-30 ml (0.85-1.01 US fl oz)",
+      "ingredient": ["espresso", "foam"],
+      "nutrition": {
+        "energy": "8.4 kJ (2.0 kcal)",
+        "carbohydrates": "0",
+        "fat": "0.2",
+        "protein": "0.1",
+        "vitamins": {
+          "riboflavin": "0.2 mg",
+          "niacin": "5.2 mg"
+        },
+        "minerals": {
+          "magnesium": "80 mg"
+        },
+        "Other constituents": {
+          "water": "97.8 g",
+          "theobromine": "0 mg",
+          "caffeine": "212 mg"
+        }
+      },
+      "price": 12,
+      "popularity": 0,
+      "id": 5
+    },
+    {
+      "name": "Mocha",
+      "description": "The basic drink from which other milk and non-milk coffee drinks are based.",
+      "image": "../photo/menu-photo/coffee-6.jpg",
+      "volume": "25-30 ml (0.85-1.01 US fl oz)",
+      "ingredient": ["espresso", "steamed milk","chocolate"],
+      "nutrition": {
+        "energy": "8.4 kJ (2.0 kcal)",
+        "carbohydrates": "0",
+        "fat": "0.2",
+        "protein": "0.1",
+        "vitamins": {
+          "riboflavin": "0.2 mg",
+          "niacin": "5.2 mg"
+        },
+        "minerals": {
+          "magnesium": "80 mg"
+        },
+        "Other constituents": {
+          "water": "97.8 g",
+          "theobromine": "0 mg",
+          "caffeine": "212 mg"
+        }
+      },
+      "price": 12,
+      "popularity": 0,
+      "id": 6
+    },
+    {
+      "name": "Galao",
+      "description": "The basic drink from which other milk and non-milk coffee drinks are based.",
+      "image": "../photo/menu-photo/coffee-7.jpg",
+      "volume": "25-30 ml (0.85-1.01 US fl oz)",
+      "ingredient": ["espresso", "foamed milk"],
+      "nutrition": {
+        "energy": "8.4 kJ (2.0 kcal)",
+        "carbohydrates": "0",
+        "fat": "0.2",
+        "protein": "0.1",
+        "vitamins": {
+          "riboflavin": "0.2 mg",
+          "niacin": "5.2 mg"
+        },
+        "minerals": {
+          "magnesium": "80 mg"
+        },
+        "Other constituents": {
+          "water": "97.8 g",
+          "theobromine": "0 mg",
+          "caffeine": "212 mg"
+        }
+      },
+      "price": 12,
+      "popularity": 0,
+      "id": 4
     }
   ],
   "product": [

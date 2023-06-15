@@ -1,0 +1,87 @@
+// @include page-heading("../../../photo/background/h1-bacground-img-1.jpg");
+
+#menu {
+  background-image: url("../../../../photo/background/new-new-h1-bacground-img-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .menu {
+    .our-menu {
+      text-align: center;
+      font-size: 48px;
+      padding: 20px 0;
+      color: #5d4335;
+    }
+    .menu-row {
+      .col-12 {
+        padding: 30px;
+        max-width: 90%;
+        display: flex;
+        position: relative;
+        .coffee-image {
+          img {
+            max-width: 70px;
+            height: 70px;
+            border: 1px solid transparent;
+            border-radius: 50%;
+          }
+        }
+        .coffee-text {
+          width: 100%;
+          padding: 0 5px;
+          .coffee-name {
+            display: flex;
+            h1 {
+              font-size: 28px;
+              // color: #5d4335;
+            }
+            .line {
+              flex-grow: 1;
+              border-bottom: 3px dotted #dadada;
+            }
+            .price {
+              color: #5d4335;
+            }
+          }
+          .description {
+            padding: 10px 0;
+            // color: #c29e7b;
+            span {
+              font-weight: bold;
+              color: #5d4335;
+            }
+          }
+        }
+        .nutrition {
+          padding: 30px;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          z-index: 1;
+          max-width: 300px;
+          h1 {
+            text-transform: uppercase;
+          }
+          ul {
+            padding: 10px 0;
+            li {
+              list-style: disc inside;
+              padding: 2px 0;
+              span {
+                font-weight: bold;
+              }
+            }
+          }
+          display: none;
+          @media only screen and (max-width: 991px) {
+            padding: 10px 15px;
+          }
+        }
+        &:hover {
+          .nutrition {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

@@ -608,10 +608,11 @@ footer .footer .down-footer {
 }
 
 #page-heading {
-  background-image: url("../../../photo/background/h1-bacground-img-2.jpg");
+  background-image: url("../../../photo/background/h1-bacground-img-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   padding: 200px 0;
 }
 #page-heading .page-heading h1 {
@@ -784,6 +785,7 @@ footer .footer .down-footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   padding: 200px 0;
 }
 #page-heading .page-heading h1 {
@@ -830,4 +832,82 @@ footer .footer .down-footer {
     grid-row: span 1;
     grid-column: span 1;
   }
+}
+
+#menu {
+  background-image: url("../../../../photo/background/new-new-h1-bacground-img-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#menu .menu .our-menu {
+  text-align: center;
+  font-size: 48px;
+  padding: 20px 0;
+  color: #5d4335;
+}
+#menu .menu .menu-row .col-12 {
+  padding: 30px;
+  max-width: 90%;
+  display: flex;
+  position: relative;
+}
+#menu .menu .menu-row .col-12 .coffee-image img {
+  max-width: 70px;
+  height: 70px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+#menu .menu .menu-row .col-12 .coffee-text {
+  width: 100%;
+  padding: 0 5px;
+}
+#menu .menu .menu-row .col-12 .coffee-text .coffee-name {
+  display: flex;
+}
+#menu .menu .menu-row .col-12 .coffee-text .coffee-name h1 {
+  font-size: 28px;
+}
+#menu .menu .menu-row .col-12 .coffee-text .coffee-name .line {
+  flex-grow: 1;
+  border-bottom: 3px dotted #dadada;
+}
+#menu .menu .menu-row .col-12 .coffee-text .coffee-name .price {
+  color: #5d4335;
+}
+#menu .menu .menu-row .col-12 .coffee-text .description {
+  padding: 10px 0;
+}
+#menu .menu .menu-row .col-12 .coffee-text .description span {
+  font-weight: bold;
+  color: #5d4335;
+}
+#menu .menu .menu-row .col-12 .nutrition {
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  max-width: 300px;
+  display: none;
+}
+#menu .menu .menu-row .col-12 .nutrition h1 {
+  text-transform: uppercase;
+}
+#menu .menu .menu-row .col-12 .nutrition ul {
+  padding: 10px 0;
+}
+#menu .menu .menu-row .col-12 .nutrition ul li {
+  list-style: disc inside;
+  padding: 2px 0;
+}
+#menu .menu .menu-row .col-12 .nutrition ul li span {
+  font-weight: bold;
+}
+@media only screen and (max-width: 991px) {
+  #menu .menu .menu-row .col-12 .nutrition {
+    padding: 10px 15px;
+  }
+}
+#menu .menu .menu-row .col-12:hover .nutrition {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
