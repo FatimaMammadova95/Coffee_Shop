@@ -31,7 +31,7 @@ function createCard(arr) {
             src="${element.image}"
             alt=""
           />
-          <a href="#" class="add">Add to Basket</a>
+          <a href="#" class="add" onclick=basketFunc(${element.id})>Add to Basket</a>
         </div>
         <div class="card-text">
           <h1>${element.name}</h1>
@@ -74,6 +74,7 @@ load.addEventListener("click", function () {
     createCard(sliceArr(sortedArr));
   }
 });
+
 
 searchInput.addEventListener("input", function (e) {
   load.style.display = "block";
@@ -141,10 +142,17 @@ range.forEach((input) => {
 });
 
 let favorited = JSON.parse(localStorage.getItem("favorited")) ?? [];
+let basket = JSON.parse(localStorage.getItem("basket")) ?? [];
 
 async function favFunc(id) {
   let res = await axios(`${BASE_URL}product/${id}`);
   favorited.push(res.data);
 
   localStorage.setItem("favorited", JSON.stringify(favorited));
+}
+async function basketFunc(id) {
+  let res = await axios(`${BASE_URL}product/${id}`);
+  basket.push(res.data);
+
+  localStorage.setItem("basket", JSON.stringify(basket));
 }
