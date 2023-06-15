@@ -1046,4 +1046,139 @@ footer .footer .down-footer {
   100% {
     transform: rotate(0);
   }
+}
+#signin .signin {
+  padding: 100px 0;
+}
+#signin .signin h1 {
+  font-size: 48px;
+  color: #5d4335;
+}
+#signin .signin p {
+  font-size: 20px;
+  letter-spacing: 10px;
+  padding: 10px 0 30px 0;
+  color: rgba(194, 159, 123, 0.8823529412);
+}
+#signin .signin form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#signin .signin form label {
+  padding: 20px 0 5px 0;
+  font-size: 18px;
+}
+#signin .signin form input {
+  padding: 10px;
+  width: 100%;
+  border-color: #5d4335;
+}
+#signin .signin form input:focus {
+  outline-color: #c29e7b;
+}
+#signin .signin form .submit {
+  margin-top: 20px;
+  position: relative;
+  padding: 15px 45px;
+  background: #c29e7b;
+  font-size: 17px;
+  font-weight: 500;
+  color: black;
+  border: 1px solid #c29e7b;
+  border-radius: 8px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+}
+#signin .signin form .submit:hover {
+  border: 1px solid #c29e7b;
+  background: linear-gradient(85deg, #c29e7b, #c29e7b, #c29e7b, #c29e7b, #c29e7b);
+  animation: wind 2s ease-in-out infinite;
+}
+#signin .signin form .submit:hover .icon-1 {
+  animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
+  transform: rotate(10deg);
+}
+#signin .signin form .submit:hover .icon-2 {
+  animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+  transform: rotate(0);
+}
+#signin .signin form .submit:hover .icon-3 {
+  animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+  transform: rotate(0);
+}
+#signin .signin form .submit .icon-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  transform-origin: 0 0;
+  transform: rotate(10deg);
+  transition: all 0.5s ease-in-out;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
+}
+#signin .signin form .submit .icon-2 {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 12px;
+  transform-origin: 50% 0;
+  transform: rotate(10deg);
+  transition: all 1s ease-in-out;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+}
+#signin .signin form .submit .icon-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  transform-origin: 50% 0;
+  transform: rotate(-5deg);
+  transition: all 1s ease-in-out;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes wind {
+  0% {
+    background-position: 0% 50%;
+  }
+  0% {
+    background-position: 50% 100%;
+  }
+  0% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes slay-1 {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes slay-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes slay-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }/*# sourceMappingURL=main.css.map */
