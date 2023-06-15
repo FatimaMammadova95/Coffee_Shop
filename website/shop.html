@@ -161,15 +161,41 @@
                   Showing <span class="product-interval">1-9</span> of
                   <span class="all-product-length">16</span> results
                 </p>
-                <select name="" id="sort">
-                  <option value="default">Default sorting</option>
-                  <option value="popularity">Sort by popularity</option>
-                  <option value="lowtohigh">Sort by price: low to high</option>
-                  <option value="hightolow">Sort by price: high to low</option>
-                </select>
+                <div class="dropdown sort">
+                  <button
+                    class="btn dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Sort
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item sort-item" href="#"
+                        >Default sorting</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item sort-item" href="#"
+                        >Sort by popularity</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item sort-item" href="#"
+                        >Sort by price: low to high</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item sort-item" href="#"
+                        >Sort by price: high to low</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div class="product-cards">
-                <div class="row card-row"></div>               
+                <div class="row card-row"></div>
                 <button class="load-more">Load More</button>
               </div>
             </div>
@@ -203,7 +229,7 @@
                       type="range"
                       min="0"
                       max="100"
-                      value="25"
+                      value="0"
                     />
                   </span>
                   <span class="range-max-wrapper">
@@ -212,7 +238,7 @@
                       type="range"
                       min="0"
                       max="100"
-                      value="100"
+                      value="25"
                     />
                   </span>
                 </div>
@@ -223,7 +249,7 @@
                       class="text-center"
                       min="0"
                       max="100"
-                      value="25"
+                      value="0"
                       disabled
                     />
                   </div>
@@ -233,7 +259,7 @@
                       class="text-center"
                       min="0"
                       max="100"
-                      value="75"
+                      value="25"
                       disabled
                     />
                   </div>

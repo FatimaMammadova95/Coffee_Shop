@@ -5,12 +5,14 @@ let progress = document.querySelector(".range-slider .progress");
 let inputValue = document.querySelectorAll(".numberVal input");
 let row = document.querySelector(".card-row");
 let searchInput = document.querySelector("#search");
-let sortBtn = document.querySelector("#sort");
+let sortItem = document.querySelectorAll(".sort-item");
 let load = document.querySelector(".load-more");
 let productInterval = document.querySelector(".product-interval");
 let allProductLength = document.querySelector(".all-product-length");
 let categories = document.querySelectorAll(".categories a");
 let tags = document.querySelectorAll(".tags li");
+
+
 
 let dataArr = [];
 let copyArr = [];
@@ -61,6 +63,7 @@ function sliceArr(arr) {
   return arr.slice(0, max);
 }
 
+//Load More
 load.addEventListener("click", function () {
   max = max + 3;
   productInterval.innerHTML = `1-${max}`;
@@ -75,7 +78,24 @@ load.addEventListener("click", function () {
   }
 });
 
+//Sort
+sortItem.forEach((sort) => {
+  sort.addEventListener("click", function () {
+    sorted = true;
+    if (sort.innerHTML == "Sort by price: low to high") {
+      sortedArr = copyArr.toSorted((a, b) => a.price - b.price);
+    } else if (sort.innerHTML == "Sort by price: high to low") {
+      sortedArr = copyArr.toSorted((a, b) => b.price - a.price);
+    } else if (sort.innerHTML == "Sort by popularity") {
+      sortedArr = copyArr.toSorted((a, b) => b.rating - a.rating);
+    } else {
+      sortedArr = copyArr;
+    }
+    createCard(sliceArr(sortedArr));
+  });
+});
 
+// Search
 searchInput.addEventListener("input", function (e) {
   load.style.display = "block";
   copyArr = sortedArr.length ? sortedArr : dataArr;
@@ -117,14 +137,6 @@ range.forEach((input) => {
     );
     console.log(rangedArr);
     createCard(sliceArr(rangedArr));
-
-    // axios.get(`${BASE_URL}product`).then((response) => {
-    //   copyArr = response.data.filter((item) =>
-    //     item.price >= minRange && item.price <= maxRange
-    //   );
-    //   console.log(copyArr);
-    //   createCard(sliceArr(copyArr));
-    // });
 
     if (maxRange - minRange < gap) {
       if (e.target.className === "range-min") {

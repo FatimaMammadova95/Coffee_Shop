@@ -628,8 +628,8 @@ footer .footer .down-footer {
   display: flex;
   justify-content: space-between;
 }
-#products .products .col-9 .sorting select {
-  border: none;
+#products .products .col-9 .sorting .sort .dropdown-menu {
+  background-color: white;
 }
 #products .products .col-9 .product-cards {
   padding: 50px 0;
@@ -743,8 +743,8 @@ footer .footer .down-footer {
 }
 #products .products .col-3 .range .range-slider .progress {
   position: absolute;
-  left: 25%;
-  right: 0%;
+  left: 0%;
+  right: 75%;
   height: 100%;
   border-radius: 15px;
   background-color: #5d4335;
@@ -754,6 +754,8 @@ footer .footer .down-footer {
   width: 100%;
   height: 10px;
   -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   pointer-events: none;
   background: none;
   outline: none;
