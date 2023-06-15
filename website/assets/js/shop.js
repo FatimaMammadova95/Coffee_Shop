@@ -31,16 +31,15 @@ function createCard(arr) {
             src="${element.image}"
             alt=""
           />
-          <div class="add">Add to Basket</div>
+          <a href="#" class="add">Add to Basket</a>
         </div>
         <div class="card-text">
           <h1>${element.name}</h1>
           <div class="stars" style="--rating: ${element.rating}"></div>
           <div class="price">${element.price}$</div>
         </div>
-
-        <a href="#" class="favorite"
-          ><i class="fa-regular fa-bookmark"></i
+        <a href="#" class="favorite" onclick=favFunc(${element.id})
+          ><i class="fa-regular fa-bookmark" ></i
         ></a>
       </div>
     </div>
@@ -140,3 +139,12 @@ range.forEach((input) => {
     }
   });
 });
+
+let favorited = JSON.parse(localStorage.getItem("favorited")) ?? [];
+
+async function favFunc(id) {
+  let res = await axios(`${BASE_URL}product/${id}`);
+  favorited.push(res.data);
+
+  localStorage.setItem("favorited", JSON.stringify(favorited));
+}
