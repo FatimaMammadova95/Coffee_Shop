@@ -26,7 +26,7 @@ $(window).scroll(function () {
 ScrollReveal().reveal(".slide-up", {
   duration: 2000,
   origin: "bottom",
-  distance: "100px",
+  distance: "50px",
   easing: "cubic-bezier(.37,.01,.74,1)",
   opacity: 0.3,
   scale: 0.5,
@@ -35,14 +35,14 @@ ScrollReveal().reveal(".slide-up", {
 ScrollReveal().reveal(".slide-left", {
   duration: 2000,
   origin: "left",
-  distance: "100px",
+  distance: "20px",
   easing: "cubic-bezier(.37,.01,.74,1)",
   opacity: 0.3,
 });
 ScrollReveal().reveal(".slide-right", {
   duration: 2000,
   origin: "right",
-  distance: "100px",
+  distance: "20px",
   easing: "cubic-bezier(.37,.01,.74,1)",
   opacity: 0.3,
 });

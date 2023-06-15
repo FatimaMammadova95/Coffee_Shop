@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+  </head>
+  <body>
+    <!-- Header-nav -->
+    <header>
+      <div class="container">
+        <div class="header">
+          <a href="index.html" class="logo">
+            <img src="../photo/logo/logo-light.png" alt="" class="logo" />
+          </a>
+          <nav>
+            <ul class="nav-ul">
+              <li><a href="#">Home</a></li>
+              <li class="">
+                <div class="dropdown">
+                  <a
+                    class="dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="galery.html">Galery</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </nav>
+          <div class="basket-fav-profile">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-store"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+              </li>
+              <li class="menu">
+                <a href="#"><i class="fa-solid fa-bars" id="menu"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Burger-Menu -->
+    <div id="burger-menu">
+      <div class="basket-fav-profile">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-store"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+          </li>
+        </ul>
+      </div>
+      <nav>
+        <ul class="nav-ul">
+          <li><a href="#">Home</a></li>
+          <li class="accordion-div">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <a
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFive"
+                  >
+                    Pages
+                  </a>
+                </h2>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFive"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="./gallery.html">Gallery</a></li>
+                      <li><a href="./faq.html">Faq</a></li>
+                      <li><a href="./team.html">Team</a></li>
+                      <li><a href="#">Team Details</a></li>
+                      <li><a href="./pricing.html">Pricing</a></li>
+                      <li><a href="./shop.html">Shop</a></li>
+                      <li><a href="#">Shop Details</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Page Heading -->
+    <section id="page-heading">
+      <div class="container">
+        <div class="page-heading">
+          <h1>Menu</h1>
+        </div>
+      </div>
+    </section>
+    <!-- Sign Up -->
+
+    <!-- Our Partners -->
+    <section id="partners">
+      <div class="container">
+        <div class="partners">
+          <div class="swiper mySwiper" id="partners-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../photo/icons/clients-img-1-1.png " alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../photo/icons/clients-img-2.png " alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../photo/icons/clients-img-3.png " alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../photo/icons/clients-img-4.png " alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../photo/icons/clients-img-5.png " alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../photo/icons/clients-img-6.png " alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="up-footer">
+            <div class="row">
+              <ul class="col-6 col-lg-3">
+                Contact
+                <li><a href="tel:225566734">Phone: 0225566734</a></li>
+                <li>
+                  <a href="mailto:lache@example.com">Email:lache@example.com</a>
+                </li>
+              </ul>
+              <ul class="col-6 col-lg-3">
+                Location
+                <li>
+                  <a
+                    href="https://www.google.com/maps/place/236-138+Linn+Dr,+Verona,+NJ+07044,+%D0%A1%D1%98%D0%B5%D0%B4%D0%B8%D1%9A%D0%B5%D0%BD%D0%B5+%D0%94%D1%80%D0%B6%D0%B0%D0%B2%D0%B5/@40.8398188,-74.2523482,19.03z/data=!4m15!1m8!3m7!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2z0IrRg9GY0L7RgNC6LCDQodGY0LXQtNC40ZrQtdC90LUg0JTRgNC20LDQstC1!3b1!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2!3m5!1s0x89c300708abaed89:0x5da00f0c0881f811!8m2!3d40.8398072!4d-74.2517191!16s%2Fg%2F11g656f8mz?hl=sr&entry=ttu"
+                    target="_blank"
+                    >LA, Halatio Ave 16</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.google.com/maps/place/236-138+Linn+Dr,+Verona,+NJ+07044,+%D0%A1%D1%98%D0%B5%D0%B4%D0%B8%D1%9A%D0%B5%D0%BD%D0%B5+%D0%94%D1%80%D0%B6%D0%B0%D0%B2%D0%B5/@40.8398188,-74.2523482,19.03z/data=!4m15!1m8!3m7!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2z0IrRg9GY0L7RgNC6LCDQodGY0LXQtNC40ZrQtdC90LUg0JTRgNC20LDQstC1!3b1!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2!3m5!1s0x89c300708abaed89:0x5da00f0c0881f811!8m2!3d40.8398072!4d-74.2517191!16s%2Fg%2F11g656f8mz?hl=sr&entry=ttu"
+                    target="_blank"
+                    >New York, Linn Dr 238</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.google.com/maps/place/236-138+Linn+Dr,+Verona,+NJ+07044,+%D0%A1%D1%98%D0%B5%D0%B4%D0%B8%D1%9A%D0%B5%D0%BD%D0%B5+%D0%94%D1%80%D0%B6%D0%B0%D0%B2%D0%B5/@40.8398188,-74.2523482,19.03z/data=!4m15!1m8!3m7!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2z0IrRg9GY0L7RgNC6LCDQodGY0LXQtNC40ZrQtdC90LUg0JTRgNC20LDQstC1!3b1!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2!3m5!1s0x89c300708abaed89:0x5da00f0c0881f811!8m2!3d40.8398072!4d-74.2517191!16s%2Fg%2F11g656f8mz?hl=sr&entry=ttu"
+                    target="_blank"
+                    >LA, Halatio Ave 9</a
+                  >
+                </li>
+              </ul>
+              <ul class="col-6 col-lg-3">
+                Information
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fag</a></li>
+                <li><a href="#">Terms of Use</a></li>
+              </ul>
+              <ul class="col-6 col-lg-3">
+                Opening hours
+                <li class="opening">
+                  <a href="#"
+                    ><p>Mon-Fri</p>
+                    <p>09.00</p></a
+                  >
+                </li>
+                <li class="opening">
+                  <a href="#"
+                    ><p>Sat-Sun</p>
+                    <p>10.00</p></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="down-footer">
+            © 2022 QODE INTERACTIVE, ALL RIGHTS RESERVED
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- JQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- My script files -->
+    <script src="./assets/js/functionality.js"></script>
+    <script src="./assets/js/menu.js"></script>
+  </body>
+</html>

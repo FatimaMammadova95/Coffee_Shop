@@ -21,7 +21,7 @@ function scrollFunction() {
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
-    header.style.background = "rgba(0, 0, 0, 0.451)";
+    header.style.background = "rgba(0, 0, 0, 0.7)";
   } else {
     header.style.background = "";
   }
