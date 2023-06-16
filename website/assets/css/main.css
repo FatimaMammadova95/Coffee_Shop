@@ -1280,4 +1280,119 @@ footer .footer .down-footer {
 }
 #favorite .favorite .col-12 .card:hover .add {
   display: block;
+}
+
+#basket .basket {
+  padding: 50px 0;
+}
+#basket .basket .product-cards .col-12 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #888d9c;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+#basket .basket .product-cards .col-12 .product-about {
+  display: flex;
+  align-items: center;
+}
+#basket .basket .product-cards .col-12 .product-about img {
+  width: 100px;
+  height: 100px;
+}
+#basket .basket .product-cards .col-12 .value {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#basket .basket .product-cards .col-12 .value .number .input-number {
+  width: 50px;
+  padding: 10px;
+  text-align: center;
+  outline: none;
+  border: 1px solid #ccc;
+}
+#basket .basket .product-cards .col-12 .value .number .input-number-decrement {
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  line-height: 38px;
+  background-color: #f1f1f1;
+  color: #444;
+  text-align: center;
+}
+#basket .basket .product-cards .col-12 .value .number .input-number-decrement:active {
+  background-color: #fff;
+}
+#basket .basket .product-cards .col-12 .value .number .input-number-increment {
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  line-height: 38px;
+  background-color: #f1f1f1;
+  color: #444;
+  text-align: center;
+}
+#basket .basket .product-cards .col-12 .value .number .input-number-increment:active {
+  background-color: #fff;
+}
+#basket .basket .card {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-color: #888d9c;
+}
+#basket .basket .card h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+#basket .basket .card span {
+  font-weight: bold;
+}
+#basket .basket .card .confrim-card {
+  position: relative;
+  padding: 17px 35px;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #c29e7b;
+  border: 1px solid #c29e7b;
+  border-radius: 10px;
+  font-weight: 400;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+#basket .basket .card .confrim-card span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+#basket .basket .card .confrim-card:hover {
+  animation: rotate624 0.7s ease-in-out both;
+}
+
+@keyframes rotate624 {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
 }/*# sourceMappingURL=main.css.map */

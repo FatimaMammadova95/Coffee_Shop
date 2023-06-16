@@ -12,8 +12,6 @@ let allProductLength = document.querySelector(".all-product-length");
 let categories = document.querySelectorAll(".categories a");
 let tags = document.querySelectorAll(".tags li");
 
-
-
 let dataArr = [];
 let copyArr = [];
 let sortedArr = [];
@@ -41,7 +39,7 @@ function createCard(arr) {
           <div class="price">${element.price}$</div>
         </div>
         <a href="#" class="favorite" onclick=favFunc(${element.id})
-          ><i class="fa-regular fa-bookmark" ></i
+          ><i class="bookicon fa-regular fa-bookmark" ></i
         ></a>
       </div>
     </div>
@@ -56,6 +54,7 @@ async function getData() {
   productInterval.innerHTML = `1-${max}`;
   allProductLength.innerHTML = copyArr.length;
   createCard(sliceArr(copyArr));
+
 }
 getData();
 
@@ -159,7 +158,8 @@ let basket = JSON.parse(localStorage.getItem("basket")) ?? [];
 async function favFunc(id) {
   let res = await axios(`${BASE_URL}product/${id}`);
   favorited.push(res.data);
-
+  const icon = document.querySelector(".bookicon");
+  icon.classList.toggle('fa-solid')
   localStorage.setItem("favorited", JSON.stringify(favorited));
 }
 async function basketFunc(id) {
