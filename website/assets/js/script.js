@@ -10,6 +10,9 @@ let reserveForm = document.querySelector(".reserve-form");
 let links = document.querySelectorAll(".links a");
 let productSlider = document.querySelector("#product-slider");
 
+console.log(window.innerWidth);
+console.log(screen.width);
+
 // Menu
 function menuLeft(arr) {
   rowLeft.innerHTML = "";

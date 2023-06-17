@@ -58,6 +58,40 @@ table {
   box-sizing: border-box;
 }
 
+html {
+  --scrollbarBG: #fff;
+  --thumbBG: #5d4335;
+}
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+::-moz-selection {
+  background: #5d4335;
+  color: #fff;
+}
+
+::selection {
+  background: #5d4335;
+  color: #fff;
+}
+
 .dropdown .dropdown-menu {
   background-color: black;
 }
@@ -419,6 +453,10 @@ header .header .basket-fav-profile ul li.menu {
 }
 #product .product #product-swiper .swiper-slide h4 {
   font-size: 20px;
+  color: #5d4335;
+}
+#product .product #product-swiper .swiper-slide p {
+  font-size: 18px;
 }
 #product .product #product-swiper .swiper-button-next {
   color: #888d9c;
