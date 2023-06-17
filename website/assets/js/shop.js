@@ -177,9 +177,13 @@ async function favFunc(id) {
 }
 async function basketFunc(id) {
   if (account) {
-    let res = await axios(`${BASE_URL}product/${id}`);
-    basket.push(res.data);
-    localStorage.setItem("basket", JSON.stringify(basket));
+    if (basket.find((item) => item.id == id)) {
+      alert("Baskette var");
+    } else {
+      let res = await axios(`${BASE_URL}product/${id}`);
+      basket.push(res.data);
+      localStorage.setItem("basket", JSON.stringify(basket));
+    }
   } else {
     alert("Hesaba daxil ol");
   }
