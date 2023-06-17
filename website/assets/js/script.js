@@ -57,8 +57,10 @@ subscribe.addEventListener("click", async function () {
     email: email.value,
   };
   await axios.post(`${BASE_URL}subscriptions`, obj);
-  alert("You have subscribed")
+  alert("You have subscribed");
 });
+
+
 
 // Counter
 let a = 0;
