@@ -1742,4 +1742,42 @@ footer .footer .down-footer {
   border: 1px solid #5d4335;
   line-height: 20px;
   max-width: 720px;
+}
+
+#about .about {
+  padding: 100px 0;
+}
+#about .about .row .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  gap: 20px;
+}
+#about .about .row .text h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+#about .about .row .text h3 {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: #888d9c;
+}
+#about .about .row .text h3::before {
+  content: " ";
+  display: inline-block;
+  height: 2px;
+  width: 50px;
+  background-color: #5d4335;
+  margin-right: 10px;
+}
+#about .about .row .text p {
+  line-height: 20px;
+  color: #888d9c;
+}
+#about .about .row .image img {
+  width: 100%;
+  height: auto;
+  padding: 20px;
 }/*# sourceMappingURL=main.css.map */
