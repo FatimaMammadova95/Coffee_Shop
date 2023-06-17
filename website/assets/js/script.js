@@ -4,6 +4,9 @@ let rowLeft = document.querySelector(".menu-row-left");
 let rowRight = document.querySelector(".menu-row-right");
 let email = document.querySelector("#Email");
 let subscribe = document.querySelector(".button--submit");
+let selectPerson = document.querySelector(".select-person");
+let selectTime = document.querySelector(".select-time");
+let reserveForm = document.querySelector(".reserve-form");
 
 // Menu
 function menuLeft(arr) {
@@ -60,7 +63,15 @@ subscribe.addEventListener("click", async function () {
   alert("You have subscribed");
 });
 
-
+// Reservation
+reserveForm.addEventListener("submit", async function () {
+  let obj = {
+    numberOfCustomer: selectPerson.value,
+    selectTime: selectTime.value,
+  };
+  await axios.post(`${BASE_URL}reservation`, obj);
+  alert("Your reservation has been accepted");
+});
 
 // Counter
 let a = 0;
