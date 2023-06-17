@@ -901,12 +901,59 @@ footer .footer .down-footer {
   color: transparent;
   -webkit-text-fill-color: transparent;
 }
-#products .products .col-9 .product-cards .col-12 .card .favorite {
+#products .products .col-9 .product-cards .col-12 .card .bookmark {
   position: absolute;
   top: 20px;
-  right: 20px;
-  color: #5d4335;
-  font-size: 20px;
+  right: 40px;
+}
+#products .products .col-9 .product-cards .col-12 .card .bookmark .style1 {
+  height: 10px;
+  width: 20px;
+  -webkit-appearance: none;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  outline: none;
+  background-color: #e5e5e5;
+  border-radius: 3px 3px 0 0;
+  transition: 0.3s;
+}
+#products .products .col-9 .product-cards .col-12 .card .bookmark .style1:focus {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+#products .products .col-9 .product-cards .col-12 .card .bookmark .style1:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-top: 20px solid #e5e5e5;
+  border-right: 22.5px solid transparent;
+  bottom: -20px;
+  transition: 0.3s;
+}
+#products .products .col-9 .product-cards .col-12 .card .bookmark .style1:after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-top: 20px solid #e5e5e5;
+  border-left: 22.5px solid transparent;
+  bottom: -20px;
+  right: 0;
+  transition: 0.3s;
+}
+#products .products .col-9 .product-cards .col-12 .card .bookmark .style1:checked {
+  background-color: #ffc64c;
+}
+#products .products .col-9 .product-cards .col-12 .card .bookmark .style1:checked::before {
+  border-top-color: #ffc64c;
+}
+#products .products .col-9 .product-cards .col-12 .card .bookmark .style1:checked::after {
+  border-top-color: #ffc64c;
 }
 #products .products .col-9 .product-cards .col-12 .card:hover img {
   opacity: 0.4;
@@ -1033,6 +1080,23 @@ footer .footer .down-footer {
 }
 #products .products .col-3 .tags p a {
   color: #888d9c;
+}
+@media only screen and (max-width: 767px) {
+  #products .products .col-3 .range {
+    display: none;
+  }
+  #products .products .col-3 .categories h1 {
+    font-size: 14px;
+  }
+  #products .products .col-3 .categories p {
+    font-size: 12px;
+  }
+  #products .products .col-3 .tags h1 {
+    font-size: 14px;
+  }
+  #products .products .col-3 .tags p {
+    font-size: 12px;
+  }
 }
 
 #page-heading {

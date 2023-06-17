@@ -38,14 +38,16 @@ function createCard(arr) {
           <div class="stars" style="--rating: ${element.rating}"></div>
           <div class="price">${element.price}$</div>
         </div>
-        <a href="#" class="favorite" onclick=favFunc(${element.id})
-          ><i class="bookicon fa-regular fa-bookmark" ></i
-        ></a>
+        <div class="bookmark"><input type="checkbox" class="style1" onclick=favFunc(${element.id})></div>
       </div>
     </div>
           `;
   });
 }
+
+{/* <a href="#" class="favorite" 
+><i class="bookicon fa-regular fa-bookmark" ></i
+></a> */}
 
 async function getData() {
   let res = await axios(`${BASE_URL}product`);
