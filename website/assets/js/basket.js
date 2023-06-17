@@ -3,40 +3,7 @@ let total = document.querySelector(".total");
 let cargo = document.querySelector(".cargo");
 let basket = JSON.parse(localStorage.getItem("basket"));
 
-window.inputNumber = function (el) {
-  let min = el.attr("min") || false;
-  let max = el.attr("max") || false;
-
-  let els = {};
-
-  els.dec = el.prev();
-  els.inc = el.next();
-
-  el.each(function () {
-    init($(this));
-  });
-
-  function init(el) {
-    els.dec.on("click", decrement);
-    els.inc.on("click", increment);
-
-    function decrement() {
-      let value = el[0].value;
-      value--;
-      if (!min || value >= min) {
-        el[0].value = value;
-      }
-    }
-
-    function increment() {
-      let value = el[0].value;
-      value++;
-      if (!max || value <= max) {
-        el[0].value = value++;
-      }
-    }
-  }
-};
+let price = 0;
 
 function getData() {
   basket.forEach((element) => {
@@ -51,21 +18,29 @@ function getData() {
     </div>
     <div class="value">
       <div class="number">
-        <span class="input-number-decrement">-</span
-        ><input
+        <input
           class="input-number"
-          type="text"
+          type="number"
           value="1"
           min="1"
           max="10"
-        /><span class="input-number-increment">+</span>
+          oninput= "inputFunc()"         
+        />
       </div>
       <p class="price-card">${element.price}$</p>
       <i class="fa-solid fa-trash"></i>
     </div>
   </div>
-    `;
-    inputNumber($(".input-number"));
+    `;    
+    price = price + element.price;
   });
 }
 getData();
+
+total.innerHTML = `<span>Product Total:</span> ${price}$`;
+cargo.innerHTML = `<span>Cargo:</span> ${price > 50 ? 0 : 10}$`;
+
+// function inputFunc(e){
+  
+//   console.log(e.target.value);
+// }

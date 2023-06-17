@@ -1583,7 +1583,7 @@ footer .footer .down-footer {
   align-items: center;
   border: 1px solid #888d9c;
   border-radius: 15px;
-  padding: 10px 15px;
+  padding: 10px 25px;
   box-shadow: 0px 0px 10px #888d9c;
 }
 #basket .basket .row .product-cards .col-12 .product-about {
@@ -1610,37 +1610,8 @@ footer .footer .down-footer {
   gap: 30px;
 }
 #basket .basket .row .product-cards .col-12 .value .number .input-number {
-  width: 40px;
-  padding: 10px;
   text-align: center;
-  outline: none;
   border: 1px solid #ccc;
-}
-#basket .basket .row .product-cards .col-12 .value .number .input-number-decrement {
-  border-right: none;
-  border-radius: 4px 0 0 4px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  line-height: 38px;
-  background-color: #f1f1f1;
-  color: #444;
-  text-align: center;
-}
-#basket .basket .row .product-cards .col-12 .value .number .input-number-decrement:active {
-  background-color: #fff;
-}
-#basket .basket .row .product-cards .col-12 .value .number .input-number-increment {
-  border-left: none;
-  border-radius: 0 4px 4px 0;
-  border: 1px solid #ccc;
-  padding: 10px;
-  line-height: 38px;
-  background-color: #f1f1f1;
-  color: #444;
-  text-align: center;
-}
-#basket .basket .row .product-cards .col-12 .value .number .input-number-increment:active {
-  background-color: #fff;
 }
 #basket .basket .row .card {
   padding: 30px;
