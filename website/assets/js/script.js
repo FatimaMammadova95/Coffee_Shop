@@ -2,10 +2,13 @@ const BASE_URL = "http://localhost:8080/";
 
 let rowLeft = document.querySelector(".menu-row-left");
 let rowRight = document.querySelector(".menu-row-right");
+let email = document.querySelector("#Email");
+let subscribe = document.querySelector(".button--submit");
 
+// Menu
 function menuLeft(arr) {
   rowLeft.innerHTML = "";
-  arr = arr.slice(0,4)
+  arr = arr.slice(0, 4);
   arr.forEach((element) => {
     rowLeft.innerHTML += `
       <div class="col-12">
@@ -23,7 +26,7 @@ function menuLeft(arr) {
 }
 function menuRight(arr) {
   rowRight.innerHTML = "";
-  arr=arr.slice(5,9)
+  arr = arr.slice(5, 9);
   arr.forEach((element) => {
     rowRight.innerHTML += `
       <div class="col-12">
@@ -39,7 +42,6 @@ function menuRight(arr) {
     `;
   });
 }
-
 async function getData() {
   let res = await axios(`${BASE_URL}menu`);
   data = res.data;
@@ -47,6 +49,16 @@ async function getData() {
   menuRight(data);
 }
 getData();
+
+// Subscribe
+
+subscribe.addEventListener("click", async function () {
+  let obj = {
+    email: email.value,
+  };
+  await axios.post(`${BASE_URL}subscriptions`, obj);
+  alert("You have subscribed")
+});
 
 // Counter
 let a = 0;

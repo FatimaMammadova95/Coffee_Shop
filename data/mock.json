@@ -693,5 +693,11 @@
       "password": "fatima2003",
       "id": 1
     }
+  ],
+  "subscriptions": [
+    {
+      "email": "fatima@gmail.com",
+      "id": 1
+    }
   ]
 }
