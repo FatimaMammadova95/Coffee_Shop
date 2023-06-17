@@ -1,43 +1,58 @@
-#social-subsribe {
-  background: #262626;
-  .social-subsribe {
-    padding: 100px 0;
-    .social {
-        position: relative;
-      ul {
-        display: flex;
-        li {          
-          a {
-            width: 80px;
-            height: 80px;
-            background-color: #fff;
-            text-align: center;
-            line-height: 80px;
-            font-size: 35px;
-            margin: 0 10px;
-            display: block;
-            border-radius: 50%;
-            position: relative;
-            overflow: hidden;
-            border: 3px solid #fff;
-            z-index: 1;
-            .icon {
+#social-subscribe {
+  background: black;
+  .social-subscribe {
+    padding: 50px 0;
+    .text {
+      h1 {
+        font-size: 48px;
+        color: white;
+        text-align: center;
+      }
+      p {
+        font-size: 24px;
+        color: #c29e7b;
+        text-align: center;
+      }
+    }
+    .icons-input {
+        padding: 25px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .social {
+        ul {
+          display: flex;
+          li {
+            a {
+              width: 80px;
+              height: 80px;
+              background-color: #fff;
+              text-align: center;
+              line-height: 80px;
+              font-size: 35px;
+              margin: 0 10px;
+              display: block;
+              border-radius: 50%;
               position: relative;
-              color: #262626;
-              transition: 0.5s;
-              z-index: 3;
-            }
-            &:hover {
+              overflow: hidden;
+              border: 3px solid #fff;
+              z-index: 1;
               .icon {
-                color: #fff;
-                transform: rotateY(360deg);
+                position: relative;
+                color: #262626;
+                transition: 0.5s;
+                z-index: 3;
               }
-              &::before{
-                top: 0;
-
+              &:hover {
+                .icon {
+                  color: #fff;
+                  transform: rotateY(360deg);
+                }
+                &::before {
+                  top: 0;
+                }
               }
-            }
-            &::before{
+              &::before {
                 content: "";
                 position: absolute;
                 top: 100%;
@@ -47,19 +62,67 @@
                 background: #f00;
                 transition: 0.5s;
                 z-index: 2;
+              }
+            }
+            &:nth-child(1) a:before {
+              background: #3b5999;
+            }
+            &:nth-child(2) a:before {
+              background: #55acee;
+            }
+            &:nth-child(3) a:before {
+              background: linear-gradient(
+                #feda75,
+                #fa7e1e,
+                #d62976,
+                #962fbf,
+                #4f5bd5
+              );
             }
           }
-          &:nth-child(1) a:before {
-            background: #3b5999;
+        }
+      }
+      .subscribe {
+        .input-group {
+          display: flex;
+          align-items: center;
+          .input {
+            min-height: 50px;
+            max-width: 500px;
+            padding: 0 1rem;
+            color: #fff;
+            font-size: 15px;
+            border: 1px solid #5d4335;
+            border-radius: 6px 0 0 6px;
+            background-color: transparent;
+            &::placeholder {
+              color: white;
+            }
+            &:focus {
+              border-color: #c29e7b;
+              outline: none;
+            }
+            &:focus-visible {
+              border-color: #c29e7b;
+              outline: none;
+            }
           }
-          &:nth-child(2) a:before {
-            background: #55acee;
-          }
-          &:nth-child(3) a:before {
-            background: linear-gradient(#feda75,#fa7e1e, #d62976,#962fbf,#4f5bd5 );
+          .button--submit {
+            min-height: 50px;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 0 6px 6px 0;
+            background-color: #5d4335;
+            color: #fff;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            &:hover {
+              background-color: #c29e7b;
+            }
           }
         }
-      } 
+      }
     }
   }
 }
