@@ -12,6 +12,10 @@ let allProductLength = document.querySelector(".all-product-length");
 let categories = document.querySelectorAll(".categories a");
 let tags = document.querySelectorAll(".tags li");
 
+let favorited = JSON.parse(localStorage.getItem("favorited")) ?? [];
+let basket = JSON.parse(localStorage.getItem("basket")) ?? [];
+let account = localStorage.getItem("account");
+
 let dataArr = [];
 let copyArr = [];
 let sortedArr = [];
@@ -21,6 +25,8 @@ let max = 6;
 let sorted = false;
 
 function createCard(arr) {
+  productInterval.innerHTML = `1-${max < arr.length ? max : arr.length}`;
+  allProductLength.innerHTML = copyArr.length;
   row.innerHTML = "";
   arr.forEach((element) => {
     row.innerHTML += `
@@ -31,30 +37,31 @@ function createCard(arr) {
             src="${element.image}"
             alt=""
           />
-          <a href="#" class="add" onclick=basketFunc(${element.id})>Add to Basket</a>
+          <a href="#" class="add" onclick=basketFunc(${
+            element.id
+          })>Add to Basket</a>
         </div>
         <div class="card-text">
           <h1>${element.name}</h1>
           <div class="stars" style="--rating: ${element.rating}"></div>
           <div class="price">${element.price}$</div>
         </div>
-        <div class="bookmark"><input type="checkbox" class="style1" onclick=favFunc(${element.id})></div>
+        <div class="bookmark"><input type="checkbox" class="fav" onclick=favFunc(${
+          element.id
+        }) ${
+      favorited.find((item) => item.id === element.id) && "checked"
+    }></div>
       </div>
     </div>
           `;
   });
 }
 
-{/* <a href="#" class="favorite" 
-><i class="bookicon fa-regular fa-bookmark" ></i
-></a> */}
-
 async function getData() {
   let res = await axios(`${BASE_URL}product`);
   dataArr = res.data;
   copyArr = searchInput.value || copyArr.length ? copyArr : res.data;
-  productInterval.innerHTML = `1-${max}`;
-  allProductLength.innerHTML = copyArr.length;
+
   createCard(sliceArr(copyArr));
 }
 getData();
@@ -153,19 +160,19 @@ range.forEach((input) => {
   });
 });
 
-let favorited = JSON.parse(localStorage.getItem("favorited")) ?? [];
-let basket = JSON.parse(localStorage.getItem("basket")) ?? [];
-let account = localStorage.getItem("account");
-
 async function favFunc(id) {
   if (account) {
-    let res = await axios(`${BASE_URL}product/${id}`);
-    favorited.push(res.data);  
+    let fav = document.querySelectorAll(".fav")[id];
+    if (fav.checked) {
+      favorited = favorited.filter((item) => item.id != id);
+    } else {
+      let res = await axios(`${BASE_URL}product/${id}`);
+      favorited.push(res.data);
+    }
     localStorage.setItem("favorited", JSON.stringify(favorited));
-    const icons = document.querySelectorAll(".bookicon");
-    icons.forEach((icon) => icon.classList.toggle("fa-solid"));
+    createCard(sliceArr(copyArr));
   } else {
-    alert("Hesaba daxil ol");    
+    alert("Hesaba daxil ol");
   }
 }
 async function basketFunc(id) {

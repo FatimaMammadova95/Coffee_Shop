@@ -17,7 +17,7 @@ Array.prototype.slice.call(forms).forEach(function (form) {
         async function getData() {
           let res = await axios(`${BASE_URL}users`);
           let data = res.data;
-          user = data.find(
+          return user = data.find(
             (user) =>
               (user.username == username.value ||
                 user.email == username.value) &&

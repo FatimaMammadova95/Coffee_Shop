@@ -373,7 +373,7 @@
       "reviews": [],
       "price": 5,
       "sku": "PR112",
-      "id": 2
+      "id": 5
     },
     {
       "name": "Columbia coffee",
@@ -404,7 +404,7 @@
       "reviews": [],
       "price": 7,
       "sku": "PR113",
-      "id": 3
+      "id": 6
     },
     {
       "name": "Ethiopia coffee",
@@ -435,7 +435,7 @@
       "reviews": [],
       "price": 6,
       "sku": "PR111",
-      "id": 1
+      "id": 7
     },
     {
       "name": "Kenya coffee",
@@ -466,7 +466,7 @@
       "reviews": [],
       "price": 5,
       "sku": "PR112",
-      "id": 2
+      "id": 8
     },
     {
       "name": "Columbia coffee",
@@ -497,7 +497,7 @@
       "reviews": [],
       "price": 7,
       "sku": "PR113",
-      "id": 3
+      "id": 9
     },
     {
       "name": "Ethiopia coffee",
@@ -528,7 +528,7 @@
       "reviews": [],
       "price": 6,
       "sku": "PR111",
-      "id": 1
+      "id": 10
     },
     {
       "name": "Kenya coffee",
@@ -559,7 +559,7 @@
       "reviews": [],
       "price": 5,
       "sku": "PR112",
-      "id": 2
+      "id": 11
     },
     {
       "name": "Columbia coffee",
@@ -590,7 +590,7 @@
       "reviews": [],
       "price": 7,
       "sku": "PR113",
-      "id": 3
+      "id": 12
     },
     {
       "name": "Ethiopia coffee",
@@ -621,7 +621,7 @@
       "reviews": [],
       "price": 6,
       "sku": "PR111",
-      "id": 1
+      "id": 13
     },
     {
       "name": "Kenya coffee",
@@ -652,7 +652,7 @@
       "reviews": [],
       "price": 5,
       "sku": "PR112",
-      "id": 2
+      "id": 14
     },
     {
       "name": "Columbia coffee",
@@ -683,7 +683,7 @@
       "reviews": [],
       "price": 7,
       "sku": "PR113",
-      "id": 3
+      "id": 15
     }
   ],
   "users": [
@@ -692,6 +692,12 @@
       "email": "mammadova",
       "password": "fatima2003",
       "id": 1
+    },
+    {
+      "username": "narmin",
+      "email": "alakbarova@gmail.com",
+      "password": "narmin777",
+      "id": 2
     }
   ],
   "subscriptions": [
