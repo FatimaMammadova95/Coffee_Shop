@@ -1,3 +1,53 @@
+const BASE_URL = "http://localhost:8080/";
+
+let rowLeft = document.querySelector(".menu-row-left");
+let rowRight = document.querySelector(".menu-row-right");
+
+function menuLeft(arr) {
+  rowLeft.innerHTML = "";
+  arr = arr.slice(0,4)
+  arr.forEach((element) => {
+    rowLeft.innerHTML += `
+      <div class="col-12">
+        <div class="coffee-name">
+          <h1>${element.name}</h1>
+          <div class="line"></div>
+          <div class="price">$ ${element.price}</div>
+        </div>
+        <div class="description">
+          <p>${element.description}</p>
+        </div>
+      </div>
+    `;
+  });
+}
+function menuRight(arr) {
+  rowRight.innerHTML = "";
+  arr=arr.slice(5,9)
+  arr.forEach((element) => {
+    rowRight.innerHTML += `
+      <div class="col-12">
+        <div class="coffee-name">
+          <h1>${element.name}</h1>
+          <div class="line"></div>
+          <div class="price">$ ${element.price}</div>
+        </div>
+        <div class="description">
+          <p>${element.description}</p>
+        </div>
+      </div>
+    `;
+  });
+}
+
+async function getData() {
+  let res = await axios(`${BASE_URL}menu`);
+  data = res.data;
+  menuLeft(data);
+  menuRight(data);
+}
+getData();
+
 // Counter
 let a = 0;
 $(window).scroll(function () {
@@ -19,8 +69,6 @@ $(window).scroll(function () {
     a = 1;
   }
 });
-
-
 
 // Scroll Reveal
 ScrollReveal().reveal(".slide-up", {

@@ -532,31 +532,31 @@ header .header .basket-fav-profile ul li.menu {
   padding: 20px 0;
   color: #5d4335;
 }
-#mini-menu .mini-menu .menu-row .col-lg-6 {
+#mini-menu .mini-menu .row .col-lg-6 {
   padding: 20px 0;
 }
-#mini-menu .mini-menu .menu-row .col-lg-6 .col-12 {
+#mini-menu .mini-menu .row .col-lg-6 .col-12 {
   padding: 30px;
   max-width: 90%;
 }
-#mini-menu .mini-menu .menu-row .col-lg-6 .col-12 .coffee-name {
+#mini-menu .mini-menu .row .col-lg-6 .col-12 .coffee-name {
   display: flex;
 }
-#mini-menu .mini-menu .menu-row .col-lg-6 .col-12 .coffee-name h1 {
+#mini-menu .mini-menu .row .col-lg-6 .col-12 .coffee-name h1 {
   font-size: 28px;
   color: #5d4335;
 }
-#mini-menu .mini-menu .menu-row .col-lg-6 .col-12 .coffee-name .line {
+#mini-menu .mini-menu .row .col-lg-6 .col-12 .coffee-name .line {
   flex-grow: 1;
   border-bottom: 3px dotted #dadada;
 }
-#mini-menu .mini-menu .menu-row .col-lg-6 .col-12 .coffee-name .price {
+#mini-menu .mini-menu .row .col-lg-6 .col-12 .coffee-name .price {
   color: #5d4335;
 }
-#mini-menu .mini-menu .menu-row .col-lg-6 .col-12 .description {
+#mini-menu .mini-menu .row .col-lg-6 .col-12 .description {
   padding: 10px 0;
 }
-#mini-menu .mini-menu .menu-row .col-3 img {
+#mini-menu .mini-menu .row .col-3 img {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
