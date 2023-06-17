@@ -1,104 +1,160 @@
 #basket {
   .basket {
     padding: 50px 0;
-    .product-cards {
-      .col-12 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: 1px solid #888d9c;
-        border-radius: 15px;
-        padding: 10px 15px;
-        .product-about {
-          display: flex;
-          align-items: center;
-          img {
-            width: 100px;
-            height: 100px;
-          }
-        }
-        .value{
-          display: flex;
-          align-items: center;
-          gap: 30px;
-          .number {
-            .input-number {
-              width: 50px;
-              padding: 10px;
-              text-align: center;
-              outline: none;
-              border: 1px solid #ccc;
-            }
-            .input-number-decrement {
-              border-right: none;
-              border-radius: 4px 0 0 4px;
-              border: 1px solid #ccc;
-              padding: 10px;
-              line-height: 38px;
-              background-color: #f1f1f1;
-              color: #444;
-              text-align: center;
-              &:active {
-                background-color: #fff;
-              }
-            }
-            .input-number-increment {
-              border-left: none;
-              border-radius: 0 4px 4px 0;
-              border: 1px solid #ccc;
-              padding: 10px;
-              line-height: 38px;
-              background-color: #f1f1f1;
-              color: #444;
-              text-align: center;
-  
-              &:active {
-                background-color: #fff;
-              }
-            }
-          }
-        }
-      }
-    }
-    .card {
-      padding: 30px;
+    .row{
       display: flex;
-      flex-direction: column;
-      gap: 30px;
-      border-color: #888d9c;
-      h1 {
-        text-align: center;
-        font-weight: bold;
-        font-size: 24px;
+      .thanks{
+        font-size: 48px;
+        color: #5d4335;
+        padding: 0 0 50px 0;
+        letter-spacing: 5px;
       }
-      span {
-        font-weight: bold;
+      .product-cards {
+        .col-12 {
+          margin: 10px 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;          
+          border: 1px solid #888d9c;
+          border-radius: 15px;
+          padding: 10px 15px;
+          box-shadow: 0px 0px 10px #888d9c;
+          .product-about {
+            display: flex;
+            align-items: center;
+            max-width: 500px;
+            img {
+              width: 100px;
+              height: 100px;
+            }
+            .product-text{
+              h1{
+                font-size: 20px;
+                font-weight: bold;
+                color: #5d4335 ;
+              }
+              p{
+                color: #444;
+                padding: 10px 0; 
+              }
+            }
+          }
+          .value{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            .number {
+              .input-number {
+                width: 40px;
+                padding: 10px;
+                text-align: center;
+                outline: none;
+                border: 1px solid #ccc;
+              }
+              .input-number-decrement {
+                border-right: none;
+                border-radius: 4px 0 0 4px;
+                border: 1px solid #ccc;
+                padding: 10px;
+                line-height: 38px;
+                background-color: #f1f1f1;
+                color: #444;
+                text-align: center;
+                &:active {
+                  background-color: #fff;
+                }
+              }
+              .input-number-increment {
+                border-left: none;
+                border-radius: 0 4px 4px 0;
+                border: 1px solid #ccc;
+                padding: 10px;
+                line-height: 38px;
+                background-color: #f1f1f1;
+                color: #444;
+                text-align: center;
+    
+                &:active {
+                  background-color: #fff;
+                }
+              }
+            }
+          }
+        }
       }
-      .confrim-card {
-        position: relative;
-        padding: 17px 35px;
-        outline: none;
+      .card {
+        padding: 30px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        text-transform: uppercase;
-        background-color: #c29e7b;
-        border: 1px solid #c29e7b;
-        border-radius: 10px;
-        font-weight: 400;
-        overflow: hidden;
-        transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
-        span {
-          color: #fff;
-          font-size: 14px;
-          font-weight: 500;
-          letter-spacing: 1px;
+        flex-direction: column;
+        gap: 30px;
+        border-color: #888d9c;
+        box-shadow: 0px 0px 10px #888d9c;
+        h1 {
+          text-align: center;
+          font-weight: bold;
+          font-size: 24px;
         }
-        &:hover {
-          animation: rotate624 0.7s ease-in-out both;
+        span {
+          font-weight: bold;
+        }
+        .confrim-card {
+          position: relative;
+          padding: 17px 35px;
+          outline: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-transform: uppercase;
+          background-color: #c29e7b;
+          border: 1px solid #c29e7b;
+          border-radius: 10px;
+          font-weight: 400;
+          overflow: hidden;
+          transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+          span {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+          &:hover {
+            animation: rotate624 0.7s ease-in-out both;
+          }
         }
       }
+      
     }
+    @media only screen and (max-width:991px){
+     .row{
+      .thanks{
+        font-size: 36px;
+      }
+      .product-cards{
+        .col-12{
+          flex-direction: column;          
+        }
+      }
+      .card{
+        padding: 50px 20px;
+        gap: 20px;
+        h1{
+          font-size: 20px;
+        }
+        .confrim-card{
+          padding: 5px 10px;
+        }
+      }
+     }
+    }
+    @media only screen and (max-width:767px){
+     .row{
+      gap: 50px;
+      .thanks{
+        font-size: 30px;
+      }  
+     }
+    }
+    
   }
 }
 

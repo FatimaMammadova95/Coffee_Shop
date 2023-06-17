@@ -1285,35 +1285,56 @@ footer .footer .down-footer {
 #basket .basket {
   padding: 50px 0;
 }
-#basket .basket .product-cards .col-12 {
+#basket .basket .row {
+  display: flex;
+}
+#basket .basket .row .thanks {
+  font-size: 48px;
+  color: #5d4335;
+  padding: 0 0 50px 0;
+  letter-spacing: 5px;
+}
+#basket .basket .row .product-cards .col-12 {
+  margin: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid #888d9c;
   border-radius: 15px;
   padding: 10px 15px;
+  box-shadow: 0px 0px 10px #888d9c;
 }
-#basket .basket .product-cards .col-12 .product-about {
+#basket .basket .row .product-cards .col-12 .product-about {
   display: flex;
   align-items: center;
+  max-width: 500px;
 }
-#basket .basket .product-cards .col-12 .product-about img {
+#basket .basket .row .product-cards .col-12 .product-about img {
   width: 100px;
   height: 100px;
 }
-#basket .basket .product-cards .col-12 .value {
+#basket .basket .row .product-cards .col-12 .product-about .product-text h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #5d4335;
+}
+#basket .basket .row .product-cards .col-12 .product-about .product-text p {
+  color: #444;
+  padding: 10px 0;
+}
+#basket .basket .row .product-cards .col-12 .value {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-#basket .basket .product-cards .col-12 .value .number .input-number {
-  width: 50px;
+#basket .basket .row .product-cards .col-12 .value .number .input-number {
+  width: 40px;
   padding: 10px;
   text-align: center;
   outline: none;
   border: 1px solid #ccc;
 }
-#basket .basket .product-cards .col-12 .value .number .input-number-decrement {
+#basket .basket .row .product-cards .col-12 .value .number .input-number-decrement {
   border-right: none;
   border-radius: 4px 0 0 4px;
   border: 1px solid #ccc;
@@ -1323,10 +1344,10 @@ footer .footer .down-footer {
   color: #444;
   text-align: center;
 }
-#basket .basket .product-cards .col-12 .value .number .input-number-decrement:active {
+#basket .basket .row .product-cards .col-12 .value .number .input-number-decrement:active {
   background-color: #fff;
 }
-#basket .basket .product-cards .col-12 .value .number .input-number-increment {
+#basket .basket .row .product-cards .col-12 .value .number .input-number-increment {
   border-left: none;
   border-radius: 0 4px 4px 0;
   border: 1px solid #ccc;
@@ -1336,25 +1357,26 @@ footer .footer .down-footer {
   color: #444;
   text-align: center;
 }
-#basket .basket .product-cards .col-12 .value .number .input-number-increment:active {
+#basket .basket .row .product-cards .col-12 .value .number .input-number-increment:active {
   background-color: #fff;
 }
-#basket .basket .card {
+#basket .basket .row .card {
   padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   border-color: #888d9c;
+  box-shadow: 0px 0px 10px #888d9c;
 }
-#basket .basket .card h1 {
+#basket .basket .row .card h1 {
   text-align: center;
   font-weight: bold;
   font-size: 24px;
 }
-#basket .basket .card span {
+#basket .basket .row .card span {
   font-weight: bold;
 }
-#basket .basket .card .confrim-card {
+#basket .basket .row .card .confrim-card {
   position: relative;
   padding: 17px 35px;
   outline: none;
@@ -1369,14 +1391,40 @@ footer .footer .down-footer {
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
-#basket .basket .card .confrim-card span {
+#basket .basket .row .card .confrim-card span {
   color: #fff;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 1px;
 }
-#basket .basket .card .confrim-card:hover {
+#basket .basket .row .card .confrim-card:hover {
   animation: rotate624 0.7s ease-in-out both;
+}
+@media only screen and (max-width: 991px) {
+  #basket .basket .row .thanks {
+    font-size: 36px;
+  }
+  #basket .basket .row .product-cards .col-12 {
+    flex-direction: column;
+  }
+  #basket .basket .row .card {
+    padding: 50px 20px;
+    gap: 20px;
+  }
+  #basket .basket .row .card h1 {
+    font-size: 20px;
+  }
+  #basket .basket .row .card .confrim-card {
+    padding: 5px 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #basket .basket .row {
+    gap: 50px;
+  }
+  #basket .basket .row .thanks {
+    font-size: 30px;
+  }
 }
 
 @keyframes rotate624 {
