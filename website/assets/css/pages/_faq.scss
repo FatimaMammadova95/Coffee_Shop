@@ -1,0 +1,32 @@
+#faq {
+    background-image: url("../../../photo/background/pexels-lukas-942802.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  .faq {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .accordion {
+      --bs-accordion-active-bg: white;
+      --bs-accordion-btn-focus-box-shadow: white;
+      .accordion-item {
+        .accordion-header {
+          button {
+            outline: none;
+            padding: 25px 15px;
+            background-color: #5d4335;
+            color: white;
+            font-size: 18px;
+          }
+        }
+        .accordion-body {
+          border: 1px solid #5d4335;
+          line-height: 20px;
+            max-width: 720px;
+        }
+      }
+    }
+  }
+}
