@@ -15,7 +15,7 @@
       }
     }
     .icons-input {
-        padding: 25px 0;
+      padding: 25px 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -123,6 +123,10 @@
           }
         }
       }
+    @media only screen and (max-width:767px){
+      flex-direction: column;
+      gap: 30px;
+    }
     }
   }
 }

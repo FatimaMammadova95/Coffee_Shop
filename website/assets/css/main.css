@@ -677,6 +677,12 @@ header .header .basket-fav-profile ul li.menu {
 #social-subscribe .social-subscribe .icons-input .subscribe .input-group .button--submit:hover {
   background-color: #c29e7b;
 }
+@media only screen and (max-width: 767px) {
+  #social-subscribe .social-subscribe .icons-input {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 
 #reservation {
   background-image: url("../../../photo/background/pexels-kevin-bidwell-2323432.jpg");
