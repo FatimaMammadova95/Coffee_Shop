@@ -245,7 +245,7 @@
         "classic"
       ],
       "rating": 3.5,
-      "popularity": 0,
+      "popularity": 10,
       "reviews": [],
       "price": 6,
       "sku": "PR111",
@@ -276,7 +276,7 @@
         "classic"
       ],
       "rating": 3,
-      "popularity": 0,
+      "popularity": 9,
       "reviews": [],
       "price": 5,
       "sku": "PR112",
@@ -307,7 +307,7 @@
         "classic"
       ],
       "rating": 4,
-      "popularity": 0,
+      "popularity": 2,
       "reviews": [],
       "price": 7,
       "sku": "PR113",
@@ -338,7 +338,7 @@
         "classic"
       ],
       "rating": 5,
-      "popularity": 0,
+      "popularity": 7,
       "reviews": [],
       "price": 10,
       "sku": "PR111",
@@ -369,7 +369,7 @@
         "classic"
       ],
       "rating": 3,
-      "popularity": 0,
+      "popularity": 3,
       "reviews": [],
       "price": 5,
       "sku": "PR112",
@@ -400,7 +400,7 @@
         "classic"
       ],
       "rating": 4,
-      "popularity": 0,
+      "popularity": 1,
       "reviews": [],
       "price": 7,
       "sku": "PR113",

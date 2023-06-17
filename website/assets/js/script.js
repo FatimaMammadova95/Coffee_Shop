@@ -7,6 +7,8 @@ let subscribe = document.querySelector(".button--submit");
 let selectPerson = document.querySelector(".select-person");
 let selectTime = document.querySelector(".select-time");
 let reserveForm = document.querySelector(".reserve-form");
+let links = document.querySelectorAll(".links a");
+let productSlider = document.querySelector("#product-slider");
 
 // Menu
 function menuLeft(arr) {
@@ -45,13 +47,20 @@ function menuRight(arr) {
     `;
   });
 }
-async function getData() {
+async function getDataInMenu() {
   let res = await axios(`${BASE_URL}menu`);
   data = res.data;
   menuLeft(data);
   menuRight(data);
 }
-getData();
+getDataInMenu();
+
+async function getDataInProduct() {
+  let res = await axios(`${BASE_URL}product`);
+  data = res.data;
+  topProduct(data);
+}
+getDataInProduct();
 
 // Subscribe
 
@@ -72,6 +81,35 @@ reserveForm.addEventListener("submit", async function () {
   await axios.post(`${BASE_URL}reservation`, obj);
   alert("Your reservation has been accepted");
 });
+
+// Product
+var selector = ".links a";
+
+$(selector).on("click", function () {
+  $(selector).removeClass("active");
+  $(this).addClass("active");
+});
+
+function topProduct(arr) {
+  // arr = arr.filter(
+  //   (obj) =>
+  //     obj.category.toLocaleUpperCase() == links.forEach((link) => {
+  //       return link.classList.contains("active")
+  //     })
+  // );
+  arr = arr.sort((a,b)=>a.popularity-b.popularity).slice(0,4)
+  console.log(arr);
+  productSlider.innerHTML = ""
+  arr.forEach((element) => {
+    productSlider.innerHTML+=`
+    <div class="swiper-slide">
+    <img src=${element.image} alt="" />
+    <h4>${element.name}</h4>
+    <p class="price">${element.price} $</p>
+  </div>
+    `
+  });
+}
 
 // Counter
 let a = 0;
