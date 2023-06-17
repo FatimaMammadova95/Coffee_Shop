@@ -147,14 +147,14 @@ ScrollReveal().reveal(".slide-up", {
 });
 
 ScrollReveal().reveal(".slide-left", {
-  duration: 2000,
+  duration: 1000,
   origin: "left",
   distance: "20px",
   easing: "cubic-bezier(.37,.01,.74,1)",
   opacity: 0.3,
 });
 ScrollReveal().reveal(".slide-right", {
-  duration: 2000,
+  duration: 1000,
   origin: "right",
   distance: "20px",
   easing: "cubic-bezier(.37,.01,.74,1)",
