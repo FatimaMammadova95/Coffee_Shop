@@ -957,10 +957,10 @@ footer .footer .down-footer {
 }
 
 #page-heading {
-  background-image: url("../../../photo/background/h1-bacground-img-1.jpg");
+  background-image: url("../../../../photo/background/nathan-dumlao-KixfBEdyp64-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 0 -300px;
   background-attachment: fixed;
   padding: 200px 0;
 }
@@ -1230,20 +1230,6 @@ footer .footer .down-footer {
   #products .products .col-3 .tags p {
     font-size: 12px;
   }
-}
-
-#page-heading {
-  background-image: url("../../../photo/background/pexels-emre-can-acer-2079438.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  padding: 200px 0;
-}
-#page-heading .page-heading h1 {
-  font-size: 48px;
-  color: white;
-  text-align: center;
 }
 
 #galery .galery {

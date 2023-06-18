@@ -3,20 +3,4 @@
   justify-content: $justify-content;
   align-items: $align-items;
 }
- @mixin page-heading($url){
-  #page-heading {
-    background-image: url($url);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 200px 0;
-    .page-heading {
-      h1 {
-        font-size: 48px;
-        color: white;
-        text-align: center;
-      }
-    }
-  }
- }
+ 
