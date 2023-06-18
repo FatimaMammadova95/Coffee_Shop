@@ -24,5 +24,8 @@ darkMode.addEventListener("click", function () {
   }
 });
 
+if(dark){
+
+}
 
 
