@@ -63,7 +63,6 @@ a {
 }
 
 header {
-  border-bottom: 1px solid black;
   padding: 15px 0;
 }
 header .header {
@@ -83,6 +82,10 @@ header .header .mode-profile {
   align-items: center;
   gap: 20px;
 }
+header .header .mode-profile #dropdownInformationButton img {
+  max-width: 50px;
+  max-height: 50px;
+}
 
 #menu {
   position: fixed;
@@ -91,9 +94,14 @@ header .header .mode-profile {
 }
 #menu .menu {
   padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #menu .menu img {
-  max-width: 200px;
+  max-width: 250px;
+  padding: 0 50px;
 }
 #menu .menu ul {
   padding: 50px 0;
@@ -119,4 +127,86 @@ header .header .mode-profile {
 }
 #title .title h1 {
   font-size: 28px;
+}
+#title .title .cards {
+  padding: 50px 0;
+}
+#title .title .cards .card {
+  border-radius: 20px;
+  background: transparent;
+  position: relative;
+  padding: 1.5rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+#title .title .cards .card .card-details {
+  color: black;
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
+}
+#title .title .cards .card .card-details .text-body {
+  color: rgb(134, 134, 134);
+  font-size: 1.2rem;
+  text-align: center;
+}
+#title .title .cards .card .card-details .text-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #008bf8;
+}
+#title .title .cards .card .card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #008bf8;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+#title .title .cards .card:hover {
+  background-color: #fff;
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+#title .title .cards .card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+#title .title .title-head {
+  display: flex;
+  justify-content: space-between;
+}
+#title .title .title-head .add {
+  border: 1px solid #008bf8;
+  background-color: #008bf8;
+  color: #fff;
+  padding: 10px 20px;
+}
+#title .title table {
+  margin-top: 50px;
+}
+#title .title table tr {
+  border: 2px solid #008bf8;
+}
+#title .title table tr th {
+  border: 2px solid #008bf8;
+}
+#title .title table tr td {
+  border: 2px solid #008bf8;
+}
+#title .title table tr td .fa-trash {
+  color: red;
+}
+#title .title table tr td .fa-pen {
+  color: green;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,32 @@
+#title {
+  .title {
+    .title-head {
+      display: flex;
+      justify-content: space-between;
+      .add {
+        border: 1px solid #008bf8;
+        background-color: #008bf8;
+        color: #fff;
+        padding: 10px 20px;
+      }
+    }
+    table {
+      margin-top: 50px;
+      tr {
+        border: 2px solid #008bf8;
+        th {
+          border: 2px solid #008bf8;
+        }
+        td {
+          border: 2px solid #008bf8;
+          .fa-trash {
+            color: red;
+          }
+          .fa-pen {
+            color: green;
+          }
+        }
+      }
+    }
+  }
+}
