@@ -117,11 +117,11 @@
                       <img src="../photo/admin/admin.png" alt="" />
                     </button>
                     <ul class="dropdown-menu">
-                      <li>Fatima Mammadova</li>
-                      <li>admin@gmail.com</li>
+                      <li class="admin-username"></li>
+                      <li class="admin-email"></li>
                       <li><hr class="dropdown-divider" /></li>
                       <li>
-                        <a class="dropdown-item" href="#">Log out</a>
+                        <a class="dropdown-item logout" href="#">Log out</a>
                       </li>
                     </ul>
                   </div>
@@ -132,7 +132,7 @@
           <section id="title" class="">
             <div class="container">
               <div class="title">
-                <h1>Welcome, Admin</h1>
+                <h1 class="welcome">Welcome, </h1>
                 <div class="cards">
                   <div class="row">
                     <div class="col-3">
@@ -175,6 +175,10 @@
                     </div>
                   </div>
                 </div>
+                <canvas
+                  id="myChart"
+                  style="width: 100%; max-width: 700px"
+                ></canvas>
               </div>
             </div>
           </section>
@@ -194,6 +198,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- Chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
     <script src="./assets/js/functionality.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>

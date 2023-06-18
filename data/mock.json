@@ -660,9 +660,11 @@
   ],
   "admin": [
     {
-      "username": "admin",
+      "username": "admin",      
       "email": "admin@gmail.com",
-      "password": "admin1234"
+      "password": "admin1234",
+      "image":"../photo/admin/admin.png",
+      "id":1
     }
   ]
 }

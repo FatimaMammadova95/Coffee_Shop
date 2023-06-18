@@ -28,7 +28,8 @@ Array.prototype.slice.call(forms).forEach(function (form) {
         if (!admin) {
         //   alert("You are not admin");
         } else {
-          localStorage.setItem("admin", true);
+          console.log(admin.id);
+          localStorage.setItem("admin", admin.id);
           window.location="admin.html"
         }
       }
