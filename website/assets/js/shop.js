@@ -37,7 +37,9 @@ function createCard(arr) {
             src="${element.image}"
             alt=""
            />
-           <a href="#" class="add" onclick=basketFunc(${element.id})>Add to Basket</a>
+           <a href="#" class="add" onclick=basketFunc(${
+             element.id
+           })>Add to Basket</a>
          </div>
          <div class="card-text">
           <h1>${element.name}</h1>
@@ -45,14 +47,17 @@ function createCard(arr) {
           <div class="price">${element.price}$</div>
          </div>
          <div class="bookmark">
-          <input type="checkbox" class="fav" onclick=favFunc(${element.id },this) ${favorited.find((item) => item.id === element.id)? "checked":""}>
+          <input type="checkbox" class="fav" onclick=favFunc(${
+            element.id
+          },this) ${
+      favorited.find((item) => item.id === element.id) ? "checked" : ""
+    }>
          </div>
         </div>
       </div>
           `;
   });
 }
-
 
 async function getData() {
   let res = await axios(`${BASE_URL}product`);
@@ -157,23 +162,15 @@ range.forEach((input) => {
   });
 });
 
-async function favFunc(id,fav) {
+async function favFunc(id, fav) {
   if (account) {
-    // let fav = document.querySelectorAll(".fav")[id];
-    console.log(fav.checked);
-    console.log(fav);
-    // console.log(fav);
     if (!fav.checked) {
-      // fav.removeAttribute("checked")
       favorited = favorited.filter((item) => item.id != id);
     } else {
-      // fav.setAttribute("checked","")
       let res = await axios(`${BASE_URL}product/${id}`);
       favorited.push(res.data);
-      console.log("hello");
     }
     localStorage.setItem("favorited", JSON.stringify(favorited));
-    // createCard(sliceArr(copyArr));
   } else {
     alert("Hesaba daxil ol");
   }

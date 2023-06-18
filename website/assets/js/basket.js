@@ -6,6 +6,7 @@ let basket = JSON.parse(localStorage.getItem("basket"));
 let price = 0;
 
 function getData() {
+  row.innerHTML=""
   basket.forEach((element) => {
     row.innerHTML += `
     <div class="col-12">

@@ -26,3 +26,59 @@
     }
   }
 }
+%bookmark{
+  .bookmark {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    .fav {
+      height: 10px;
+      width: 20px;
+      appearance: none;
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      cursor: pointer;
+      outline: none;
+      background-color: #e5e5e5;
+      border-radius: 3px 3px 0 0;
+      transition: 0.3s;
+      &:focus {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 0;
+        border-top: 20px solid #e5e5e5;
+        border-right: 22.5px solid transparent;
+        bottom: -20px;
+        transition: 0.3s;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 0;
+        border-top: 20px solid #e5e5e5;
+        border-left: 22.5px solid transparent;
+        bottom: -20px;
+        right: 0;
+        transition: 0.3s;
+      }
+      &:checked {
+        background-color: #ffc64c;
+        &::before {
+          border-top-color: #ffc64c;
+        }
+        &::after {
+          border-top-color: #ffc64c;
+        }
+      }
+    }
+  }
+}
