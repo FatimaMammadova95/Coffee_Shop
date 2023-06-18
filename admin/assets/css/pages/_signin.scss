@@ -1,0 +1,41 @@
+#signin {
+    .signin {
+      padding: 100px 0;
+      h1 {
+        font-size: 48px;
+        color: #008bf8;
+      }
+      p {
+        font-size: 20px;
+        letter-spacing: 10px;
+        padding: 10px 0 30px 0;
+        color: #008df877;
+        
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        label {
+          padding: 20px 0 5px 0;
+          font-size: 18px;
+        }
+        input {
+          padding: 10px;
+          width: 100%;
+          border-color: #008bf8;
+          
+        } 
+        .submit{
+            background-color: #008bf8;
+            border-color: #008bf8;
+            color: #fff;
+            padding: 10px;
+            border-radius: 15px;
+        }       
+      }
+    }
+  }
+
+  

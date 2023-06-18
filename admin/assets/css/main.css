@@ -325,4 +325,40 @@ header.dark .header .mode-profile .dropdown .dropdown-menu li a:hover {
 }
 .form.dark .row .col-4 input[type=file] {
   color: #fff;
+}
+
+#signin .signin {
+  padding: 100px 0;
+}
+#signin .signin h1 {
+  font-size: 48px;
+  color: #008bf8;
+}
+#signin .signin p {
+  font-size: 20px;
+  letter-spacing: 10px;
+  padding: 10px 0 30px 0;
+  color: rgba(0, 141, 248, 0.4666666667);
+}
+#signin .signin form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#signin .signin form label {
+  padding: 20px 0 5px 0;
+  font-size: 18px;
+}
+#signin .signin form input {
+  padding: 10px;
+  width: 100%;
+  border-color: #008bf8;
+}
+#signin .signin form .submit {
+  background-color: #008bf8;
+  border-color: #008bf8;
+  color: #fff;
+  padding: 10px;
+  border-radius: 15px;
 }/*# sourceMappingURL=main.css.map */
