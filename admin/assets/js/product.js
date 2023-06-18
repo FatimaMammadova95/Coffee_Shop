@@ -1,6 +1,5 @@
 const BASE_URL = "http://localhost:8080/";
 
-
 const tBody = document.querySelector("tbody");
 const searchInput = document.querySelector("#simple-search");
 

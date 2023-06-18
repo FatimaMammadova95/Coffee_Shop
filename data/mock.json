@@ -684,6 +684,35 @@
       "price": 7,
       "sku": "PR113",
       "id": 15
+    },
+    {
+      "name": "Coffee",
+      "description": "Coffee is so beautiful drink.",
+      "image": "../photo/product/product-img-8.png",
+      "feature": {
+        "roasting level": "5",
+        "body": "3",
+        "sweetness": "2",
+        "acidity": "1"
+      },
+      "additional information": {
+        "weight": "1",
+        "dimensions": {
+          "length": "1",
+          "width": "1",
+          "height": "2"
+        }
+      },
+      "category": "coffee",
+      "tags": [
+        ""
+      ],
+      "rating": 0,
+      "popularity": 0,
+      "reviews": [],
+      "price": "48",
+      "sku": "FMF11",
+      "id": 16
     }
   ],
   "users": [
