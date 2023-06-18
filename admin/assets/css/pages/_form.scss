@@ -11,14 +11,6 @@
       h1 {
         padding: 10px 0;
       }
-      .feature {
-        display: flex;
-        flex-direction: column;
-      }
-      .additional {
-        display: flex;
-        flex-direction: column;
-      }
     }
   }
   button {
@@ -28,13 +20,13 @@
     color: #fff;
     font-size: 20px;
   }
-  &.dark{
+  &.dark {
     .row {
       .col-4 {
         label {
           color: #fff;
         }
-        input[type="file"]{
+        input[type="file"] {
           color: #fff;
         }
       }

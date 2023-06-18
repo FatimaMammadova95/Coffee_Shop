@@ -12,15 +12,17 @@ function createCard(arr) {
   arr.forEach((element, index) => {
     tBody.innerHTML += `
 <tr>
-<td>${index}</td>
+<td>${index + 1}</td>
 <td><img src=${element.image} width="70px"></td>
 <td>${element.name}</td>
 <td class="description">${element.description}</td>
 <td>${element.price}</td>
 <td>${element.rating}</td>
 <td class="process">
-<a href="#" onclick=deleteFunc(${element.id})><i class="fa-solid fa-trash"></i></a>
-<a href="form.html?id=${element.id}"><i class="fa-solid fa-pen"></i></a>
+<a href="#" onclick=deleteFunc(${
+      element.id
+    })><i class="fa-solid fa-trash"></i></a>
+<a href="productForm.html?id=${element.id}"><i class="fa-solid fa-pen"></i></a>
 </td>
 </tr>`;
   });

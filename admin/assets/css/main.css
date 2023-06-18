@@ -313,14 +313,6 @@ header.dark .header .mode-profile .dropdown .dropdown-menu li a:hover {
 .form .row .col-4 h1 {
   padding: 10px 0;
 }
-.form .row .col-4 .feature {
-  display: flex;
-  flex-direction: column;
-}
-.form .row .col-4 .additional {
-  display: flex;
-  flex-direction: column;
-}
 .form button {
   margin-top: 20px;
   padding: 20px 80px;

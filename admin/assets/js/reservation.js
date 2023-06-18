@@ -12,7 +12,7 @@ function createCard(arr) {
   arr.forEach((element, index) => {
     tBody.innerHTML += `
 <tr>
-<td>${index}</td>
+<td>${index+1}</td>
 <td>${element.numberOfCustomer}</td>
 <td class="description">${element.selectTime}</td>
 </tr>`;
