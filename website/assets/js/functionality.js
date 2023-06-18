@@ -1,4 +1,4 @@
-const menuIcon = document.querySelector("#menu");
+const menuIcon = document.querySelector("#header-menu");
 const burgerMenu = document.querySelector("#burger-menu");
 const header = document.querySelector("header");
 const logout = document.querySelector(".logout");

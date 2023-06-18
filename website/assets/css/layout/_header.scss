@@ -65,8 +65,13 @@ header {
             }
           }
           &.menu {
-            margin-left: 20px;
+            margin-left: 50px;
             display: none;
+            a {
+              i {
+                color: #fff;
+              }
+            }
           }
         }
       }
@@ -80,10 +85,18 @@ header {
       }
       .basket-fav-profile {
         margin-right: 50px;
-        ul {
+        .icon-ul {
           li {
-            .text {
-              display: none;
+            .btn {
+              .text {
+                display: none;
+              }
+              &:hover {
+                .icon {
+                  width: 100px;
+                }
+               
+              }
             }
             &.menu {
               display: block;
@@ -97,7 +110,7 @@ header {
         max-width: 80px;
       }
       .basket-fav-profile {
-        ul {
+        .icon-ul {
           li {
             display: none;
             &.menu {

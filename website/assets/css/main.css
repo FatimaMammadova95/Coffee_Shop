@@ -243,8 +243,11 @@ header .header .basket-fav-profile .icon-ul li .btn:active .icon {
   transform: scale(0.85);
 }
 header .header .basket-fav-profile .icon-ul li.menu {
-  margin-left: 20px;
+  margin-left: 50px;
   display: none;
+}
+header .header .basket-fav-profile .icon-ul li.menu a i {
+  color: #fff;
 }
 @media only screen and (max-width: 991px) {
   header .header .logo {
@@ -256,10 +259,13 @@ header .header .basket-fav-profile .icon-ul li.menu {
   header .header .basket-fav-profile {
     margin-right: 50px;
   }
-  header .header .basket-fav-profile ul li .text {
+  header .header .basket-fav-profile .icon-ul li .btn .text {
     display: none;
   }
-  header .header .basket-fav-profile ul li.menu {
+  header .header .basket-fav-profile .icon-ul li .btn:hover .icon {
+    width: 100px;
+  }
+  header .header .basket-fav-profile .icon-ul li.menu {
     display: block;
   }
 }
@@ -267,10 +273,10 @@ header .header .basket-fav-profile .icon-ul li.menu {
   header .header .logo {
     max-width: 80px;
   }
-  header .header .basket-fav-profile ul li {
+  header .header .basket-fav-profile .icon-ul li {
     display: none;
   }
-  header .header .basket-fav-profile ul li.menu {
+  header .header .basket-fav-profile .icon-ul li.menu {
     display: block;
   }
 }
