@@ -32,7 +32,9 @@
         <section id="menu">
           <div class="container">
             <div class="menu">
-              <a href="admin.html"><img src="../photo/logo/logo.png" alt="" /></a>
+              <a href="admin.html"
+                ><img src="../photo/logo/logo.png" alt=""
+              /></a>
               <ul>
                 <li><a href="product.html">Product</a></li>
                 <li><a href="#">Menu</a></li>
@@ -83,14 +85,14 @@
                   </form>
                 </div>
                 <div class="mode-profile">
-                  <a href=""
-                    ><svg
+                  <a href="#">
+                    <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="w-6 h-6"
+                      class="w-6 h-6 dark-mode"
                     >
                       <path
                         stroke-linecap="round"
@@ -142,37 +144,39 @@
                     <div class="col-3">
                       <div class="card">
                         <div class="card-details">
-                          <p class="text-title">Product</p>
-                          <p class="text-body">15</p>
+                          <p class="text-title">Products</p>
+                          <p class="text-body product">15</p>
                         </div>
-                        <button class="card-button">More info</button>
+                        <a href="product.html" class="card-button">More info</a>
                       </div>
                     </div>
                     <div class="col-3">
                       <div class="card">
                         <div class="card-details">
-                          <p class="text-title">Product</p>
-                          <p class="text-body">15</p>
+                          <p class="text-title">Users</p>
+                          <p class="text-body user">15</p>
                         </div>
-                        <button class="card-button">More info</button>
+                        <a href="users.html" class="card-button">More info</a>
                       </div>
                     </div>
                     <div class="col-3">
                       <div class="card">
                         <div class="card-details">
-                          <p class="text-title">Product</p>
-                          <p class="text-body">15</p>
+                          <p class="text-title">Menu food</p>
+                          <p class="text-body menu-length">15</p>
                         </div>
-                        <button class="card-button">More info</button>
+                        <a href="menu.html" class="card-button">More info</a>
                       </div>
                     </div>
                     <div class="col-3">
                       <div class="card">
                         <div class="card-details">
-                          <p class="text-title">Product</p>
-                          <p class="text-body">15</p>
+                          <p class="text-title">Reservations</p>
+                          <p class="text-body reservation">15</p>
                         </div>
-                        <button class="card-button">More info</button>
+                        <a href="reservation.html" class="card-button"
+                          >More info</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -189,6 +193,14 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <!-- Axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./assets/js/functionality.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
