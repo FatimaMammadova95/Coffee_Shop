@@ -4,7 +4,7 @@ let username = document.querySelector("#username");
 let password = document.querySelector("#password");
 let forms = document.querySelectorAll(".needs-validation");
 
-let user;
+let admin;
 
 Array.prototype.slice.call(forms).forEach(function (form) {
   form.addEventListener(
@@ -17,18 +17,19 @@ Array.prototype.slice.call(forms).forEach(function (form) {
         async function getData() {
           let res = await axios(`${BASE_URL}admin`);
           let data = res.data;
-          return user = data.find(
-            (user) =>
-              (user.username == username.value ||
-                user.email == username.value) &&
-              user.password == password.value
+          return admin = data.find(
+            (admin) =>
+              (admin.username == username.value ||
+                admin.email == username.value) &&
+              admin.password == password.value
           );
         }
         getData();
-        if (!user) {
-          alert("You are not user");
+        if (!admin) {
+        //   alert("You are not admin");
         } else {
           localStorage.setItem("admin", true);
+          window.location="admin.html"
         }
       }
       form.classList.add("was-validated");
