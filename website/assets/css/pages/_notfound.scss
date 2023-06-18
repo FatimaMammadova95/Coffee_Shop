@@ -46,9 +46,39 @@
       }
     }
     img {
+      max-width: 100%;
+      height: auto;
       position: absolute;
       right: 0;
       bottom: 0;
+    }
+    @media only screen and (max-width: 991px) {
+      .text-404 {
+        top: 20%;
+        h1 {
+          font-size: 80px;
+        }
+        p {
+          font-size: 22px;
+          padding: 25px 0;
+          letter-spacing: 5px;
+        }
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .text-404 {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+        h1 {
+          font-size: 72px;
+        }
+        p {
+          font-size: 20px;
+          padding: 15px 0;
+          letter-spacing: 5px;
+        }      
+      }
     }
   }
 }

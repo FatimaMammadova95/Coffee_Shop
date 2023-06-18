@@ -1867,9 +1867,39 @@ footer .footer .down-footer {
   transition: all 1s;
 }
 #not-found .not-found img {
+  max-width: 100%;
+  height: auto;
   position: absolute;
   right: 0;
   bottom: 0;
+}
+@media only screen and (max-width: 991px) {
+  #not-found .not-found .text-404 {
+    top: 20%;
+  }
+  #not-found .not-found .text-404 h1 {
+    font-size: 80px;
+  }
+  #not-found .not-found .text-404 p {
+    font-size: 22px;
+    padding: 25px 0;
+    letter-spacing: 5px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #not-found .not-found .text-404 {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  #not-found .not-found .text-404 h1 {
+    font-size: 72px;
+  }
+  #not-found .not-found .text-404 p {
+    font-size: 20px;
+    padding: 15px 0;
+    letter-spacing: 5px;
+  }
 }
 
 #faq {
