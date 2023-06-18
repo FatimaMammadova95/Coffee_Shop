@@ -34,7 +34,11 @@
             <div class="menu">
               <a href="admin.html">
                 <img src="../photo/logo/logo.png" alt="" class="logo-dark" />
-                <img src="../photo/logo/logo-light.png" alt="" class="logo-light" />
+                <img
+                  src="../photo/logo/logo-light.png"
+                  alt=""
+                  class="logo-light"
+                />
               </a>
               <ul>
                 <li><a href="product.html">Product</a></li>
@@ -48,7 +52,7 @@
       </div>
       <div class="col flex-0">
         <section id="body">
-          <header>
+          <header class="">
             <div class="container">
               <div class="header">
                 <div class="menu-search">
@@ -102,41 +106,30 @@
                       />
                     </svg>
                   </a>
-
                   <div class="dropdown">
                     <button
                       id="dropdownInformationButton"
-                      data-dropdown-toggle="dropdownInformation"
-                      class=""
+                      class="dropdown-toggle"
                       type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
                     >
                       <img src="../photo/admin/admin.png" alt="" />
                     </button>
-
-                    <div
-                      id="dropdownInformation"
-                      class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
-                    >
-                      <div
-                        class="px-4 py-3 text-sm text-gray-900 dark:text-white"
-                      >
-                        <div>Fatima Mammadova</div>
-                        <div class="font-medium truncate">admin@gmail.com</div>
-                      </div>
-                      <div class="py-2">
-                        <a
-                          href="#"
-                          class="block bg-primary px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                          >Sign out</a
-                        >
-                      </div>
-                    </div>
+                    <ul class="dropdown-menu">
+                      <li>Fatima Mammadova</li>
+                      <li>admin@gmail.com</li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Log out</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
           </header>
-          <section id="title">
+          <section id="title" class="">
             <div class="container">
               <div class="title">
                 <h1>Welcome, Admin</h1>

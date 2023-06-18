@@ -12,20 +12,13 @@ menuIcon.addEventListener("click", function () {
   }
 });
 
-let dark = localStorage.getItem("dark-mode")
-
+let dark = localStorage.getItem("dark-mode");
+if (dark) {
+  darkMode.style.fill = "white";
+} else {
+  darkMode.style.fill = "none";
+}
 
 darkMode.addEventListener("click", function () {
   localStorage.setItem("dark-mode", true);
-  if(dark){
-    darkMode.style.fill="black"
-  }else{
-    darkMode.style.fill="none"
-  }
 });
-
-if(dark){
-
-}
-
-

@@ -86,9 +86,43 @@ header .header .mode-profile {
   align-items: center;
   gap: 20px;
 }
-header .header .mode-profile #dropdownInformationButton img {
+header .header .mode-profile .dropdown #dropdownInformationButton img {
   max-width: 50px;
   max-height: 50px;
+}
+header .header .mode-profile .dropdown #dropdownInformationButton:after {
+  display: none;
+}
+header .header .mode-profile .dropdown .dropdown-menu li {
+  margin: 5px;
+}
+header .header .mode-profile .dropdown .dropdown-menu li a {
+  padding: 0;
+  margin: 0;
+}
+header.dark {
+  background-color: black;
+}
+header.dark .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header.dark .header .menu-search #menu-icon {
+  color: white;
+}
+header.dark .header .mode-profile .dropdown .dropdown-menu {
+  background-color: black;
+}
+header.dark .header .mode-profile .dropdown .dropdown-menu li {
+  margin: 5px;
+  color: white;
+}
+header.dark .header .mode-profile .dropdown .dropdown-menu li a {
+  color: white;
+}
+header.dark .header .mode-profile .dropdown .dropdown-menu li a:hover {
+  background-color: rgb(38, 38, 38);
 }
 
 .col-2 {
@@ -206,6 +240,35 @@ header .header .mode-profile #dropdownInformationButton img {
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 #title .title .cards .card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+#title.dark {
+  background-color: black;
+  height: 100vh;
+}
+#title.dark .title h1 {
+  color: white;
+}
+#title.dark .title .cards .card .card-details {
+  color: white;
+}
+#title.dark .title .cards .card .card-details .text-body {
+  color: white !important;
+}
+#title.dark .title .cards .card .card-details .text-title {
+  color: white;
+}
+#title.dark .title .cards .card .card-button {
+  background-color: #008bf8;
+  color: #fff;
+}
+#title.dark .title .cards .card:hover {
+  background-color: black;
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+#title.dark .title .cards .card:hover .card-button {
   transform: translate(-50%, 50%);
   opacity: 1;
 }

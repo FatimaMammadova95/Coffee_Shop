@@ -9,12 +9,54 @@ header {
     .mode-profile {
       @include flexbox;
       gap: 20px;
-      #dropdownInformationButton{        
-        img{
-          max-width: 50px;
-          max-height: 50px;
+      .dropdown {
+        #dropdownInformationButton {
+          img {
+            max-width: 50px;
+            max-height: 50px;
+          }
+          &:after {
+            display: none;
+          }
+        }
+        .dropdown-menu {
+          li {
+            margin: 5px;
+            a {
+              padding: 0;
+              margin: 0;
+            }
+          }
         }
       }
     }
-  }  
+  }
+  &.dark {
+    background-color: black;
+    .header {
+      @include flexbox;
+      .menu-search {
+        #menu-icon {
+          color: white;
+        }
+      }
+      .mode-profile {
+        .dropdown {
+          .dropdown-menu {
+            background-color: black;
+            li {
+              margin: 5px;
+              color: white;
+              a {
+                color: white;
+                &:hover {
+                  background-color: rgb(38, 38, 38);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
