@@ -1,6 +1,8 @@
 let menuIcon = document.querySelector("#menu-icon");
 let burgerMenu = document.querySelector(".col-2");
 let darkMode = document.querySelector(".dark-mode");
+let header = document.querySelector("header");
+let title = document.querySelector("#title");
 
 menuIcon.addEventListener("click", function () {
   if (this.classList.contains("open")) {
@@ -11,14 +13,29 @@ menuIcon.addEventListener("click", function () {
     burgerMenu.style.display = "none";
   }
 });
-
 let dark = localStorage.getItem("dark-mode");
-if (dark) {
-  darkMode.style.fill = "white";
-} else {
-  darkMode.style.fill = "none";
+function darkModeFunc() {
+  if (dark) {
+    darkMode.style.fill = "white";
+    burgerMenu.classList.add("dark");
+    header.classList.add("dark");
+    title.classList.add("dark");
+  } else {
+    darkMode.style.fill = "none";
+    burgerMenu.classList.remove("dark");
+    header.classList.remove("dark");
+    title.classList.remove("dark");
+  }
 }
+darkModeFunc();
 
 darkMode.addEventListener("click", function () {
-  localStorage.setItem("dark-mode", true);
+  if (dark) {
+    localStorage.removeItem("dark-mode");
+    dark = localStorage.getItem("dark-mode");
+  } else {
+    localStorage.setItem("dark-mode", true);
+    dark = localStorage.getItem("dark-mode");
+  }
+  darkModeFunc();
 });

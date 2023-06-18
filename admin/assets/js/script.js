@@ -17,4 +17,3 @@ async function getData(){
   reservation.innerHTML=reservationRes.data.length
 }
 getData()
-
