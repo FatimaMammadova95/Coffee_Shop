@@ -327,4 +327,10 @@ header.dark .header .mode-profile .dropdown .dropdown-menu li a:hover {
   background-color: #008bf8;
   color: #fff;
   font-size: 20px;
+}
+.form.dark .row .col-4 label {
+  color: #fff;
+}
+.form.dark .row .col-4 input[type=file] {
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

@@ -28,4 +28,16 @@
     color: #fff;
     font-size: 20px;
   }
+  &.dark{
+    .row {
+      .col-4 {
+        label {
+          color: #fff;
+        }
+        input[type="file"]{
+          color: #fff;
+        }
+      }
+    }
+  }
 }
