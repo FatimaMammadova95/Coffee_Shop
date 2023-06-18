@@ -125,9 +125,6 @@ header.dark .header .mode-profile .dropdown .dropdown-menu li a:hover {
   background-color: rgb(38, 38, 38);
 }
 
-.col-2 {
-  height: 100vh;
-}
 .col-2 #menu {
   position: fixed;
   top: 0;
@@ -245,7 +242,7 @@ header.dark .header .mode-profile .dropdown .dropdown-menu li a:hover {
 }
 #title.dark {
   background-color: black;
-  height: 100vh;
+  padding-bottom: 50vh;
 }
 #title.dark .title h1 {
   color: white;
