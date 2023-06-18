@@ -3,6 +3,7 @@ let burgerMenu = document.querySelector(".col-2");
 let darkMode = document.querySelector(".dark-mode");
 let header = document.querySelector("header");
 let title = document.querySelector("#title");
+let table = document.querySelector("table")
 
 menuIcon.addEventListener("click", function () {
   if (this.classList.contains("open")) {
@@ -20,11 +21,14 @@ function darkModeFunc() {
     burgerMenu.classList.add("dark");
     header.classList.add("dark");
     title.classList.add("dark");
+    table.classList.add("table-dark")
   } else {
     darkMode.style.fill = "none";
     burgerMenu.classList.remove("dark");
     header.classList.remove("dark");
     title.classList.remove("dark");
+    table.classList.remove("table-dark")
+
   }
 }
 darkModeFunc();
