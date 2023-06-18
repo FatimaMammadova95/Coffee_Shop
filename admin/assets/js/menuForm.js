@@ -57,7 +57,7 @@ form.addEventListener("submit", async function () {
     description: productDescription.value,
     image: `../photo/menu/${productImage.value.split("\\")[2]}`,
     volume: productVolume.value,
-    ingredient: [productIngredient],
+    ingredient: productIngredient.value.split(","),
     nutrition: {
       energy: productEnergy.value,
       carbohydrates: productCarbohydrates.value,

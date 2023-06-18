@@ -36,6 +36,7 @@ if (id) {
     productName.value = data.name;
     productDescription.value = data.description;
     productCategory.value = data.category;
+    productTags.value = data.tags;
     productRoasting.value = data.feature["roasting level"];
     productBody.value = data.feature.body;
     productSweetness.value = data.feature.sweetness;
@@ -70,7 +71,7 @@ form.addEventListener("submit", async function () {
       },
     },
     category: productCategory.value,
-    tags: [productTags.value],
+    tags: productTags.value.split(","),
     rating: 0,
     popularity: 0,
     reviews: [],
