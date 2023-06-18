@@ -1,5 +1,6 @@
 const BASE_URL = "http://localhost:8080/";
 
+
 let form = document.querySelector(".form");
 let productName = document.querySelector("#name");
 let productDescription = document.querySelector("#description");
@@ -20,6 +21,12 @@ let addEdit = document.querySelector(".add-edit");
 let submit = document.querySelector(".submit");
 
 let id = new URLSearchParams(window.location.search).get("id");
+
+let adminId = localStorage.getItem("admin")
+
+if(!adminId){
+  document.body.innerHTML=''
+}
 
 if (id) {
   addEdit.innerHTML = "Edit";

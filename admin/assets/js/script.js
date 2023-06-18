@@ -11,6 +11,10 @@ let logout = document.querySelector(".logout")
 
 let id = localStorage.getItem("admin")
 
+if(!id){
+  document.body.innerHTML=''
+}
+
 async function getData() {
   let productRes = await axios(`${BASE_URL}product`);
   let userRes = await axios(`${BASE_URL}users`);

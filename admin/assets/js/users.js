@@ -7,6 +7,12 @@ let dataArr = [];
 let copyArr = [];
 let sortedArr = [];
 
+let id = localStorage.getItem("admin")
+
+if(!id){
+  document.body.innerHTML=''
+}
+
 function createCard(arr) {
   tBody.innerHTML = "";
   arr.forEach((element, index) => {
