@@ -1277,6 +1277,9 @@ footer .footer .down-footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#menu .menu {
+  padding: 50px 0;
+}
 #menu .menu .our-menu {
   text-align: center;
   font-size: 48px;
