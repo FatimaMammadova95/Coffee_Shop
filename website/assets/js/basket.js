@@ -24,14 +24,14 @@ function getData() {
           value="1"
           min="1"
           max="10"
-          oninput= "inputFunc()"         
+          onchange= inputFunc(${element.price},this)         
         />
       </div>
       <p class="price-card">${element.price}$</p>
       <i class="fa-solid fa-trash"></i>
     </div>
   </div>
-    `;    
+    `;
     price = price + element.price;
   });
 }
@@ -40,7 +40,8 @@ getData();
 total.innerHTML = `<span>Product Total:</span> ${price}$`;
 cargo.innerHTML = `<span>Cargo:</span> ${price > 50 ? 0 : 10}$`;
 
-// function inputFunc(e){
-  
-//   console.log(e.target.value);
-// }
+function inputFunc(productPrice, input) {
+  price = price + productPrice * (input.value - 1);
+  total.innerHTML = `<span>Product Total:</span> ${price}$`;
+  cargo.innerHTML = `<span>Cargo:</span> ${price > 50 ? 0 : 10}$`;
+}

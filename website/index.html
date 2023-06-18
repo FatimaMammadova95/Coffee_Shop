@@ -314,11 +314,11 @@
               the world
             </h1>
             <div class="links">
-              <a href="#product" class="active">COFFEE</a>
-              <a href="#product">COFFEE CUPS</a>
-              <a href="#product">ESPRESSO MACHINES</a>
-              <a href="#product">COFFEE CAPSULE</a>
-              <a href="#product">ACCESSORIES</a>
+              <a href="#product" class="active" data-coffee="coffee">COFFEE</a>
+              <a href="#product" data-coffee="coffee cup">COFFEE CUPS</a>
+              <a href="#product" data-coffee="espresso machine">ESPRESSO MACHINES</a>
+              <a href="#product" data-coffee="coffee capsule">COFFEE CAPSULE</a>
+              <a href="#product" data-coffee="accessories">ACCESSORIES</a>
             </div>
           </div>
           <div class="swiper mySwiper" id="product-swiper">
@@ -458,8 +458,7 @@
                   <option value="10">10 People</option>
                 </select>
                 <input
-                  type="datetime-local"
-                  value="07/09/2023"
+                  type="datetime-local"                  
                   class="select-time"
                   name="date"
                 />

@@ -9,9 +9,7 @@ let selectTime = document.querySelector(".select-time");
 let reserveForm = document.querySelector(".reserve-form");
 let links = document.querySelectorAll(".links a");
 let productSlider = document.querySelector("#product-slider");
-
-console.log(window.innerWidth);
-console.log(screen.width);
+let dataArr;
 
 // Menu
 function menuLeft(arr) {
@@ -61,7 +59,8 @@ getDataInMenu();
 async function getDataInProduct() {
   let res = await axios(`${BASE_URL}product`);
   data = res.data;
-  topProduct(data);
+  dataArr = data;
+  topProduct(dataArr);
 }
 getDataInProduct();
 
@@ -91,26 +90,25 @@ var selector = ".links a";
 $(selector).on("click", function () {
   $(selector).removeClass("active");
   $(this).addClass("active");
+  let coffee = document.querySelector(".active").dataset.coffee;
+  console.log(coffee);
+  arr = dataArr.filter((obj) => obj.category == coffee);
+  topProduct(arr)
+  console.log(arr);
 });
 
 function topProduct(arr) {
-  // arr = arr.filter(
-  //   (obj) =>
-  //     obj.category.toLocaleUpperCase() == links.forEach((link) => {
-  //       return link.classList.contains("active")
-  //     })
-  // );
-  arr = arr.sort((a,b)=>a.popularity-b.popularity).slice(0,4)
-  console.log(arr);
-  productSlider.innerHTML = ""
+  arr = arr.sort((a, b) => a.popularity - b.popularity).slice(0, 4);
+
+  productSlider.innerHTML = "";
   arr.forEach((element) => {
-    productSlider.innerHTML+=`
+    productSlider.innerHTML += `
     <div class="swiper-slide">
     <img src=${element.image} alt="" />
     <h4>${element.name}</h4>
     <p class="price">${element.price} $</p>
   </div>
-    `
+    `;
   });
 }
 

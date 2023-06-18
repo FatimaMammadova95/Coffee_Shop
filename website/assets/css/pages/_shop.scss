@@ -64,7 +64,6 @@
                 }
               }
             }
-
             .bookmark {
               position: absolute;
               top: 20px;
@@ -72,7 +71,7 @@
               .fav {
                 height: 10px;
                 width: 20px;
-                -webkit-appearance: none;
+                appearance: none;
                 position: absolute;
                 margin: auto;
                 left: 0;
@@ -118,7 +117,7 @@
                   }
                 }
               }
-            }            
+            }
             &:hover img {
               opacity: 0.4;
             }
@@ -259,24 +258,24 @@
         }
       }
     }
-    @media only screen and (max-width:767px){
-      .col-3{
-        .range{
-         display: none;
+    @media only screen and (max-width: 767px) {
+      .col-3 {
+        .range {
+          display: none;
         }
-        .categories{
-          h1{
+        .categories {
+          h1 {
             font-size: 14px;
           }
-          p{
+          p {
             font-size: 12px;
           }
         }
-        .tags{
-          h1{
+        .tags {
+          h1 {
             font-size: 14px;
           }
-          p{
+          p {
             font-size: 12px;
           }
         }
