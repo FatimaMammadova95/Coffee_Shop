@@ -1,9 +1,13 @@
 const menuIcon = document.querySelector("#menu");
 const burgerMenu = document.querySelector("#burger-menu");
 const header = document.querySelector("header");
+const logout = document.querySelector(".logout");
+
+logout.addEventListener("click", function () {
+  localStorage.removeItem("account");
+});
 
 // Menu click
-
 menuIcon.addEventListener("click", function (e) {
   if (this.classList.contains("fa-bars")) {
     this.classList = "fa-solid fa-xmark";
@@ -15,7 +19,6 @@ menuIcon.addEventListener("click", function (e) {
 });
 
 // Scroll nav
-
 function scrollFunction() {
   if (
     document.body.scrollTop > 100 ||

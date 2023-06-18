@@ -25,7 +25,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <title>Corretto | Home</title>
-    <link rel="icon" type="image/x-icon" href="../photo/logo/logo.png">
+    <link rel="icon" type="image/x-icon" href="../photo/logo/logo.png" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
@@ -39,7 +39,7 @@
           </a>
           <nav>
             <ul class="nav-ul">
-              <li><a href="#">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li class="">
                 <div class="dropdown">
                   <a
@@ -52,34 +52,68 @@
                     Pages
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="galery.html">Galery</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="faq.html">FAQ </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="notfound.html"
+                        >Not Found 404</a
+                      >
                     </li>
                   </ul>
                 </div>
               </li>
-              <li><a href="galery.html">Galery</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="menu.html">Menu</a></li>
               <li><a href="shop.html">Shop</a></li>
             </ul>
           </nav>
           <div class="basket-fav-profile">
-            <ul>
+            <ul class="icon-ul">
               <li>
-                <a href="#"><i class="fa-solid fa-store"></i></a>
+                <a href="basket.html" class="btn">
+                  <i class="fa-solid fa-store icon"></i>
+                  <span class="text">Store</span>
+                </a>
               </li>
               <li>
-                <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                <a href="favorite.html" class="btn">
+                  <i class="fa-regular fa-bookmark icon"></i>
+                  <span class="text">Favorite</span>
+                </a>
               </li>
               <li>
-                <a href="#"><i class="fa-regular fa-user"></i></a>
+                <div class="dropdown">
+                  <a
+                    class="dropdown-toggle btn"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-regular fa-user icon"></i>
+                    <span class="text">Profile</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="signup.html">Sign Up</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="signin.html">Sign In </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item logout" href="#">Log Out</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="menu">
-                <a href="#"><i class="fa-solid fa-bars" id="menu"></i></a>
+                <a href="#">
+                  <i class="fa-solid fa-bars" id="menu"></i>
+                </a>
               </li>
             </ul>
           </div>
@@ -316,16 +350,15 @@
             <div class="links">
               <a href="#product" class="active" data-coffee="coffee">COFFEE</a>
               <a href="#product" data-coffee="coffee cup">COFFEE CUPS</a>
-              <a href="#product" data-coffee="espresso machine">ESPRESSO MACHINES</a>
+              <a href="#product" data-coffee="espresso machine"
+                >ESPRESSO MACHINES</a
+              >
               <a href="#product" data-coffee="coffee capsule">COFFEE CAPSULE</a>
               <a href="#product" data-coffee="accessories">ACCESSORIES</a>
             </div>
           </div>
           <div class="swiper mySwiper" id="product-swiper">
-            <div class="swiper-wrapper" id="product-slider">
-             
-              
-            </div>
+            <div class="swiper-wrapper" id="product-slider"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
@@ -457,12 +490,10 @@
                   <option value="9">9 People</option>
                   <option value="10">10 People</option>
                 </select>
-                <input
-                  type="datetime-local"                  
-                  class="select-time"
-                  name="date"
-                />
-                <button type="submit" class="reserve">Make a reservation</button>
+                <input type="datetime-local" class="select-time" name="date" />
+                <button type="submit" class="reserve">
+                  Make a reservation
+                </button>
               </form>
             </div>
           </div>
