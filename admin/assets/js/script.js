@@ -8,8 +8,6 @@ let welcome = document.querySelector(".welcome");
 let username = document.querySelector(".admin-username")
 let email = document.querySelector(".admin-email")
 
-
-
 async function getData() {
   let productRes = await axios(`${BASE_URL}product`);
   let userRes = await axios(`${BASE_URL}users`);
@@ -26,8 +24,6 @@ async function getData() {
   email.innerHTML = adminRes.data.email
 }
 getData();
-
-
 
 // Chart
 const xValues1 = [

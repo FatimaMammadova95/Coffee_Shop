@@ -2,6 +2,9 @@ const BASE_URL = "http://localhost:8080/";
 
 const tBody = document.querySelector("tbody");
 const searchInput = document.querySelector("#simple-search");
+let load = document.querySelector("#load");
+load.style.display = "none";
+
 
 let dataArr = [];
 let copyArr = [];
@@ -29,11 +32,17 @@ function createCard(arr) {
 }
 
 async function getData() {
-  let res = await axios(`${BASE_URL}menu`);
-  dataArr = res.data;
-  copyArr = searchInput.value || copyArr.length ? copyArr : res.data;
+  load.style.display = "block";
+  try {
+    let res = await axios(`${BASE_URL}menu`);
+    dataArr = res.data;
+    copyArr = searchInput.value || copyArr.length ? copyArr : res.data;
+    load.style.display = "none";
 
-  createCard(copyArr);
+    createCard(copyArr);
+  } catch (error) {
+    console.log(error);
+  }
 }
 getData();
 

@@ -7,16 +7,12 @@ let table = document.querySelector("table");
 let addEditForm = document.querySelector(".form");
 let logout = document.querySelector(".logout");
 
-let id = localStorage.getItem("admin");
+let id = localStorage.getItem("admin") || false;
+let dark = localStorage.getItem("dark-mode") || "";
 
 if (!id) {
   document.body.innerHTML = "";
 }
-
-logout.addEventListener("click", function () {
-  localStorage.removeItem("admin");
-  window.location = "signin.html";
-});
 
 menuIcon.addEventListener("click", function () {
   if (this.classList.contains("open")) {
@@ -27,7 +23,7 @@ menuIcon.addEventListener("click", function () {
     burgerMenu.style.display = "block";
   }
 });
-let dark = localStorage.getItem("dark-mode");
+
 function darkModeFunc() {
   if (dark) {
     darkMode.style.fill = "white";
@@ -56,4 +52,9 @@ darkMode.addEventListener("click", function () {
     dark = localStorage.getItem("dark-mode");
   }
   darkModeFunc();
+});
+
+logout.addEventListener("click", function () {
+  localStorage.removeItem("admin");
+  window.location = "signin.html";
 });
