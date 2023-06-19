@@ -33,7 +33,7 @@ getData();
 searchInput.addEventListener("input", function (e) {
   copyArr = sortedArr.length ? sortedArr : dataArr;
   copyArr = copyArr.filter((item) =>
-    item.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
+    item.selectTime.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
   );
   createCard(copyArr);
 });
