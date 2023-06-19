@@ -22,11 +22,7 @@ let submit = document.querySelector(".submit");
 
 let id = new URLSearchParams(window.location.search).get("id");
 
-let adminId = localStorage.getItem("admin")
 
-if(!adminId){
-  document.body.innerHTML=''
-}
 
 if (id) {
   addEdit.innerHTML = "Edit";

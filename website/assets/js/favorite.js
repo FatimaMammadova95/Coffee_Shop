@@ -1,5 +1,10 @@
+const BASE_URL = "http://localhost:8080/";
+
 let row = document.querySelector(".card-row");
+
+let account = localStorage.getItem("account");
 let favorited = JSON.parse(localStorage.getItem("favorited"));
+let basket = JSON.parse(localStorage.getItem("basket")) ?? [];
 
 function createCard() {
   row.innerHTML = "";
@@ -33,7 +38,9 @@ function createCard() {
           `;
   });
 }
-createCard();
+if (account) {
+  createCard();
+}
 
 async function favFunc(id, fav) {
   if (!fav.checked) {
@@ -43,5 +50,15 @@ async function favFunc(id, fav) {
     favorited.push(res.data);
   }
   localStorage.setItem("favorited", JSON.stringify(favorited));
-  createCard()
+  createCard();
+}
+
+async function basketFunc(id) {
+  if (basket.find((item) => item.id == id)) {
+    alert("Baskette var");
+  } else {
+    let res = await axios(`${BASE_URL}product/${id}`);
+    basket.push(res.data);
+    localStorage.setItem("basket", JSON.stringify(basket));
+  }
 }

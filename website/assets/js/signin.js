@@ -10,26 +10,27 @@ Array.prototype.slice.call(forms).forEach(function (form) {
   form.addEventListener(
     "submit",
     function (event) {
-      event.preventDefault();
       if (!form.checkValidity()) {
         event.stopPropagation();
+        event.preventDefault();
       } else {
         async function getData() {
           let res = await axios(`${BASE_URL}users`);
           let data = res.data;
-          return user = data.find(
+          user = data.find(
             (user) =>
               (user.username == username.value ||
                 user.email == username.value) &&
               user.password == password.value
           );
+          if (!user) {
+            alert("You are not user");
+          } else {
+            localStorage.setItem("account", true);
+            window.location = "index.html";
+          }
         }
         getData();
-        if (!user) {
-          alert("You are not user");
-        } else {
-          localStorage.setItem("account", true);
-        }
       }
       form.classList.add("was-validated");
     },

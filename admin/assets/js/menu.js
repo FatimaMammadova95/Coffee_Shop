@@ -1,10 +1,6 @@
 const BASE_URL = "http://localhost:8080/";
 
-let id = localStorage.getItem("admin")
 
-if(!id){
-  document.body.innerHTML=''
-}
 
 const tBody = document.querySelector("tbody");
 const searchInput = document.querySelector("#simple-search");

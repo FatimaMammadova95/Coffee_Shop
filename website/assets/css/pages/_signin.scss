@@ -1,36 +1,35 @@
 #signin {
-    .signin {
-      padding: 100px 0;
-      h1 {
-        font-size: 48px;
-        color: #5d4335;
+  .signin {
+    padding: 100px 0;
+    h1 {
+      font-size: 48px;
+      color: #5d4335;
+    }
+    p {
+      font-size: 20px;
+      letter-spacing: 10px;
+      padding: 10px 0 30px 0;
+      color: #c29f7be1;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      label {
+        padding: 20px 0 5px 0;
+        font-size: 18px;
       }
-      p {
-        font-size: 20px;
-        letter-spacing: 10px;
-        padding: 10px 0 30px 0;
-        color: #c29f7be1;
-      }
-      form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        label {
-          padding: 20px 0 5px 0;
-          font-size: 18px;
+      input {
+        padding: 10px;
+        width: 100%;
+        border-color: #5d4335;
+        &:focus {
+          outline-color: #c29e7b;
+          box-shadow: 0px 0px 20px #c29e7b;
         }
-        input {
-          padding: 10px;
-          width: 100%;
-          border-color: #5d4335;
-          &:focus {
-            outline-color: #c29e7b;
-          }
-        }
-        @extend %submit;
       }
+      @extend %submit;
     }
   }
-
-  
+}

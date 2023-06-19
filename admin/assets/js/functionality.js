@@ -5,6 +5,18 @@ let header = document.querySelector("header");
 let title = document.querySelector("#title");
 let table = document.querySelector("table");
 let addEditForm = document.querySelector(".form");
+let logout = document.querySelector(".logout");
+
+let id = localStorage.getItem("admin");
+
+if (!id) {
+  document.body.innerHTML = "";
+}
+
+logout.addEventListener("click", function () {
+  localStorage.removeItem("admin");
+  window.location = "signin.html";
+});
 
 menuIcon.addEventListener("click", function () {
   if (this.classList.contains("open")) {

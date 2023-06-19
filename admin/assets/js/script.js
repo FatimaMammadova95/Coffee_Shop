@@ -7,13 +7,8 @@ let reservation = document.querySelector(".reservation");
 let welcome = document.querySelector(".welcome");
 let username = document.querySelector(".admin-username")
 let email = document.querySelector(".admin-email")
-let logout = document.querySelector(".logout")
 
-let id = localStorage.getItem("admin")
 
-if(!id){
-  document.body.innerHTML=''
-}
 
 async function getData() {
   let productRes = await axios(`${BASE_URL}product`);
@@ -32,10 +27,7 @@ async function getData() {
 }
 getData();
 
-logout.addEventListener('click', function(){
-  localStorage.removeItem("admin")
-  window.location="signin.html"
-})
+
 
 // Chart
 const xValues1 = [

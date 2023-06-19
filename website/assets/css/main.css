@@ -1521,6 +1521,7 @@ footer .footer .down-footer {
 }
 #signin .signin form input:focus {
   outline-color: #c29e7b;
+  box-shadow: 0px 0px 20px #c29e7b;
 }
 
 #favorite .favorite .col-12 {
@@ -1627,6 +1628,9 @@ footer .footer .down-footer {
 #basket .basket .row .product-cards .col-12 .value .number .input-number {
   text-align: center;
   border: 1px solid #ccc;
+}
+#basket .basket .row .product-cards .col-12 .value a {
+  color: #5d4335;
 }
 #basket .basket .row .card {
   padding: 30px;

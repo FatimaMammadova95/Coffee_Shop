@@ -12,14 +12,17 @@ Array.prototype.slice.call(forms).forEach(function (form) {
       if (!form.checkValidity()) {
         event.preventDefault();
         event.stopPropagation();
-  
-      }else{
-        let user = {
+      } else {
+        async function addUser() {
+          let user = {
             username: username.value,
             email: email.value,
             password: password.value,
           };
-          axios.post(`${BASE_URL}users`, user);
+          await axios.post(`${BASE_URL}users`, user);
+          window.location = "signin.html";
+        }
+        addUser();
       }
 
       form.classList.add("was-validated");
