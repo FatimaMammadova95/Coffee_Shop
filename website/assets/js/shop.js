@@ -31,7 +31,7 @@ function createCard(arr) {
   arr.forEach((element) => {
     row.innerHTML += `
       <div class="col-12 col-md-6 col-lg-4">
-       <div class="card">
+       <a href="details.html?id=${element.id}" class="card">
          <div class="card card-image">
            <img
             src="${element.image}"
@@ -53,7 +53,7 @@ function createCard(arr) {
       favorited.find((item) => item.id === element.id) ? "checked" : ""
     }>
          </div>
-        </div>
+        </a>
       </div>
           `;
   });
@@ -177,13 +177,20 @@ async function favFunc(id, fav) {
 }
 async function basketFunc(id) {
   if (account) {
-    if (basket.find((item) => item.id == id)) {
-      alert("Baskette var");
+    let res = await axios(`${BASE_URL}product/${id}`);
+    if (basket.find((item) => item.product.id == id)) {
+      let obj = basket.find((item) => item.product.id == id);
+      obj.count += 1;
+      console.log(basket);
+      console.log(obj);
     } else {
-      let res = await axios(`${BASE_URL}product/${id}`);
-      basket.push(res.data);
-      localStorage.setItem("basket", JSON.stringify(basket));
+      let obj = {
+        count: 1,
+        product: res.data,
+      };
+      basket.push(obj);
     }
+    localStorage.setItem("basket", JSON.stringify(basket));
   } else {
     alert("Hesaba daxil ol");
   }

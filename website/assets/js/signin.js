@@ -10,9 +10,9 @@ Array.prototype.slice.call(forms).forEach(function (form) {
   form.addEventListener(
     "submit",
     function (event) {
+      event.preventDefault();
       if (!form.checkValidity()) {
         event.stopPropagation();
-        event.preventDefault();
       } else {
         async function getData() {
           let res = await axios(`${BASE_URL}users`);

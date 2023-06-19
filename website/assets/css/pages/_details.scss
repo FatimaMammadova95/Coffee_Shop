@@ -1,0 +1,114 @@
+#details {
+  .details {
+    padding: 50px 0;
+    .product-row {
+      .img-magnifier-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        img {
+          max-width: 600px;
+        }
+        .img-magnifier-glass {
+          display: none;
+          position: absolute;
+          border: 1px solid #000;
+          cursor: none;
+          /*Set the size of the magnifier glass:*/
+          width: 150px;
+          height: 150px;
+        }
+        &:hover {
+          .img-magnifier-glass {
+            display: block;
+          }
+        }
+      }
+      .information-col {
+        h1 {
+          font-size: 38px;
+          color: #5d4335;
+        }
+        h2 {
+          font-size: 28px;
+          color: #888d9c;
+        }
+        .stars {
+          --percent: calc(var(--rating) / 5 * 100%);
+          display: inline-block;
+          font-size: 25px;
+          font-family: Times; // make sure ★ appears correctly
+          line-height: 1;
+
+          &::before {
+            content: "★★★★★";
+            letter-spacing: 3px;
+            background: linear-gradient(
+              90deg,
+              #fc0 var(--percent),
+              #888d9c var(--percent)
+            );
+            background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        button {
+          margin: 25px 0;
+          padding: 20px 50px;
+          border: 1px solid #be9c79;
+          background-color: #be9c79;
+          color: #fff;
+        }
+        p {
+          padding: 5px 0;
+          color: #5d4335;
+          span {
+            font-weight: bold;
+            font-size: 18px;
+            padding-right: 10px;
+            color: #000;
+          }
+          i {
+            color: #888d9c;
+            font-size: 20px;
+            padding: 0 5px;
+            &:hover {
+              color: #c29e7b;
+            }
+          }
+        }
+        .additional {
+          padding: 20px 0;
+          .details-link {
+            a {
+              padding: 10px 15px;
+              background-color: #c29e7b;
+              color: #fff;
+            }
+          }
+          .details-content {
+            border: 1px solid #888d9c;
+            padding: 20px 10px;
+          }
+        }
+      }
+    }
+    h1 {
+      font-size: 30px;
+      padding: 20px 0;
+    }
+    .related-row {
+      .col-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        img {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}
