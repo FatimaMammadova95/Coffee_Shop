@@ -48,6 +48,22 @@ searchInput.addEventListener("input", function (e) {
   createCard(copyArr);
 });
 
-async function deleteFunc(id) {
-  await axios.delete(`${BASE_URL}product/${id}`);
+function deleteFunc(id) {
+  swal({
+    title: "Are you sure?",
+    text: "Once deleted, you will not be able to recover this imaginary file!",
+    icon: "warning",
+    buttons: true,
+    dangerMode: true,
+  }).then((willDelete) => {
+    if (willDelete) {
+      axios.delete(`${BASE_URL}product/${id}`);
+
+      swal("Poof! Your imaginary file has been deleted!", {
+        icon: "success",
+      });
+    } else {
+      swal("Your imaginary file is safe!");
+    }
+  });
 }

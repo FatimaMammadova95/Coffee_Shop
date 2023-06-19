@@ -5,9 +5,7 @@
       "description": "The basic drink from which other milk and non-milk coffee drinks are based.",
       "image": "../photo/menu-photo/coffee-1.jpg",
       "volume": "25-30 ml (0.85-1.01 US fl oz)",
-      "ingredient": [
-        "espresso"
-      ],
+      "ingredient": ["espresso"],
       "nutrition": {
         "energy": "8.4 kJ (2.0 kcal)",
         "carbohydrates": "0",
@@ -35,10 +33,7 @@
       "description": "The basic drink from which other milk and non-milk coffee drinks are based.",
       "image": "../photo/menu-photo/coffee-2.jpg",
       "volume": "25-30 ml (0.85-1.01 US fl oz)",
-      "ingredient": [
-        "espresso",
-        "steamed milk"
-      ],
+      "ingredient": ["espresso", "steamed milk"],
       "nutrition": {
         "energy": "8.4 kJ (2.0 kcal)",
         "carbohydrates": "0",
@@ -66,11 +61,7 @@
       "description": "The basic drink from which other milk and non-milk coffee drinks are based.",
       "image": "../photo/menu-photo/coffee-3.jpg",
       "volume": "25-30 ml (0.85-1.01 US fl oz)",
-      "ingredient": [
-        "espresso",
-        "steamed milk",
-        "foam"
-      ],
+      "ingredient": ["espresso", "steamed milk", "foam"],
       "nutrition": {
         "energy": "8.4 kJ (2.0 kcal)",
         "carbohydrates": "0",
@@ -98,10 +89,7 @@
       "description": "The basic drink from which other milk and non-milk coffee drinks are based.",
       "image": "../photo/menu-photo/coffee-4.jpg",
       "volume": "25-30 ml (0.85-1.01 US fl oz)",
-      "ingredient": [
-        "espresso",
-        "hot water"
-      ],
+      "ingredient": ["espresso", "hot water"],
       "nutrition": {
         "energy": "8.4 kJ (2.0 kcal)",
         "carbohydrates": "0",
@@ -129,10 +117,7 @@
       "description": "The basic drink from which other milk and non-milk coffee drinks are based.",
       "image": "../photo/menu-photo/coffee-5.jpg",
       "volume": "25-30 ml (0.85-1.01 US fl oz)",
-      "ingredient": [
-        "espresso",
-        "foam"
-      ],
+      "ingredient": ["espresso", "foam"],
       "nutrition": {
         "energy": "8.4 kJ (2.0 kcal)",
         "carbohydrates": "0",
@@ -160,11 +145,7 @@
       "description": "The basic drink from which other milk and non-milk coffee drinks are based.",
       "image": "../photo/menu-photo/coffee-6.jpg",
       "volume": "25-30 ml (0.85-1.01 US fl oz)",
-      "ingredient": [
-        "espresso",
-        "steamed milk",
-        "chocolate"
-      ],
+      "ingredient": ["espresso", "steamed milk", "chocolate"],
       "nutrition": {
         "energy": "8.4 kJ (2.0 kcal)",
         "carbohydrates": "0",
@@ -192,10 +173,7 @@
       "description": "The basic drink from which other milk and non-milk coffee drinks are based.",
       "image": "../photo/menu-photo/coffee-7.jpg",
       "volume": "25-30 ml (0.85-1.01 US fl oz)",
-      "ingredient": [
-        "espresso",
-        "foamed milk"
-      ],
+      "ingredient": ["espresso", "foamed milk"],
       "nutrition": {
         "energy": "8.4 kJ (2.0 kcal)",
         "carbohydrates": "0",
@@ -239,11 +217,7 @@
         }
       },
       "category": "coffee",
-      "tags": [
-        "black",
-        "casual",
-        "classic"
-      ],
+      "tags": ["black", "casual", "classic"],
       "rating": 3.5,
       "popularity": 10,
       "reviews": [],
@@ -270,11 +244,7 @@
         }
       },
       "category": "coffee",
-      "tags": [
-        "cream",
-        "casual",
-        "classic"
-      ],
+      "tags": ["cream", "casual", "classic"],
       "rating": 3,
       "popularity": 9,
       "reviews": [],
@@ -301,11 +271,7 @@
         }
       },
       "category": "coffee",
-      "tags": [
-        "black",
-        "beans",
-        "classic"
-      ],
+      "tags": ["black", "beans", "classic"],
       "rating": 4,
       "popularity": 2,
       "reviews": [],
@@ -332,11 +298,7 @@
         }
       },
       "category": "coffee",
-      "tags": [
-        "black",
-        "casual",
-        "classic"
-      ],
+      "tags": ["black", "casual", "classic"],
       "rating": 5,
       "popularity": 7,
       "reviews": [],
@@ -363,9 +325,7 @@
         }
       },
       "category": "ESPRESSO MACHINES",
-      "tags": [
-        "black"
-      ],
+      "tags": ["black"],
       "rating": 5,
       "popularity": 7,
       "reviews": [],
@@ -392,9 +352,7 @@
         }
       },
       "category": "ESPRESSO MACHINES",
-      "tags": [
-        "black"
-      ],
+      "tags": ["black"],
       "rating": 5,
       "popularity": 7,
       "reviews": [],
@@ -421,9 +379,7 @@
         }
       },
       "category": "espresso machines",
-      "tags": [
-        "black"
-      ],
+      "tags": ["black"],
       "rating": 5,
       "popularity": 7,
       "reviews": [],
@@ -450,9 +406,7 @@
         }
       },
       "category": "espresso machines",
-      "tags": [
-        "black"
-      ],
+      "tags": ["black"],
       "rating": 5,
       "popularity": 7,
       "reviews": [],
@@ -479,9 +433,7 @@
         }
       },
       "category": "ACCESSORIES",
-      "tags": [
-        "black"
-      ],
+      "tags": ["black"],
       "rating": 5,
       "popularity": 7,
       "reviews": [],
@@ -508,9 +460,7 @@
         }
       },
       "category": "coffee capsule",
-      "tags": [
-        "black"
-      ],
+      "tags": ["black"],
       "rating": 5,
       "popularity": 7,
       "reviews": [],
