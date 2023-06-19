@@ -9,10 +9,10 @@ let addEditForm = document.querySelector(".form");
 menuIcon.addEventListener("click", function () {
   if (this.classList.contains("open")) {
     this.classList = "fa-solid fa-bars close";
-    burgerMenu.style.display = "block";
+    burgerMenu.style.display = "none";
   } else {
     this.classList = "fa-solid fa-bars open";
-    burgerMenu.style.display = "none";
+    burgerMenu.style.display = "block";
   }
 });
 let dark = localStorage.getItem("dark-mode");

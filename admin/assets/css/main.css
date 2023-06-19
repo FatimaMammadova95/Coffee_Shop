@@ -62,8 +62,8 @@ a {
   margin: auto;
 }
 
-.admin-row > * {
-  padding: 0;
+.admin-row {
+  --bs-gutter-x: 0 !important;
 }
 
 header {
