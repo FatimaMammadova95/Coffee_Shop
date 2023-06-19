@@ -1384,14 +1384,15 @@ footer .footer .down-footer {
 }
 #signup .signup form input:focus {
   outline-color: #c29e7b;
+  box-shadow: 0px 0px 20px #c29e7b;
 }
 #signup .signup form .submit {
   margin-top: 20px;
   position: relative;
   padding: 15px 45px;
   background: #c29e7b;
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: bold;
   color: black;
   border: 1px solid #c29e7b;
   border-radius: 8px;

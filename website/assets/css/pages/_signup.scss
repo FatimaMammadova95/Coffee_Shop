@@ -4,14 +4,12 @@
     h1 {
       font-size: 48px;
       color: #5d4335;
-      // text-align: center;
     }
     p {
       font-size: 20px;
       letter-spacing: 10px;
       padding: 10px 0 30px 0;
       color: #c29f7be1;
-      // text-align: center;
     }
     form {
       display: flex;
@@ -28,6 +26,7 @@
         border-color: #5d4335;
         &:focus {
           outline-color: #c29e7b;
+          box-shadow: 0px 0px 20px #c29e7b;
         }
       }
       .submit {
@@ -35,8 +34,8 @@
         position: relative;
         padding: 15px 45px;
         background: #c29e7b;
-        font-size: 17px;
-        font-weight: 500;
+        font-size: 18px;
+        font-weight: bold;
         color: black;
         border: 1px solid #c29e7b;
         border-radius: 8px;
