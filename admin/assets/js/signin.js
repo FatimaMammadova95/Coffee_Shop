@@ -17,21 +17,21 @@ Array.prototype.slice.call(forms).forEach(function (form) {
         async function getData() {
           let res = await axios(`${BASE_URL}admin`);
           let data = res.data;
-          return admin = data.find(
+          admin = data.find(
             (admin) =>
               (admin.username == username.value ||
                 admin.email == username.value) &&
               admin.password == password.value
           );
+          if (!admin) {
+            swal("Warning!", "You are not admin!", "warning");
+          } else {
+            console.log(admin.id);
+            localStorage.setItem("admin", admin.id);
+            window.location = "admin.html";
+          }
         }
         getData();
-        if (!admin) {
-        //   alert("You are not admin");
-        } else {
-          console.log(admin.id);
-          localStorage.setItem("admin", admin.id);
-          window.location="admin.html"
-        }
       }
       form.classList.add("was-validated");
     },
