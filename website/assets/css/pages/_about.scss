@@ -14,19 +14,19 @@
         h3 {
           font-size: 18px;
           @include flexbox(flex-start,center);
-          color: #888d9c;
+          color: $color-gray;
           &::before {
             content: " ";
             display: inline-block;
             height: 2px;
             width: 50px;
-            background-color: #5d4335;
+            background-color: $color-brown;
             margin-right: 10px;
           }
         }
         p {
           line-height: 20px;
-          color: #888d9c;
+          color: $color-gray;
         }
       }
       .image {

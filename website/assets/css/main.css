@@ -432,7 +432,7 @@ body::-webkit-scrollbar-thumb {
   width: 55px;
   height: 55px;
   cursor: pointer;
-  background-color: #5de6de;
+  background-color: #c29e7b;
   background-image: linear-gradient(315deg, #5d4335 0%, #c29e7b 74%);
   border: none;
   border-radius: 50%;
@@ -1390,7 +1390,7 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   color: white;
 }
 #social-subscribe .social-subscribe .icons-input .subscribe .input-group .input:focus {
-  border-color: #c29e7b;
+  border-color: #5d4335;
   outline: none;
 }
 #social-subscribe .social-subscribe .icons-input .subscribe .input-group .input:focus-visible {

@@ -9,7 +9,7 @@
       @include flexbox(center,center);      
       flex-direction: column;
       gap: 50px;
-      border-bottom: 1px solid #888d9c;
+      border-bottom: 1px solid $color-gray;
       h1 {
         font-size: 48px;
         text-align: center;
@@ -18,9 +18,9 @@
         display: flex;
         gap: 30px;
         a {
-          color: #888d9c;
+          color: $color-gray;
           &.active {
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid $color-dark;
             padding: 0 0 15px 0;
           }
         }
@@ -36,43 +36,43 @@
         img {
           max-width: 100%;
           height: auto;
-          border-bottom: 1px solid #888d9c;
+          border-bottom: 1px solid $color-gray;
           padding-bottom: 15px;
         }
         h4 {
           font-size: 20px;
-          color: #5d4335;
+          color: $color-brown;
         }
         p{
           font-size: 18px;
         }
       }
       .swiper-button-next {
-        color: #888d9c;
+        color: $color-gray;
         padding: 30px;
-        border: 1px solid #888d9c;
+        border: 1px solid $color-gray;
         border-radius: 50%;
         &:after {
           font-size: 20px;
         }
         &:hover {
-          border-color: #c29e7b;
-          background-color: #c29e7b;
-          color: white;
+          border-color: $color-bisque;
+          background-color: $color-bisque;
+          color: $color-light;
         }
       }
       .swiper-button-prev {
-        color: #888d9c;
+        color: $color-gray;
         padding: 30px;
-        border: 1px solid #888d9c;
+        border: 1px solid $color-gray;
         border-radius: 50%;
         &:after {
           font-size: 20px;
         }
         &:hover {
-          border-color: #c29e7b;
-          background-color: #c29e7b;
-          color: white;
+          border-color: $color-bisque;
+          background-color: $color-bisque;
+          color: $color-light;
         }
       }
     }

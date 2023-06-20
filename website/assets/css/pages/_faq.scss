@@ -7,20 +7,20 @@
     padding: 100px 0;
     @include flexbox(center,center);
     .accordion {
-      --bs-accordion-active-bg: white;
-      --bs-accordion-btn-focus-box-shadow: white;
+      --bs-accordion-active-bg: $color-light;
+      --bs-accordion-btn-focus-box-shadow: $color-light;
       .accordion-item {
         .accordion-header {
           button {
             outline: none;
             padding: 25px 15px;
-            background-color: #5d4335;
-            color: white;
+            background-color: $color-brown;
+            color: $color-light;
             font-size: 18px;
           }
         }
         .accordion-body {
-          border: 1px solid #5d4335;
+          border: 1px solid $color-brown;
           line-height: 20px;
           max-width: 720px;
         }

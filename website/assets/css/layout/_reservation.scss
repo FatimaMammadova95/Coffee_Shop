@@ -11,11 +11,11 @@
       background-size: cover;
       @include flexbox(center,center);
       flex-direction: column;
-      border: 5px dashed #5d4335;
+      border: 5px dashed $color-brown;
       h1 {
         font-size: 48px;
         padding: 0 0 40px 0;
-        color: #5d4335;
+        color: $color-brown;
       }
       form {
         @include flexbox(center,normal);     
@@ -25,7 +25,7 @@
           width: 240px;
           margin: 10px;
           padding: 12px 15px;
-          background: #fff;
+          background: $color-light;
           border-radius: 5px;
           box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
           cursor: pointer;
@@ -35,17 +35,17 @@
           width: 240px;
           margin: 10px;
           padding: 12px 15px;
-          background: #fff;
+          background: $color-light;
           border-radius: 5px;
           box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
           cursor: pointer;
           outline: none;
         }
         .reserve {
-          background-color: #c29e7b;
-          color: #5d4335;
+          background-color: $color-bisque;
+          color: $color-brown;
           font-weight: bold;
-          border-color: #c29e7b;
+          border-color: $color-bisque;
           padding: 15px;
         }
       }

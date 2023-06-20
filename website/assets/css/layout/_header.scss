@@ -14,7 +14,7 @@ header {
         @include flexbox;
         gap: 50px;
         & > li > a {
-          color: #fff;
+          color: $color-light;
           position: relative;
           transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
           transition-duration: 400ms;
@@ -29,7 +29,7 @@ header {
         gap: 25px;
         li {
           .btn {
-            color: white;
+            color: $color-light;
             border: none;
             transition: all 0.5s ease-in-out;
             @include flexbox(flex-start,center);
@@ -66,7 +66,7 @@ header {
             display: none;
             a {
               i {
-                color: #fff;
+                color: $color-light;
               }
             }
           }

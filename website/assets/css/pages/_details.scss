@@ -11,7 +11,7 @@
         .img-magnifier-glass {
           display: none;
           position: absolute;
-          border: 1px solid #000;
+          border: 1px solid $color-dark;
           cursor: none;
           /*Set the size of the magnifier glass:*/
           width: 150px;
@@ -26,11 +26,11 @@
       .information-col {
         h1 {
           font-size: 38px;
-          color: #5d4335;
+          color: $color-brown;
         }
         h2 {
           font-size: 28px;
-          color: #888d9c;
+          color: $color-gray;
         }
         .stars {
           --percent: calc(var(--rating) / 5 * 100%);
@@ -45,7 +45,7 @@
             background: linear-gradient(
               90deg,
               #fc0 var(--percent),
-              #888d9c var(--percent)
+              $color-gray var(--percent)
             );
             background-clip: text;
             color: transparent;
@@ -57,23 +57,23 @@
           padding: 20px 50px;
           border: 1px solid #be9c79;
           background-color: #be9c79;
-          color: #fff;
+          color: $color-light;
         }
         p {
           padding: 5px 0;
-          color: #5d4335;
+          color: $color-brown;
           span {
             font-weight: bold;
             font-size: 18px;
             padding-right: 10px;
-            color: #000;
+            color: $color-dark;
           }
           i {
-            color: #888d9c;
+            color: $color-gray;
             font-size: 20px;
             padding: 0 5px;
             &:hover {
-              color: #c29e7b;
+              color: $color-bisque;
             }
           }
         }
@@ -82,12 +82,12 @@
           .details-link {
             a {
               padding: 10px 15px;
-              background-color: #c29e7b;
-              color: #fff;
+              background-color: $color-bisque;
+              color: $color-light;
             }
           }
           .details-content {
-            border: 1px solid #888d9c;
+            border: 1px solid $color-gray;
             padding: 20px 10px;
           }
         }

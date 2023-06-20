@@ -5,7 +5,7 @@
       display: flex;
       .thanks{
         font-size: 48px;
-        color: #5d4335;
+        color: $color-brown;
         padding: 0 0 50px 0;
         letter-spacing: 5px;
       }
@@ -13,10 +13,10 @@
         .col-12 {
           margin: 10px 0;
           @include flexbox();         
-          border: 1px solid #888d9c;
+          border: 1px solid $color-gray;
           border-radius: 15px;
           padding: 10px 25px;
-          box-shadow: 0px 0px 10px #888d9c;
+          box-shadow: 0px 0px 10px $color-gray;
           .product-about {
             @include flexbox(flex-start,center);
             max-width: 500px;
@@ -28,7 +28,7 @@
               h1{
                 font-size: 20px;
                 font-weight: bold;
-                color: #5d4335 ;
+                color: $color-brown ;
               }
               p{
                 color: #444;
@@ -46,7 +46,7 @@
               }
             }
             a{
-              color: #5d4335;
+              color: $color-brown;
             }
           }
         }
@@ -56,8 +56,8 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
-        border-color: #888d9c;
-        box-shadow: 0px 0px 10px #888d9c;
+        border-color: $color-gray;
+        box-shadow: 0px 0px 10px $color-gray;
         h1 {
           text-align: center;
           font-weight: bold;
@@ -72,14 +72,14 @@
           outline: none;
           @include flexbox(center,center);
           text-transform: uppercase;
-          background-color: #c29e7b;
-          border: 1px solid #c29e7b;
+          background-color: $color-bisque;
+          border: 1px solid $color-bisque;
           border-radius: 10px;
           font-weight: 400;
           overflow: hidden;
           transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
           span {
-            color: #fff;
+            color: $color-light;
             font-size: 14px;
             font-weight: 500;
             letter-spacing: 1px;

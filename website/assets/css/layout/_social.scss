@@ -1,16 +1,16 @@
 #social-subscribe {
-  background: black;
+  background: $color-dark;
   .social-subscribe {
     padding: 50px 0;
     .text {
       h1 {
         font-size: 48px;
-        color: white;
+        color: $color-light;
         text-align: center;
       }
       p {
         font-size: 24px;
-        color: #c29e7b;
+        color: $color-bisque;
         text-align: center;
       }
       @media only screen and (max-width: 991px) {
@@ -50,7 +50,7 @@
             a {
               width: 60px;
               height: 60px;
-              background-color: #fff;
+              background-color: $color-light;
               text-align: center;
               line-height: 60px;
               font-size: 35px;
@@ -59,7 +59,7 @@
               border-radius: 50%;
               position: relative;
               overflow: hidden;
-              border: 3px solid #fff;
+              border: 3px solid $color-light;
               z-index: 1;
               .icon {
                 position: relative;
@@ -69,7 +69,7 @@
               }
               &:hover {
                 .icon {
-                  color: #fff;
+                  color: $color-light;
                   transform: rotateY(360deg);
                 }
                 &::before {
@@ -113,20 +113,20 @@
             min-height: 50px;
             max-width: 500px;
             padding: 0 1rem;
-            color: #fff;
+            color: $color-light;
             font-size: 15px;
-            border: 1px solid #5d4335;
+            border: 1px solid $color-brown;
             border-radius: 6px 0 0 6px;
             background-color: transparent;
             &::placeholder {
-              color: white;
+              color: $color-light;
             }
             &:focus {
-              border-color: #c29e7b;
+              border-color: $color-brown;
               outline: none;
             }
             &:focus-visible {
-              border-color: #c29e7b;
+              border-color: $color-bisque;
               outline: none;
             }
           }
@@ -135,13 +135,13 @@
             padding: 0.5em 1em;
             border: none;
             border-radius: 0 6px 6px 0;
-            background-color: #5d4335;
-            color: #fff;
+            background-color: $color-brown;
+            color: $color-light;
             font-size: 15px;
             cursor: pointer;
             transition: background-color 0.3s ease-in-out;
             &:hover {
-              background-color: #c29e7b;
+              background-color: $color-bisque;
             }
           }
         }

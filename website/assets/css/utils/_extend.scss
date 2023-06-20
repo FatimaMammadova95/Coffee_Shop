@@ -6,20 +6,20 @@
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: #fff;
+    background-color: $color-light;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, left;
   }
   &:hover {
-    color: #fff;
+    color: $color-light;
     &:after {
       width: 100%;
       left: 0%;
     }
   }
   &:focus{
-    color: #fff;
+    color: $color-light;
     &:after{
       width: 100%;
       left: 0%;
@@ -87,22 +87,22 @@
     margin-top: 20px;
     position: relative;
     padding: 15px 45px;
-    background: #c29e7b;
+    background: $color-bisque;
     font-size: 18px;
     font-weight: bold;
-    color: black;
-    border: 1px solid #c29e7b;
+    color: $color-dark;
+    border: 1px solid $color-bisque;
     border-radius: 8px;
     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
     &:hover {
-      border: 1px solid #c29e7b;
+      border: 1px solid $color-bisque;
       background: linear-gradient(
         85deg,
-        #c29e7b,
-        #c29e7b,
-        #c29e7b,
-        #c29e7b,
-        #c29e7b
+        $color-bisque,
+        $color-bisque,
+        $color-bisque,
+        $color-bisque,
+        $color-bisque
       );
       animation: wind 2s ease-in-out infinite;
       .icon-1 {
@@ -217,7 +217,7 @@
       background: linear-gradient(
         90deg,
         #fc0 var(--percent),
-        #fff var(--percent)
+        $color-light var(--percent)
       );
       background-clip: text;
       color: transparent;

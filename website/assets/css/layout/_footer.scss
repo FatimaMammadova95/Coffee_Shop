@@ -1,11 +1,11 @@
 footer {
-  background-color: #5d4335;
+  background-color: $color-brown;
   .footer {
     .up-footer {
       padding: 100px 0;
-      border-bottom: 1px solid #c29e7b;
+      border-bottom: 1px solid $color-bisque;
       ul {
-        color: #c29e7b;
+        color: $color-bisque;
         font-size: 24px;
         padding: 20px 0;
         li {
@@ -14,7 +14,7 @@ footer {
             padding-top: 10px;
           }
           a {
-            color: white;
+            color: $color-light;
             font-size: 16px;
           }
           &.opening {
@@ -54,7 +54,7 @@ footer {
     }
     .down-footer {
       padding: 25px;
-      color: #c29e7b;
+      color: $color-bisque;
       text-align: center;
       @media only screen and (max-width: 991px) {
         font-size: 14px;

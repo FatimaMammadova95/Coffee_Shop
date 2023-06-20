@@ -13,13 +13,13 @@
   width: 55px;
   height: 55px;
   cursor: pointer;
-  background-color: #5de6de;
-  background-image: linear-gradient(315deg, #5d4335 0%, #c29e7b 74%);
+  background-color: $color-bisque;
+  background-image: linear-gradient(315deg, $color-brown 0%, $color-bisque 74%);
   border: none;
   border-radius: 50%;
   transition: 200ms;
   svg {
-    fill: white;
+    fill: $color-light;
     width: 30px;
     height: 30px;
     position: absolute;

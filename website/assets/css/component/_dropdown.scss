@@ -1,8 +1,8 @@
 .dropdown-header {
   .dropdown-toggle {
-    color: #fff;
+    color: $color-light;
     background-color: transparent;
-    border-color: #fff;
+    border-color: $color-light;
     border-style: solid;
     border-top: none;
     border-right: none;
@@ -13,18 +13,18 @@
     @extend %hover;
   }
   .dropdown-menu {
-    background-color: #0000005a;
+    background-color: $color-dark0005a;
     & > li > a {
       font-size: 15px;
       @include flexbox(flex-start,center);
       background-color: transparent;
-      color: #fff;
+      color: $color-light;
       cursor: pointer;
       outline: 0;
       border: 0;
       padding: 10px 5px;
       &:before {
-        background-color: #fff;
+        background-color: $color-light;
         content: "";
         display: inline-block;
         height: 1px;
@@ -35,7 +35,7 @@
       &:hover {
         background-color: transparent;
         &::before {
-          background-color: #fff;
+          background-color: $color-light;
           width: 1rem;
         }
       }

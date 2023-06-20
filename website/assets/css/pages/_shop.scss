@@ -6,7 +6,7 @@
         @include flexbox();
         .sort {
           .dropdown-menu {
-            background-color: white;
+            background-color: $color-light;
           }
         }
       }
@@ -26,11 +26,11 @@
         background: transparent;
         position: relative;
         z-index: 2;
-        color: #fff;
+        color: $color-light;
         perspective: 300px;
         transform-style: preserve-3d;
         &:hover {
-          color: #5d4335;
+          color: $color-brown;
           &::after {
             transform: rotateX(-180deg);
           }
@@ -42,7 +42,7 @@
           left: 0;
           width: 100%;
           height: 100%;
-          background: #5d4335;
+          background: $color-brown;
           z-index: -1;
           transform-origin: center bottom;
           transform: rotateX(0);
@@ -60,14 +60,14 @@
           height: 10px;
           width: 100%;
           border-radius: 15px;
-          border: 1px solid #5d4335;
+          border: 1px solid $color-brown;
           .progress {
             position: absolute;
             left: 0%;
             right: 75%;
             height: 100%;
             border-radius: 15px;
-            background-color: #5d4335;
+            background-color: $color-brown;
           }
           input[type="range"] {
             position: absolute;
@@ -82,7 +82,7 @@
               -webkit-appearance: none;
               width: 15px;
               height: 15px;
-              background: #5d4335 0% 0% no-repeat padding-box;
+              background: $color-brown 0% 0% no-repeat padding-box;
               border-radius: 50%;
               opacity: 1;
               cursor: pointer;
@@ -92,7 +92,7 @@
               -webkit-appearance: none;
               width: 15px;
               height: 15px;
-              background: #5d4335 0% 0% no-repeat padding-box;
+              background: $color-brown 0% 0% no-repeat padding-box;
               border-radius: 50%;
               opacity: 1;
               cursor: pointer;
@@ -104,7 +104,7 @@
           @include flexbox();
           .numberVal {
             input {
-              color: #5d4335;
+              color: $color-brown;
               border: none;
               background-color: transparent;
             }
@@ -126,7 +126,7 @@
           li {
             padding: 5px 0;
             a {
-              color: #888d9c;
+              color: $color-gray;
             }
           }
         }
@@ -139,7 +139,7 @@
         p {
           line-height: 24px;
           a {
-            color: #888d9c;
+            color: $color-gray;
           }
         }
       }

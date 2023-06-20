@@ -4,7 +4,7 @@
       text-align: center;
       font-size: 48px;
       padding: 20px 0;
-      color: #5d4335;
+      color: $color-brown;
     }
     .row {
       & > * {
@@ -19,14 +19,14 @@
             display: flex;
             h1 {
               font-size: 28px;
-              color: #5d4335;
+              color: $color-brown;
             }
             .line {
               flex-grow: 1;
               border-bottom: 3px dotted #dadada;
             }
             .price {
-              color: #5d4335;
+              color: $color-brown;
             }
           }
           .description {
