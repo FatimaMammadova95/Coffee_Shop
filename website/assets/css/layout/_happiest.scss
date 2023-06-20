@@ -14,8 +14,27 @@
       color: white;
       padding: 20px;
     }
+    @media only screen and (max-width: 991px) {
+      padding: 40px 0;
+      p{
+        font-size: 14px;
+        padding: 15px;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      padding: 20px 0;
+      p{
+        font-size: 12px;
+        padding: 10px;
+      }
+    }
+    @media only screen and (max-width: 575px) {
+      padding: 10px 0;
+      p{
+        font-size: 10px;
+        padding:  5px;
+      }
+    }
   }
-  @media only screen and (max-width: 991px) {
-    background-position: left center;
-  }
+
 }

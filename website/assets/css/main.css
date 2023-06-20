@@ -711,8 +711,30 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   padding: 20px;
 }
 @media only screen and (max-width: 991px) {
-  #happiest {
-    background-position: left center;
+  #happiest .happiest {
+    padding: 40px 0;
+  }
+  #happiest .happiest p {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #happiest .happiest {
+    padding: 20px 0;
+  }
+  #happiest .happiest p {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #happiest .happiest {
+    padding: 10px 0;
+  }
+  #happiest .happiest p {
+    font-size: 10px;
+    padding: 5px;
   }
 }
 
