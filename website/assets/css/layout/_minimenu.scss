@@ -7,7 +7,7 @@
       color: #5d4335;
     }
     .row {
-      &>*{
+      & > * {
         padding: 0;
       }
       .col-lg-6 {
@@ -39,6 +39,71 @@
           width: 100%;
           height: fit-content;
           padding: 5px;
+        }
+      }
+    }
+    @media only screen and (max-width: 991px) {
+      .our-menu {
+        font-size: 42px;
+      }
+      .row {
+        .col-lg-6 {
+          padding: 20px 0;
+          .col-12 {
+            padding: 20px;
+            max-width: 100%;
+            .coffee-name {
+              h1 {
+                font-size: 24px;
+              }
+            }
+            .description {
+              padding: 10px 0;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .our-menu {
+        font-size: 36px;
+      }
+      .row {
+        .col-lg-6 {
+          padding: 15px 0;
+          .col-12 {
+            padding: 15px;
+            .coffee-name {
+              h1 {
+                font-size: 22px;
+              }
+            }
+            .description {
+              padding: 8px 0;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 575px) {
+      .our-menu {
+        font-size: 28px;
+      }
+      .row {
+        .col-lg-6 {
+          padding: 10px;
+          .col-12 {
+            padding: 10px;
+            .coffee-name {
+              h1 {
+                font-size: 20px;
+              }
+            }
+            .description {
+              font-size: 12px;
+              padding: 5px 0;
+            }
+          }
         }
       }
     }

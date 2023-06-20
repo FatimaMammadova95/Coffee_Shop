@@ -936,6 +936,59 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   height: fit-content;
   padding: 5px;
 }
+@media only screen and (max-width: 991px) {
+  #mini-menu .mini-menu .our-menu {
+    font-size: 42px;
+  }
+  #mini-menu .mini-menu .row .col-lg-6 {
+    padding: 20px 0;
+  }
+  #mini-menu .mini-menu .row .col-lg-6 .col-12 {
+    padding: 20px;
+    max-width: 100%;
+  }
+  #mini-menu .mini-menu .row .col-lg-6 .col-12 .coffee-name h1 {
+    font-size: 24px;
+  }
+  #mini-menu .mini-menu .row .col-lg-6 .col-12 .description {
+    padding: 10px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #mini-menu .mini-menu .our-menu {
+    font-size: 36px;
+  }
+  #mini-menu .mini-menu .row .col-lg-6 {
+    padding: 15px 0;
+  }
+  #mini-menu .mini-menu .row .col-lg-6 .col-12 {
+    padding: 15px;
+  }
+  #mini-menu .mini-menu .row .col-lg-6 .col-12 .coffee-name h1 {
+    font-size: 22px;
+  }
+  #mini-menu .mini-menu .row .col-lg-6 .col-12 .description {
+    padding: 8px 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #mini-menu .mini-menu .our-menu {
+    font-size: 28px;
+  }
+  #mini-menu .mini-menu .row .col-lg-6 {
+    padding: 10px;
+  }
+  #mini-menu .mini-menu .row .col-lg-6 .col-12 {
+    padding: 10px;
+  }
+  #mini-menu .mini-menu .row .col-lg-6 .col-12 .coffee-name h1 {
+    font-size: 20px;
+  }
+  #mini-menu .mini-menu .row .col-lg-6 .col-12 .description {
+    font-size: 12px;
+    padding: 5px 0;
+  }
+}
 
 #social-subscribe {
   background: black;
