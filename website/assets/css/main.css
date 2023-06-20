@@ -820,7 +820,7 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
     font-size: 30px;
   }
   #product .product .heading .links a {
-    font-size: 12px;
+    font-size: 11px;
   }
   #product .product #product-swiper .swiper-slide {
     gap: 10px;
@@ -931,6 +931,23 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   color: #c29e7b;
   text-align: center;
 }
+@media only screen and (max-width: 991px) {
+  #social-subscribe .social-subscribe .text h1 {
+    font-size: 40px;
+  }
+  #social-subscribe .social-subscribe .text p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #social-subscribe .social-subscribe .text h1 {
+    font-size: 36px;
+  }
+  #social-subscribe .social-subscribe .text p {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
 #social-subscribe .social-subscribe .icons-input {
   padding: 25px 0;
   display: flex;
@@ -945,7 +962,7 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   height: 60px;
   background-color: #fff;
   text-align: center;
-  line-height: 0px;
+  line-height: 60px;
   font-size: 35px;
   margin: 0 10px;
   display: block;
