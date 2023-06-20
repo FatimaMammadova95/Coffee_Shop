@@ -27,21 +27,23 @@ footer {
         }
       }
       @media only screen and (max-width: 991px) {
-        padding: 70px 0;
+        padding: 50px 0;
         flex-direction: column;
       }
       @media only screen and (max-width: 767px) {
-        padding: 50px 0;
-        flex-direction: column;
-        ul{
-          font-size: 20px;
-        }
-      }
-      @media only screen and (max-width: 575px) {
         padding: 30px 0;
         flex-direction: column;
         ul{
+          font-size: 20px;
+          padding: 15px;
+        }
+      }
+      @media only screen and (max-width: 575px) {
+        padding: 10px 0;
+        flex-direction: column;
+        ul{
           font-size: 16px;
+          padding: 5px;
           li{
             a{
               font-size: 12px;

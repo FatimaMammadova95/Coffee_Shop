@@ -39,6 +39,7 @@
         @media only screen and (max-width: 991px) {
           height: 100%;
           gap: 25px;
+          padding: 100px 0;
           .emblem {
             max-width: 150px;
             max-height: 150px;
@@ -52,6 +53,7 @@
         }
         @media only screen and (max-width: 767px) {
           gap: 15px;
+          padding: 50px 0;
           .emblem {
             max-width: 100px;
             max-height: 100px;
@@ -66,9 +68,15 @@
       }
       .swiper-button-next {
         color: white;
+        @media only screen and (max-width: 575px) {
+          display: none;
+        }
       }
       .swiper-button-prev {
         color: white;
+        @media only screen and (max-width: 575px) {
+          display: none;
+        }
       }
     }
   }
