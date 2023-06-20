@@ -12,7 +12,7 @@ function getData() {
   price = 0;
   basket.forEach((element) => {
     row.innerHTML += `
-    <div class="col-12">
+    <div class="col col-12">
     <div class="product-about">
       <img src=${element.product.image} alt="" />
       <div class="product-text">

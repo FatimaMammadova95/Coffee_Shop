@@ -30,7 +30,7 @@ function createCard(arr) {
   row.innerHTML = "";
   arr.forEach((element) => {
     row.innerHTML += `
-      <div class="col-12 col-md-6 col-lg-4">
+      <div class="col col-12 col-md-6 col-lg-4">
        <div class="card">
          <div class="card card-image">
            <img

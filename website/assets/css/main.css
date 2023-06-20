@@ -120,12 +120,12 @@ body::-webkit-scrollbar-thumb {
   left: 0%;
 }
 
-#favorite .favorite .card-row .col-12 .card .bookmark, #products .products .col-9 .product-cards .col-12 .card .bookmark {
+#favorite .favorite .card-row .col .card .bookmark, #products .products .col-9 .product-cards .col .card .bookmark {
   position: absolute;
   top: 20px;
   right: 40px;
 }
-#favorite .favorite .card-row .col-12 .card .bookmark .fav, #products .products .col-9 .product-cards .col-12 .card .bookmark .fav {
+#favorite .favorite .card-row .col .card .bookmark .fav, #products .products .col-9 .product-cards .col .card .bookmark .fav {
   height: 10px;
   width: 20px;
   -webkit-appearance: none;
@@ -143,10 +143,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 3px 3px 0 0;
   transition: 0.3s;
 }
-#favorite .favorite .card-row .col-12 .card .bookmark .fav:focus, #products .products .col-9 .product-cards .col-12 .card .bookmark .fav:focus {
+#favorite .favorite .card-row .col .card .bookmark .fav:focus, #products .products .col-9 .product-cards .col .card .bookmark .fav:focus {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
 }
-#favorite .favorite .card-row .col-12 .card .bookmark .fav:before, #products .products .col-9 .product-cards .col-12 .card .bookmark .fav:before {
+#favorite .favorite .card-row .col .card .bookmark .fav:before, #products .products .col-9 .product-cards .col .card .bookmark .fav:before {
   content: "";
   position: absolute;
   height: 0;
@@ -156,7 +156,7 @@ body::-webkit-scrollbar-thumb {
   bottom: -20px;
   transition: 0.3s;
 }
-#favorite .favorite .card-row .col-12 .card .bookmark .fav:after, #products .products .col-9 .product-cards .col-12 .card .bookmark .fav:after {
+#favorite .favorite .card-row .col .card .bookmark .fav:after, #products .products .col-9 .product-cards .col .card .bookmark .fav:after {
   content: "";
   position: absolute;
   height: 0;
@@ -167,13 +167,13 @@ body::-webkit-scrollbar-thumb {
   right: 0;
   transition: 0.3s;
 }
-#favorite .favorite .card-row .col-12 .card .bookmark .fav:checked, #products .products .col-9 .product-cards .col-12 .card .bookmark .fav:checked {
+#favorite .favorite .card-row .col .card .bookmark .fav:checked, #products .products .col-9 .product-cards .col .card .bookmark .fav:checked {
   background-color: #ffc64c;
 }
-#favorite .favorite .card-row .col-12 .card .bookmark .fav:checked::before, #products .products .col-9 .product-cards .col-12 .card .bookmark .fav:checked::before {
+#favorite .favorite .card-row .col .card .bookmark .fav:checked::before, #products .products .col-9 .product-cards .col .card .bookmark .fav:checked::before {
   border-top-color: #ffc64c;
 }
-#favorite .favorite .card-row .col-12 .card .bookmark .fav:checked::after, #products .products .col-9 .product-cards .col-12 .card .bookmark .fav:checked::after {
+#favorite .favorite .card-row .col .card .bookmark .fav:checked::after, #products .products .col-9 .product-cards .col .card .bookmark .fav:checked::after {
   border-top-color: #ffc64c;
 }
 
@@ -281,14 +281,14 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-#favorite .favorite .card-row .col-12 .card .card-text .stars, #products .products .col-9 .product-cards .col-12 .card .card-text .stars {
+#favorite .favorite .card-row .col .card .card-text .stars, #products .products .col-9 .product-cards .col .card .card-text .stars {
   --percent: calc(var(--rating) / 5 * 100%);
   display: inline-block;
   font-size: 25px;
   font-family: Times;
   line-height: 1;
 }
-#favorite .favorite .card-row .col-12 .card .card-text .stars::before, #products .products .col-9 .product-cards .col-12 .card .card-text .stars::before {
+#favorite .favorite .card-row .col .card .card-text .stars::before, #products .products .col-9 .product-cards .col .card .card-text .stars::before {
   content: "★★★★★";
   letter-spacing: 3px;
   background: linear-gradient(90deg, #fc0 var(--percent), #fff var(--percent));
@@ -298,33 +298,33 @@ body::-webkit-scrollbar-thumb {
   -webkit-text-fill-color: transparent;
 }
 
-#favorite .favorite .card-row .col-12, #products .products .col-9 .product-cards .col-12 {
+#favorite .favorite .card-row .col, #products .products .col-9 .product-cards .col {
   padding: 10px;
 }
-#favorite .favorite .card-row .col-12 .card, #products .products .col-9 .product-cards .col-12 .card {
+#favorite .favorite .card-row .col .card, #products .products .col-9 .product-cards .col .card {
   background-color: rgba(194, 159, 123, 0.2549019608);
   padding: 10px;
   position: relative;
 }
-#favorite .favorite .card-row .col-12 .card .card-image, #products .products .col-9 .product-cards .col-12 .card .card-image {
+#favorite .favorite .card-row .col .card .card-image, #products .products .col-9 .product-cards .col .card .card-image {
   border: none;
   transition: transform 5s ease;
 }
-#favorite .favorite .card-row .col-12 .card .card-text, #products .products .col-9 .product-cards .col-12 .card .card-text {
+#favorite .favorite .card-row .col .card .card-text, #products .products .col-9 .product-cards .col .card .card-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
-#favorite .favorite .card-row .col-12 .card .add, #products .products .col-9 .product-cards .col-12 .card .add {
+#favorite .favorite .card-row .col .card .add, #products .products .col-9 .product-cards .col .card .add {
   font-size: 22px;
   color: #e5e5e5;
   position: absolute;
   top: 60px;
   right: 18px;
 }
-#favorite .favorite .card-row .col-12 .card:hover img, #products .products .col-9 .product-cards .col-12 .card:hover img {
+#favorite .favorite .card-row .col .card:hover img, #products .products .col-9 .product-cards .col .card:hover img {
   transform: scale(1.1);
 }
 
@@ -2014,6 +2014,39 @@ footer .footer .down-footer {
 #signin .signin form input:focus {
   outline-color: #c29e7b;
   box-shadow: 0px 0px 20px #c29e7b;
+}
+@media only screen and (max-width: 991px) {
+  #signin .signin {
+    padding: 80px 0;
+  }
+  #signin .signin h1 {
+    font-size: 40px;
+  }
+  #signin .signin p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #signin .signin {
+    padding: 50px 0;
+  }
+  #signin .signin h1 {
+    font-size: 36px;
+  }
+  #signin .signin p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #signin .signin {
+    padding: 25px 0;
+  }
+  #signin .signin h1 {
+    font-size: 30px;
+  }
+  #signin .signin p {
+    font-size: 14px;
+  }
 }
 
 #favorite .favorite .sort-search {
