@@ -1,61 +1,50 @@
 #favorite{
     .favorite{
-      .col-12 {
-        padding: 10px;
-        .card {
-          background-color: #c29f7b41;
+      .sort-search{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+      }
+      .card-row{
+        .col-12 {
           padding: 10px;
-          position: relative;
-          .card-image {
+          .card {
+            background-color: #c29f7b41;
+            padding: 10px;
             position: relative;
-            border: none;
-            .add {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              border: 1px solid #c29e7b;
-              background-color: #c29e7b;
-              color: white;
-              font-size: 20px;
-              padding: 10px;
-              width: fit-content;
-              display: none;
-            }
-          }
-          .card-text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 5px;
-            .stars {
-              --percent: calc(var(--rating) / 5 * 100%);
-              display: inline-block;
-              font-size: 25px;
-              font-family: Times; // make sure ★ appears correctly
-              line-height: 1;
-
-              &::before {
-                content: "★★★★★";
-                letter-spacing: 3px;
-                background: linear-gradient(
-                  90deg,
-                  #fc0 var(--percent),
-                  #fff var(--percent)
-                );
-                background-clip: text;
-                color: transparent;
-                -webkit-text-fill-color: transparent;
+            .card-image {
+              position: relative;
+              border: none;
+              .add {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 1px solid #c29e7b;
+                background-color: #c29e7b;
+                color: white;
+                font-size: 20px;
+                padding: 10px;
+                width: fit-content;
+                display: none;
               }
             }
-          }
-          @extend %bookmark;
-          &:hover img {
-            opacity: 0.4;
-          }
-          &:hover .add {
-            display: block;
+            .card-text {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: 5px;
+              @extend %stars;
+            }
+            @extend %bookmark;
+            &:hover img {
+              opacity: 0.4;
+            }
+            &:hover .add {
+              display: block;
+            }
           }
         }
       }
