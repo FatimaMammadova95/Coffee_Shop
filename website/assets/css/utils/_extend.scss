@@ -225,3 +225,38 @@
     }
   }
 }
+
+%card{
+.col-12 {
+  padding: 10px;
+  .card {
+    background-color: #c29f7b41;
+    padding: 10px;
+    position: relative;
+    .card-image {
+      border: none;
+      transition: transform 5s ease;              
+    }
+    .card-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      @extend %stars;
+    }
+    @extend %bookmark;
+    .add{             
+      font-size: 22px;
+      color: #e5e5e5;
+      position: absolute;
+      top: 60px;
+      right: 18px;
+    }
+    &:hover img {
+      transform: scale(1.1);
+    }            
+  }
+}
+}
+

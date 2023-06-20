@@ -1,46 +1,75 @@
 const BASE_URL = "http://localhost:8080/";
 
 let row = document.querySelector(".card-row");
+let searchInput = document.querySelector("#search");
+let sortItem = document.querySelectorAll(".sort-item");
 
 let account = localStorage.getItem("account");
 let favorited = JSON.parse(localStorage.getItem("favorited"));
 let basket = JSON.parse(localStorage.getItem("basket")) ?? [];
 
-function createCard() {
+let copyArr = searchInput.value ? copyArr : favorited;
+
+
+function createCard(arr) {
   row.innerHTML = "";
-  favorited.forEach((element) => {
+  arr.forEach((element) => {
     row.innerHTML += `
-      <div class="col-12 col-md-6 col-lg-3">
+      <div class="col-12 col-md-6 col-lg-4">
        <div class="card">
          <div class="card card-image">
            <img
             src="${element.image}"
             alt=""
-           />
-           <a href="#" class="add" onclick=basketFunc(${
-             element.id
-           })>Add to Basket</a>
+           />           
          </div>
-         <div class="card-text">
+         <div class="card-text" onclick=details(${element.id}) >
           <h1>${element.name}</h1>
           <div class="stars" style="--rating: ${element.rating}"></div>
           <div class="price">${element.price}$</div>
-         </div>
+         </div>         
          <div class="bookmark">
           <input type="checkbox" class="fav" onclick=favFunc(${
             element.id
-          },this) ${
-      favorited.find((item) => item.id === element.id) ? "checked" : ""
-    }>
+          },this) 
+          ${favorited.find((item) => item.id === element.id) ? "checked" : ""}>
          </div>
+         <a href="#product" class="add" onclick=basketFunc(${element.id})><i class="fa-solid fa-basket-shopping"></i></a>
+              
         </div>
       </div>
           `;
   });
 }
 if (account) {
-  createCard();
+  createCard(favorited);
 }
+
+//Sort
+sortItem.forEach((sort) => {
+  sort.addEventListener("click", function () {
+    sorted = true;
+    if (sort.innerHTML == "Sort by price: low to high") {
+      copyArr = favorited.toSorted((a, b) => a.price - b.price);
+    } else if (sort.innerHTML == "Sort by price: high to low") {
+      copyArr = favorited.toSorted((a, b) => b.price - a.price);
+    } else if (sort.innerHTML == "Sort by popularity") {
+      copyArr = favorited.toSorted((a, b) => b.rating - a.rating);
+    } else {
+      copyArr = favorited;
+    }
+    createCard(copyArr);
+  });
+});
+
+// Search
+searchInput.addEventListener("input", function (e) {
+  copyArr =  favorited;
+  copyArr = copyArr.filter((item) =>
+    item.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
+  );
+  createCard(copyArr);
+});
 
 async function favFunc(id, fav) {
   if (!fav.checked) {
@@ -50,15 +79,29 @@ async function favFunc(id, fav) {
     favorited.push(res.data);
   }
   localStorage.setItem("favorited", JSON.stringify(favorited));
-  createCard();
+  createCard(favorited);
 }
 
 async function basketFunc(id) {
-  if (basket.find((item) => item.id == id)) {
-    alert("Baskette var");
-  } else {
+  if (account) {
     let res = await axios(`${BASE_URL}product/${id}`);
-    basket.push(res.data);
+    if (basket.find((item) => item.product.id == id)) {
+      let obj = basket.find((item) => item.product.id == id);
+      obj.count += 1;
+      console.log(basket);
+      console.log(obj);
+    } else {
+      let obj = {
+        count: 1,
+        product: res.data,
+      };
+      basket.push(obj);
+    }
     localStorage.setItem("basket", JSON.stringify(basket));
+  } else {
+    alert("Hesaba daxil ol");
   }
+}
+function details(id){
+  window.location=`details.html?id=${id}`
 }
