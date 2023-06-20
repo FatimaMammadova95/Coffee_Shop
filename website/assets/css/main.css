@@ -1555,6 +1555,30 @@ footer .footer .down-footer {
   color: white;
   text-align: center;
 }
+@media only screen and (max-width: 991px) {
+  #page-heading {
+    padding: 150px 0;
+  }
+  #page-heading .page-heading h1 {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #page-heading {
+    padding: 100px 0;
+  }
+  #page-heading .page-heading h1 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #page-heading {
+    padding: 50px 0;
+  }
+  #page-heading .page-heading h1 {
+    font-size: 20px;
+  }
+}
 
 #products .products {
   padding: 50px 0;
