@@ -935,11 +935,11 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   display: flex;
 }
 #social-subscribe .social-subscribe .icons-input .social ul li a {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background-color: #fff;
   text-align: center;
-  line-height: 80px;
+  line-height: 0px;
   font-size: 35px;
   margin: 0 10px;
   display: block;
