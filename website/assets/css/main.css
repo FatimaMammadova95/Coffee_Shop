@@ -623,6 +623,9 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   display: flex;
   justify-content: center;
 }
+#capabilities .capabilities .row > * {
+  padding: 0;
+}
 #capabilities .capabilities .row .text-col {
   display: flex;
   flex-direction: column;
@@ -878,6 +881,9 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   font-size: 48px;
   padding: 20px 0;
   color: #5d4335;
+}
+#mini-menu .mini-menu .row > * {
+  padding: 0;
 }
 #mini-menu .mini-menu .row .col-lg-6 {
   padding: 20px 0;

@@ -2,6 +2,9 @@
   padding: 100px 0;
   .capabilities {
     .row {
+      &>*{
+        padding: 0;
+      }
       display: flex;
       justify-content: center;
       .text-col {
