@@ -1145,6 +1145,7 @@ footer .footer .up-footer ul li a {
 footer .footer .up-footer ul li.opening a {
   display: flex;
   justify-content: space-between;
+  padding-right: 10px;
 }
 @media only screen and (max-width: 991px) {
   footer .footer .up-footer {
