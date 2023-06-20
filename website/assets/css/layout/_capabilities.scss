@@ -16,13 +16,12 @@
         #row {
           display: flex;
           flex-wrap: nowrap;
-          // margin: 0 70px;
           img {
             width: fit-content;
             height: fit-content;
           }
           .text {
-            max-width: 280px;
+            max-width: 250px;
             h1 {
               font-weight: bold;
               letter-spacing: 2px;

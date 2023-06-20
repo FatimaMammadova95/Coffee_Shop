@@ -2,15 +2,12 @@
   text-decoration: none !important;
   box-sizing: border-box;
 }
-// .container {
-//   max-width: 1200px;
-//   padding: 0 5%;
-//   margin: auto;
-// }
+
 
 // Scroll-bar Design
 
 html {
+  scroll-behavior: smooth;
   --scrollbarBG: #fff;
   --thumbBG: #5d4335;
 }
