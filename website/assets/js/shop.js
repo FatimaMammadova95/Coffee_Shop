@@ -31,29 +31,27 @@ function createCard(arr) {
   arr.forEach((element) => {
     row.innerHTML += `
       <div class="col-12 col-md-6 col-lg-4">
-       <a href="details.html?id=${element.id}" class="card">
+       <div onclick=details(${element.id}) class="card">
          <div class="card card-image">
            <img
             src="${element.image}"
             alt=""
-           />
-           <a href="#" class="add" onclick=basketFunc(${
-             element.id
-           })>Add to Basket</a>
+           />           
          </div>
          <div class="card-text">
           <h1>${element.name}</h1>
           <div class="stars" style="--rating: ${element.rating}"></div>
           <div class="price">${element.price}$</div>
-         </div>
+         </div>         
          <div class="bookmark">
           <input type="checkbox" class="fav" onclick=favFunc(${
             element.id
-          },this) ${
-      favorited.find((item) => item.id === element.id) ? "checked" : ""
-    }>
+          },this) 
+          ${favorited.find((item) => item.id === element.id) ? "checked" : ""}>
          </div>
-        </a>
+         <a href="#product" class="add" onclick=basketFunc(${element.id})><i class="fa-solid fa-basket-shopping"></i></a>
+              
+        </div>
       </div>
           `;
   });
@@ -194,4 +192,8 @@ async function basketFunc(id) {
   } else {
     alert("Hesaba daxil ol");
   }
+}
+
+function details(id){
+  window.location=`details.html?id=${id}`
 }

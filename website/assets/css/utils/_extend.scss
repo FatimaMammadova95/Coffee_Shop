@@ -203,3 +203,25 @@
     }
   }
 }
+%stars{
+  .stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    display: inline-block;
+    font-size: 25px;
+    font-family: Times; // make sure ★ appears correctly
+    line-height: 1;
+
+    &::before {
+      content: "★★★★★";
+      letter-spacing: 3px;
+      background: linear-gradient(
+        90deg,
+        #fc0 var(--percent),
+        #fff var(--percent)
+      );
+      background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

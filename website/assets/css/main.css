@@ -280,6 +280,23 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+#products .products .col-9 .product-cards .col-12 .card .card-text .stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: 25px;
+  font-family: Times;
+  line-height: 1;
+}
+#products .products .col-9 .product-cards .col-12 .card .card-text .stars::before {
+  content: "★★★★★";
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #fc0 var(--percent), #fff var(--percent));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 .dropdown .dropdown-toggle {
   color: #fff;
   background-color: transparent;
@@ -1153,22 +1170,8 @@ footer .footer .down-footer {
   position: relative;
 }
 #products .products .col-9 .product-cards .col-12 .card .card-image {
-  position: relative;
   border: none;
-}
-#products .products .col-9 .product-cards .col-12 .card .card-image .add {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid #c29e7b;
-  background-color: #c29e7b;
-  color: white;
-  font-size: 20px;
-  padding: 10px;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: none;
+  transition: transform 5s ease;
 }
 #products .products .col-9 .product-cards .col-12 .card .card-text {
   display: flex;
@@ -1177,27 +1180,15 @@ footer .footer .down-footer {
   align-items: center;
   gap: 5px;
 }
-#products .products .col-9 .product-cards .col-12 .card .card-text .stars {
-  --percent: calc(var(--rating) / 5 * 100%);
-  display: inline-block;
-  font-size: 25px;
-  font-family: Times;
-  line-height: 1;
-}
-#products .products .col-9 .product-cards .col-12 .card .card-text .stars::before {
-  content: "★★★★★";
-  letter-spacing: 3px;
-  background: linear-gradient(90deg, #fc0 var(--percent), #fff var(--percent));
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+#products .products .col-9 .product-cards .col-12 .card .add {
+  font-size: 22px;
+  color: #e5e5e5;
+  position: absolute;
+  top: 60px;
+  right: 18px;
 }
 #products .products .col-9 .product-cards .col-12 .card:hover img {
-  opacity: 0.4;
-}
-#products .products .col-9 .product-cards .col-12 .card:hover .add {
-  display: block;
+  transform: scale(1.1);
 }
 #products .products .col-9 .load-more {
   margin-top: 20px;
