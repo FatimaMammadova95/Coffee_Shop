@@ -47,7 +47,6 @@ async function getData() {
 }
 getData();
 
-// Search
 searchInput.addEventListener("input", function (e) {
   copyArr = sortedArr.length ? sortedArr : dataArr;
   copyArr = copyArr.filter((item) =>

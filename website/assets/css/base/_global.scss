@@ -1,15 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Mono&display=swap");
+
 * {
   text-decoration: none !important;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif !important;
 }
 
 
-// Scroll-bar Design
-
 html {
   scroll-behavior: smooth;
-  --scrollbarBG: #fff;
-  --thumbBG: #5d4335;
+  --scrollbarBG: $color-light;
+  --thumbBG: $color-brown;
 }
 body::-webkit-scrollbar {
   width: 11px;
@@ -27,9 +28,8 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid var(--scrollbarBG);
 }
 
-// Selected text design
 
 ::selection {
-  background: #5d4335;
-  color: #fff;
+  background: $color-brown;
+  color: $color-light;
 }

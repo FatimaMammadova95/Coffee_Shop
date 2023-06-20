@@ -208,7 +208,7 @@
     --percent: calc(var(--rating) / 5 * 100%);
     display: inline-block;
     font-size: 25px;
-    font-family: Times; // make sure ★ appears correctly
+    font-family: Times; 
     line-height: 1;
 
     &::before {

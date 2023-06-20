@@ -25,7 +25,6 @@ async function getData() {
 }
 getData();
 
-// Chart
 const xValues1 = [
   "January",
   "February",

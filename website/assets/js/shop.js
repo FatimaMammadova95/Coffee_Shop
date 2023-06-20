@@ -72,7 +72,6 @@ function sliceArr(arr) {
   return arr.slice(0, max);
 }
 
-//Load More
 load.addEventListener("click", function () {
   max = max + 3;
   productInterval.innerHTML = `1-${max}`;
@@ -87,7 +86,6 @@ load.addEventListener("click", function () {
   }
 });
 
-//Sort
 sortItem.forEach((sort) => {
   sort.addEventListener("click", function () {
     sorted = true;
@@ -104,7 +102,6 @@ sortItem.forEach((sort) => {
   });
 });
 
-// Search
 searchInput.addEventListener("input", function (e) {
   load.style.display = "block";
   copyArr = sortedArr.length ? sortedArr : dataArr;
@@ -114,7 +111,6 @@ searchInput.addEventListener("input", function (e) {
   createCard(sliceArr(copyArr));
 });
 
-// Categories
 categories.forEach((category) => {
   category.addEventListener("click", function () {
     copyArr = dataArr.filter(
@@ -124,7 +120,6 @@ categories.forEach((category) => {
   });
 });
 
-// Tags
 tags.forEach((tag) => {
   tag.addEventListener("click", function (e) {
     e.preventDefault();
@@ -135,7 +130,6 @@ tags.forEach((tag) => {
   });
 });
 
-// Range
 range.forEach((input) => {
   input.addEventListener("change", (e) => {
     let minRange = parseInt(range[0].value);
@@ -144,7 +138,6 @@ range.forEach((input) => {
     let rangedArr = dataArr.filter(
       (item) => item.price >= minRange && item.price <= maxRange
     );
-    console.log(rangedArr);
     createCard(sliceArr(rangedArr));
 
     if (maxRange - minRange < gap) {
@@ -181,8 +174,6 @@ async function basketFunc(id) {
     if (basket.find((item) => item.product.id == id)) {
       let obj = basket.find((item) => item.product.id == id);
       obj.count += 1;
-      console.log(basket);
-      console.log(obj);
     } else {
       let obj = {
         count: 1,

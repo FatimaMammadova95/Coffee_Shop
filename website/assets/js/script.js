@@ -11,7 +11,6 @@ let links = document.querySelectorAll(".links a");
 let productSlider = document.querySelector("#product-slider");
 let dataArr;
 
-// Menu
 function menuLeft(arr) {
   rowLeft.innerHTML = "";
   arr = arr.slice(0, 4);
@@ -64,7 +63,6 @@ async function getDataInProduct() {
 }
 getDataInProduct();
 
-// Subscribe
 
 subscribe.addEventListener("click", async function (e) {
   e.preventDefault();
@@ -81,7 +79,6 @@ subscribe.addEventListener("click", async function (e) {
   });
 });
 
-// Reservation
 reserveForm.addEventListener("submit", async function () {
   let obj = {
     numberOfCustomer: selectPerson.value,
@@ -97,17 +94,14 @@ reserveForm.addEventListener("submit", async function () {
   });
 });
 
-// Product
 var selector = ".links a";
 
 $(selector).on("click", function () {
   $(selector).removeClass("active");
   $(this).addClass("active");
   let coffee = document.querySelector(".active").dataset.coffee;
-  console.log(coffee);
   arr = dataArr.filter((obj) => obj.category == coffee);
   topProduct(arr);
-  console.log(arr);
 });
 
 function topProduct(arr) {
@@ -125,7 +119,6 @@ function topProduct(arr) {
   });
 }
 
-// Counter
 let a = 0;
 $(window).scroll(function () {
   let oTop = $("#counter").offset().top - window.innerHeight;
@@ -147,7 +140,6 @@ $(window).scroll(function () {
   }
 });
 
-// Scroll Reveal
 ScrollReveal().reveal(".slide-up", {
   duration: 2000,
   origin: "bottom",

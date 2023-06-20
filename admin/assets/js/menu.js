@@ -46,7 +46,6 @@ async function getData() {
 }
 getData();
 
-// Search
 searchInput.addEventListener("input", function (e) {
   copyArr = sortedArr.length ? sortedArr : dataArr;
   copyArr = copyArr.filter((item) =>
@@ -55,7 +54,6 @@ searchInput.addEventListener("input", function (e) {
   createCard(copyArr);
 });
 
-// Delete
 function deleteFunc(id) {
   swal({
     title: "Are you sure?",

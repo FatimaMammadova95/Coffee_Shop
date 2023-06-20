@@ -54,7 +54,6 @@ function inputFunc(id) {
     let count = +element.querySelector(".input-number").value;
     let price = +element.querySelector(".price-value").innerText;
     obj.count = count;
-    console.log(obj);
     localStorage.setItem("basket", JSON.stringify(basket));
     totals += price * count;
     totals == 0 && deleteFunc(id);

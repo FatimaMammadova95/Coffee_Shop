@@ -10,7 +10,6 @@ logout.forEach((element) => {
 });
 
 
-// Menu click
 menuIcon.addEventListener("click", function (e) {
   if (this.classList.contains("fa-bars")) {
     this.classList = "fa-solid fa-xmark";
@@ -21,7 +20,6 @@ menuIcon.addEventListener("click", function (e) {
   }
 });
 
-// Scroll nav
 function scrollFunction() {
   if (
     document.body.scrollTop > 100 ||
@@ -48,7 +46,6 @@ $(document).ready(function () {
   });
 });
 
-// Swipper
 let heroSwiper = new Swiper("#hero-swiper", {
   spaceBetween: 30,
   effect: "fade",

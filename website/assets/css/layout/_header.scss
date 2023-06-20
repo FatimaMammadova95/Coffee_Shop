@@ -14,6 +14,8 @@ header {
         @include flexbox;
         gap: 50px;
         & > li > a {
+          font-family: $space-mono;
+
           color: $color-light;
           position: relative;
           transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);

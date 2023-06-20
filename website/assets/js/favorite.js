@@ -45,7 +45,6 @@ if (account) {
   createCard(favorited);
 }
 
-//Sort
 sortItem.forEach((sort) => {
   sort.addEventListener("click", function () {
     sorted = true;
@@ -62,7 +61,6 @@ sortItem.forEach((sort) => {
   });
 });
 
-// Search
 searchInput.addEventListener("input", function (e) {
   copyArr =  favorited;
   copyArr = copyArr.filter((item) =>
@@ -88,8 +86,6 @@ async function basketFunc(id) {
     if (basket.find((item) => item.product.id == id)) {
       let obj = basket.find((item) => item.product.id == id);
       obj.count += 1;
-      console.log(basket);
-      console.log(obj);
     } else {
       let obj = {
         count: 1,
