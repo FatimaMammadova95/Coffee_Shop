@@ -24,7 +24,13 @@ Array.prototype.slice.call(forms).forEach(function (form) {
               user.password == password.value
           );
           if (!user) {
-            alert("You are not user");
+            Swal.fire({
+              position: "top-end",
+              icon: "error",
+              title: "Your are not user",
+              showConfirmButton: false,
+              timer: 1500,
+            });
           } else {
             localStorage.setItem("account", true);
             window.location = "index.html";

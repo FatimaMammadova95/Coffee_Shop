@@ -99,7 +99,7 @@ async function basketFunc(id) {
     }
     localStorage.setItem("basket", JSON.stringify(basket));
   } else {
-    alert("Hesaba daxil ol");
+    window.location="signin.html"
   }
 }
 function details(id){

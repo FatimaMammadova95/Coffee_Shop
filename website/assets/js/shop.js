@@ -49,7 +49,9 @@ function createCard(arr) {
           },this) 
           ${favorited.find((item) => item.id === element.id) ? "checked" : ""}>
          </div>
-         <a href="#product" class="add" onclick=basketFunc(${element.id})><i class="fa-solid fa-basket-shopping"></i></a>
+         <a href="#product" class="add" onclick=basketFunc(${
+           element.id
+         })><i class="fa-solid fa-basket-shopping"></i></a>
               
         </div>
       </div>
@@ -170,7 +172,7 @@ async function favFunc(id, fav) {
     }
     localStorage.setItem("favorited", JSON.stringify(favorited));
   } else {
-    alert("Hesaba daxil ol");
+    window.location = "signin.html";
   }
 }
 async function basketFunc(id) {
@@ -190,10 +192,10 @@ async function basketFunc(id) {
     }
     localStorage.setItem("basket", JSON.stringify(basket));
   } else {
-    alert("Hesaba daxil ol");
+    window.location = "signin.html";
   }
 }
 
-function details(id){
-  window.location=`details.html?id=${id}`
+function details(id) {
+  window.location = `details.html?id=${id}`;
 }

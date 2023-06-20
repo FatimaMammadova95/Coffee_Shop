@@ -66,12 +66,19 @@ getDataInProduct();
 
 // Subscribe
 
-subscribe.addEventListener("click", async function () {
+subscribe.addEventListener("click", async function (e) {
+  e.preventDefault();
   let obj = {
     email: email.value,
   };
   await axios.post(`${BASE_URL}subscriptions`, obj);
-  alert("You have subscribed");
+  Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: "You have subscribed",
+    showConfirmButton: false,
+    timer: 1500,
+  });
 });
 
 // Reservation
@@ -81,7 +88,13 @@ reserveForm.addEventListener("submit", async function () {
     selectTime: selectTime.value,
   };
   await axios.post(`${BASE_URL}reservation`, obj);
-  alert("Your reservation has been accepted");
+  Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: "Your reservation has been accepted",
+    showConfirmButton: false,
+    timer: 1500,
+  });
 });
 
 // Product
@@ -93,7 +106,7 @@ $(selector).on("click", function () {
   let coffee = document.querySelector(".active").dataset.coffee;
   console.log(coffee);
   arr = dataArr.filter((obj) => obj.category == coffee);
-  topProduct(arr)
+  topProduct(arr);
   console.log(arr);
 });
 
