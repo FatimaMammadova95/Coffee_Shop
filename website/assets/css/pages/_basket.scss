@@ -98,6 +98,7 @@
       
     }
     @media only screen and (max-width:991px){
+      padding: 40px 0;
      .row{
       .thanks{
         font-size: 36px;
@@ -120,12 +121,28 @@
      }
     }
     @media only screen and (max-width:767px){
+      padding: 30px 0;
      .row{
       .thanks{
         font-size: 30px;
+        padding: 0 0 30px 0;
+
       }  
       .card{
         margin-top: 10px;
+        padding: 20px;
+      }
+     }
+    }
+    @media only screen and (max-width:575px){
+      padding: 20px 0;
+     .row{
+      .thanks{
+        font-size: 24px;
+        padding: 0 0 25px 0;
+      }  
+      .card{
+        margin-top: 5px;
         padding: 20px;
       }
      }

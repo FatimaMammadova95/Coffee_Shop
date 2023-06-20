@@ -2164,6 +2164,9 @@ footer .footer .down-footer {
   animation: rotate624 0.7s ease-in-out both;
 }
 @media only screen and (max-width: 991px) {
+  #basket .basket {
+    padding: 40px 0;
+  }
   #basket .basket .row .thanks {
     font-size: 36px;
   }
@@ -2182,11 +2185,28 @@ footer .footer .down-footer {
   }
 }
 @media only screen and (max-width: 767px) {
+  #basket .basket {
+    padding: 30px 0;
+  }
   #basket .basket .row .thanks {
     font-size: 30px;
+    padding: 0 0 30px 0;
   }
   #basket .basket .row .card {
     margin-top: 10px;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #basket .basket {
+    padding: 20px 0;
+  }
+  #basket .basket .row .thanks {
+    font-size: 24px;
+    padding: 0 0 25px 0;
+  }
+  #basket .basket .row .card {
+    margin-top: 5px;
     padding: 20px;
   }
 }
