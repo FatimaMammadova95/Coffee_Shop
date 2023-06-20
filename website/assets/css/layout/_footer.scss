@@ -27,13 +27,42 @@ footer {
         }
       }
       @media only screen and (max-width: 991px) {
+        padding: 70px 0;
         flex-direction: column;
+      }
+      @media only screen and (max-width: 767px) {
+        padding: 50px 0;
+        flex-direction: column;
+        ul{
+          font-size: 20px;
+        }
+      }
+      @media only screen and (max-width: 575px) {
+        padding: 30px 0;
+        flex-direction: column;
+        ul{
+          font-size: 16px;
+          li{
+            a{
+              font-size: 12px;
+            }
+          }
+        }
       }
     }
     .down-footer {
       padding: 25px;
       color: #c29e7b;
       text-align: center;
+      @media only screen and (max-width: 991px) {
+        font-size: 14px;
+      }
+      @media only screen and (max-width: 767px) {
+        font-size: 12px;
+      }
+      @media only screen and (max-width: 575px) {
+        font-size: 10px;
+      }
     }
   }
 }
