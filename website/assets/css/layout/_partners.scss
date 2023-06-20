@@ -5,5 +5,14 @@
       max-width: 100%;
       height: auto;
     }
+    @media only screen and (max-width: 991px) {
+      padding: 40px 0;
+    }
+    @media only screen and (max-width: 767px) {
+      padding: 20px 0;
+    }
+    @media only screen and (max-width: 575px) {
+      padding: 10px 0;
+    }
   }
 }

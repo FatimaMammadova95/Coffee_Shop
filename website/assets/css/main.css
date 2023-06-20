@@ -1141,6 +1141,21 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   max-width: 100%;
   height: auto;
 }
+@media only screen and (max-width: 991px) {
+  #partners .partners {
+    padding: 40px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #partners .partners {
+    padding: 20px 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #partners .partners {
+    padding: 10px 0;
+  }
+}
 
 footer {
   background-color: #5d4335;
