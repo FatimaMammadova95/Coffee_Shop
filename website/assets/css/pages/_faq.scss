@@ -1,8 +1,8 @@
 #faq {
-    background-image: url("../../../photo/background/pexels-lukas-942802.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url("../../../photo/background/pexels-lukas-942802.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   .faq {
     padding: 100px 0;
     display: flex;
@@ -24,7 +24,57 @@
         .accordion-body {
           border: 1px solid #5d4335;
           line-height: 20px;
-            max-width: 720px;
+          max-width: 720px;
+        }
+      }
+    }
+    @media only screen and (max-width: 991px) {
+      padding: 80px 0;
+      .accordion {
+        .accordion-item {
+          .accordion-header {
+            button {
+              padding: 25px 15px;
+              font-size: 16px;
+            }
+          }
+          .accordion-body {
+            line-height: 18px;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      padding: 50px 0;
+      .accordion {
+        .accordion-item {
+          .accordion-header {
+            button {
+              padding: 20px 15px;
+              font-size: 16px;
+            }
+          }
+          .accordion-body {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 575px) {
+      padding: 25px 0;
+      .accordion {
+        .accordion-item {
+          .accordion-header {
+            button {
+              padding: 15px 10px;
+              font-size: 14px;
+            }
+          }
+          .accordion-body {
+            line-height: 14px;
+            font-size: 12px;
+          }
         }
       }
     }

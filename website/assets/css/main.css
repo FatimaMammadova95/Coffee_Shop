@@ -2319,6 +2319,44 @@ footer .footer .down-footer {
   line-height: 20px;
   max-width: 720px;
 }
+@media only screen and (max-width: 991px) {
+  #faq .faq {
+    padding: 80px 0;
+  }
+  #faq .faq .accordion .accordion-item .accordion-header button {
+    padding: 25px 15px;
+    font-size: 16px;
+  }
+  #faq .faq .accordion .accordion-item .accordion-body {
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #faq .faq {
+    padding: 50px 0;
+  }
+  #faq .faq .accordion .accordion-item .accordion-header button {
+    padding: 20px 15px;
+    font-size: 16px;
+  }
+  #faq .faq .accordion .accordion-item .accordion-body {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #faq .faq {
+    padding: 25px 0;
+  }
+  #faq .faq .accordion .accordion-item .accordion-header button {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+  #faq .faq .accordion .accordion-item .accordion-body {
+    line-height: 14px;
+    font-size: 12px;
+  }
+}
 
 #about .about {
   padding: 100px 0;
