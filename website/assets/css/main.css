@@ -1982,6 +1982,39 @@ footer .footer .down-footer {
   outline-color: #c29e7b;
   box-shadow: 0px 0px 20px #c29e7b;
 }
+@media only screen and (max-width: 991px) {
+  #signup .signup {
+    padding: 80px 0;
+  }
+  #signup .signup h1 {
+    font-size: 40px;
+  }
+  #signup .signup p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #signup .signup {
+    padding: 50px 0;
+  }
+  #signup .signup h1 {
+    font-size: 36px;
+  }
+  #signup .signup p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #signup .signup {
+    padding: 25px 0;
+  }
+  #signup .signup h1 {
+    font-size: 30px;
+  }
+  #signup .signup p {
+    font-size: 14px;
+  }
+}
 
 #signin .signin {
   padding: 100px 0;
