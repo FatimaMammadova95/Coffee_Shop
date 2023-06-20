@@ -595,14 +595,55 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
 #burger-menu .basket-fav-profile {
   display: none;
 }
-#burger-menu .basket-fav-profile ul {
+#burger-menu .basket-fav-profile .b-f-p-ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 25px;
 }
-#burger-menu .basket-fav-profile ul li a {
+#burger-menu .basket-fav-profile .b-f-p-ul li a {
   color: white;
+}
+#burger-menu .basket-fav-profile .b-f-p-ul li .dropdown {
+  border: none;
+}
+#burger-menu .basket-fav-profile .b-f-p-ul li .dropdown button {
+  color: #fff;
+  background-color: transparent;
+  --bs-btn-border-color:none;
+}
+#burger-menu .basket-fav-profile .b-f-p-ul li .dropdown button::after {
+  display: none;
+}
+#burger-menu .basket-fav-profile .b-f-p-ul li .dropdown ul {
+  --bs-dropdown-bg: rgba(0, 0, 0, 0.362);
+}
+#burger-menu .basket-fav-profile .b-f-p-ul li .dropdown ul > li > a {
+  font-size: 15px;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  outline: 0;
+  border: 0;
+  padding: 10px 5px;
+}
+#burger-menu .basket-fav-profile .b-f-p-ul li .dropdown ul > li > a:before {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-right: 10px;
+  transition: all 0.42s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 0;
+}
+#burger-menu .basket-fav-profile .b-f-p-ul li .dropdown ul > li > a:hover {
+  background-color: transparent;
+}
+#burger-menu .basket-fav-profile .b-f-p-ul li .dropdown ul > li > a:hover::before {
+  background-color: #fff;
+  width: 1rem;
 }
 #burger-menu nav .nav-ul {
   display: flex;
@@ -618,6 +659,11 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: color;
+}
+@media only screen and (min-width: 992px) {
+  #burger-menu {
+    display: none;
+  }
 }
 @media only screen and (max-width: 767px) {
   #burger-menu {

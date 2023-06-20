@@ -1,11 +1,14 @@
 const menuIcon = document.querySelector("#header-menu");
 const burgerMenu = document.querySelector("#burger-menu");
 const header = document.querySelector("header");
-const logout = document.querySelector(".logout");
+const logout = document.querySelectorAll(".logout");
 
-logout.addEventListener("click", function () {
-  localStorage.removeItem("account");
+logout.forEach((element) => {
+  element.addEventListener("click", function () {
+    localStorage.removeItem("account");
+  });
 });
+
 
 // Menu click
 menuIcon.addEventListener("click", function (e) {

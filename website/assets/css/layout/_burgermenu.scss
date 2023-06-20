@@ -11,12 +11,53 @@
   gap: 50px;
   .basket-fav-profile {
     display: none;
-    ul {
+    .b-f-p-ul {
       @include flexbox;
       gap: 25px;
       li {
         a {
           color: white;
+        }
+        .dropdown{
+          border: none;
+          button{
+            color: #fff;
+            background-color: transparent;
+            --bs-btn-border-color:none;
+            &::after{
+              display: none
+            }           
+          }
+          ul{
+            --bs-dropdown-bg: rgba(0, 0, 0, 0.362);
+            & > li > a {
+              font-size: 15px;
+              align-items: center;
+              background-color: transparent;
+              color: #fff;
+              cursor: pointer;
+              display: flex;
+              outline: 0;
+              border: 0;
+              padding: 10px 5px;
+              &:before {
+                background-color: #fff;
+                content: "";
+                display: inline-block;
+                height: 1px;
+                margin-right: 10px;
+                transition: all 0.42s cubic-bezier(0.25, 0.8, 0.25, 1);
+                width: 0;
+              }
+              &:hover {
+                background-color: transparent;
+                &::before {
+                  background-color: #fff;
+                  width: 1rem;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -36,6 +77,9 @@
         @extend %hover;
       }
     }
+  }
+  @media only screen and (min-width: 992px) {
+    display: none;
   }
   @media only screen and (max-width: 767px) {
     width: 50%;
