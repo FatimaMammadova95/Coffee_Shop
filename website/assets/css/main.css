@@ -970,6 +970,15 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
     padding: 10px;
   }
 }
+@media only screen and (max-width: 575px) {
+  #social-subscribe .social-subscribe .text h1 {
+    font-size: 24px;
+  }
+  #social-subscribe .social-subscribe .text p {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
 #social-subscribe .social-subscribe .icons-input {
   padding: 25px 0;
   display: flex;
@@ -1069,10 +1078,77 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
 #social-subscribe .social-subscribe .icons-input .subscribe .input-group .button--submit:hover {
   background-color: #c29e7b;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   #social-subscribe .social-subscribe .icons-input {
     flex-direction: column;
     gap: 30px;
+  }
+  #social-subscribe .social-subscribe .icons-input .social ul {
+    display: flex;
+  }
+  #social-subscribe .social-subscribe .icons-input .social ul li a {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  #social-subscribe .social-subscribe .icons-input .subscribe .input-group {
+    display: flex;
+    align-items: center;
+  }
+  #social-subscribe .social-subscribe .icons-input .subscribe .input-group .input {
+    min-height: 40px;
+  }
+  #social-subscribe .social-subscribe .icons-input .subscribe .input-group .button--submit {
+    min-height: 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #social-subscribe .social-subscribe .icons-input {
+    gap: 25px;
+  }
+  #social-subscribe .social-subscribe .icons-input .social ul {
+    display: flex;
+  }
+  #social-subscribe .social-subscribe .icons-input .social ul li a {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  #social-subscribe .social-subscribe .icons-input .subscribe .input-group {
+    display: flex;
+    align-items: center;
+  }
+  #social-subscribe .social-subscribe .icons-input .subscribe .input-group .input {
+    min-height: 35px;
+  }
+  #social-subscribe .social-subscribe .icons-input .subscribe .input-group .button--submit {
+    min-height: 35px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #social-subscribe .social-subscribe .icons-input {
+    gap: 20px;
+  }
+  #social-subscribe .social-subscribe .icons-input .social ul {
+    display: flex;
+  }
+  #social-subscribe .social-subscribe .icons-input .social ul li a {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  #social-subscribe .social-subscribe .icons-input .subscribe .input-group {
+    display: flex;
+    align-items: center;
+  }
+  #social-subscribe .social-subscribe .icons-input .subscribe .input-group .input {
+    min-height: 30px;
+  }
+  #social-subscribe .social-subscribe .icons-input .subscribe .input-group .button--submit {
+    min-height: 25px;
   }
 }
 

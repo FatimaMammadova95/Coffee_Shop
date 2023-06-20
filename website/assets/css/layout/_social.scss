@@ -13,21 +13,30 @@
         color: #c29e7b;
         text-align: center;
       }
-      @media only screen and (max-width:991px){
-        h1{
+      @media only screen and (max-width: 991px) {
+        h1 {
           font-size: 40px;
         }
-        p{
+        p {
           font-size: 20px;
         }
       }
-      @media only screen and (max-width:767px){
-        h1{
+      @media only screen and (max-width: 767px) {
+        h1 {
           font-size: 36px;
         }
-        p{
+        p {
           font-size: 16px;
           padding: 10px;
+        }
+      }
+      @media only screen and (max-width: 575px) {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 14px;
+          padding: 5px;
         }
       }
     }
@@ -140,10 +149,91 @@
           }
         }
       }
-    @media only screen and (max-width:767px){
-      flex-direction: column;
-      gap: 30px;
-    }
+      @media only screen and (max-width: 991px) {
+        flex-direction: column;
+        gap: 30px;
+        .social {
+          ul {
+            display: flex;
+            li {
+              a {
+                width: 50px;
+                height: 50px;
+                font-size: 30px;
+                line-height: 50px;
+              }
+            }
+          }
+        }
+        .subscribe {
+          .input-group {
+            display: flex;
+            align-items: center;
+            .input {
+              min-height: 40px;
+            }
+            .button--submit {
+              min-height: 40px;
+            }
+          }
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        gap: 25px;
+        .social {
+          ul {
+            display: flex;
+            li {
+              a {
+                width: 40px;
+                height: 40px;
+                font-size: 25px;
+                line-height: 40px;
+              }
+            }
+          }
+        }
+        .subscribe {
+          .input-group {
+            display: flex;
+            align-items: center;
+            .input {
+              min-height: 35px;
+            }
+            .button--submit {
+              min-height: 35px;
+            }
+          }
+        }
+      }
+      @media only screen and (max-width: 575px) {
+        gap: 20px;
+        .social {
+          ul {
+            display: flex;
+            li {
+              a {
+                width: 30px;
+                height: 30px;
+                font-size: 20px;
+                line-height: 30px;
+              }
+            }
+          }
+        }
+        .subscribe {
+          .input-group {
+            display: flex;
+            align-items: center;
+            .input {
+              min-height: 30px;
+            }
+            .button--submit {
+              min-height: 25px;
+            }
+          }
+        }
+      }
     }
   }
 }
