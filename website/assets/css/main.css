@@ -419,6 +419,7 @@ body::-webkit-scrollbar-thumb {
 
 .top-back {
   position: fixed;
+  z-index: 10000000000000000;
   bottom: 50px;
   right: 50px;
   -webkit-touch-callout: none;
@@ -442,6 +443,9 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   transform: translateX(-50%) translateY(-50%);
 }
+.top-back:focus {
+  outline: none;
+}
 .top-back:hover {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
   width: 70px;
@@ -449,6 +453,42 @@ body::-webkit-scrollbar-thumb {
 }
 .top-back:hover svg {
   animation: bounce 2s infinite linear;
+}
+@media only screen and (max-width: 991px) {
+  .top-back {
+    bottom: 40px;
+    right: 40px;
+    width: 45px;
+    height: 45px;
+  }
+  .top-back svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .top-back {
+    bottom: 30px;
+    right: 30px;
+    width: 35px;
+    height: 35px;
+  }
+  .top-back svg {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .top-back {
+    bottom: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+  }
+  .top-back svg {
+    width: 5px;
+    height: 5px;
+  }
 }
 
 @keyframes bounce {
@@ -468,10 +508,6 @@ body::-webkit-scrollbar-thumb {
     transform: translateX(-50%) translateY(-50%);
   }
 }
-button:focus {
-  outline: none;
-}
-
 header {
   position: fixed;
   top: 0;

@@ -1,5 +1,6 @@
 .top-back {
   position: fixed;
+  z-index: 9999999999999999;
   bottom: 50px;
   right: 50px;
   -webkit-touch-callout: none;
@@ -24,12 +25,45 @@
     position: absolute;
     transform: translateX(-50%) translateY(-50%);
   }
+  &:focus {
+    outline: none;
+  }
   &:hover {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
     width: 70px;
     height: 70px;
     svg {
       animation: bounce 2s infinite linear;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    bottom: 40px;
+    right: 40px;
+    width: 45px;
+    height: 45px;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    bottom: 30px;
+    right: 30px;
+    width: 35px;
+    height: 35px;
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    bottom: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    svg {
+      width: 5px;
+      height: 5px;
     }
   }
 }
@@ -52,6 +86,4 @@
   }
 }
 
-button:focus {
-  outline: none;
-}
+
