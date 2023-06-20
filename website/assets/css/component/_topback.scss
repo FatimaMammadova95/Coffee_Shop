@@ -1,7 +1,7 @@
 .top-back {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 50px;
+  right: 50px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -9,8 +9,8 @@
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
-  width: 75px;
-  height: 75px;
+  width: 55px;
+  height: 55px;
   cursor: pointer;
   background-color: #5de6de;
   background-image: linear-gradient(315deg, #5d4335 0%, #c29e7b 74%);
@@ -24,24 +24,12 @@
     position: absolute;
     transform: translateX(-50%) translateY(-50%);
   }
-  &:before {
-    content: "Back to Top";
-    position: absolute;
-    transform: translateX(-50%) translateY(45px);
-    font-size: 15px;
-    transition: 200ms;
-    color: transparent;
-    font-weight: bold;
-  }
   &:hover {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     svg {
       animation: bounce 2s infinite linear;
-    }
-    &::before {
-      color: #fff;
     }
   }
 }

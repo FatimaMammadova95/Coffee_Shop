@@ -31,6 +31,20 @@ function scrollFunction() {
 }
 window.addEventListener("scroll", scrollFunction);
 
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $(".top-back").fadeIn();
+    } else {
+      $(".top-back").fadeOut();
+    }
+  });
+  $(".top-back").click(function () {
+    $("html, body").animate({ scrollTop: 100 }, 100);
+    return false;
+  });
+});
+
 // Swipper
 let heroSwiper = new Swiper("#hero-swiper", {
   spaceBetween: 30,
