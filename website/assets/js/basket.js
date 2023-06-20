@@ -1,9 +1,10 @@
 let row = document.querySelector(".card-row");
 let total = document.querySelector(".total");
 let cargo = document.querySelector(".cargo");
+let confrim = document.querySelector(".confrim-card");
 
 let account = localStorage.getItem("account");
-let basket = JSON.parse(localStorage.getItem("basket"));
+let basket = JSON.parse(localStorage.getItem("basket")) || [];
 
 let price = 0;
 
@@ -36,7 +37,6 @@ function getData() {
     </div>
   </div>
     `;
-    // inputFunc()
     price = price + element.product.price * element.count;
   });
   total.innerHTML = `<span>Product Total:</span> ${price}$`;
@@ -53,7 +53,6 @@ function inputFunc(id) {
   document.querySelectorAll(".col-12 .value").forEach((element) => {
     let count = +element.querySelector(".input-number").value;
     let price = +element.querySelector(".price-value").innerText;
-    // console.log(id);
     obj.count = count;
     console.log(obj);
     localStorage.setItem("basket", JSON.stringify(basket));

@@ -22,9 +22,7 @@
         font-size: 12px;
         span {
           position: relative;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include flexbox(center,center);
           bottom: 0.4em;
           width: 8.25em;
           height: 2.5em;

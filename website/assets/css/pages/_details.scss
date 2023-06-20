@@ -4,8 +4,7 @@
     .product-row {
       .img-magnifier-container {
         position: relative;
-        display: flex;
-        justify-content: center;
+        @include flexbox(center,normal);
         img {
           max-width: 600px;
         }
@@ -100,10 +99,8 @@
     }
     .related-row {
       .col-3 {
-        display: flex;
+        @include flexbox(center,center);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: 10px;
         img {
           max-width: 300px;

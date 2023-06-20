@@ -3,9 +3,8 @@
     padding: 100px 0;
     .row {
       .text {
-        display: flex;
+        @include flexbox(center,normal);
         flex-direction: column;
-        justify-content: center;
         padding: 50px;
         gap: 20px;
         h1 {
@@ -14,8 +13,7 @@
         }
         h3 {
           font-size: 18px;
-          display: flex;
-          align-items: center;
+          @include flexbox(flex-start,center);
           color: #888d9c;
           &::before {
             content: " ";

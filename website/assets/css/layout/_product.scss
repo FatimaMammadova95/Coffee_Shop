@@ -6,10 +6,8 @@
   .product {
     padding: 150px 0;
     .heading {
-      display: flex;
+      @include flexbox(center,center);      
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       gap: 50px;
       border-bottom: 1px solid #888d9c;
       h1 {
@@ -32,10 +30,8 @@
     #product-swiper {
       padding: 50px 0;
       .swiper-slide {
-        display: flex;
+        @include flexbox(center,center);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: 20px;
         img {
           max-width: 100%;

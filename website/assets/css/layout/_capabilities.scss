@@ -5,13 +5,10 @@
       &>*{
         padding: 0;
       }
-      display: flex;
-      justify-content: center;
+      @include flexbox(center,normal);
       .text-col {
-        display: flex;
+        @include flexbox(center,center);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: 50px;
         #row {
           display: flex;
@@ -35,7 +32,6 @@
         &.text-col-left {
           #row {
             display: flex;
-            justify-content: flex-start;
             .text {
               h1 {
                 text-align: right;
@@ -48,8 +44,8 @@
         }
         &.text-col-right {
           #row {
-            display: flex;
-            justify-content: flex-end;
+            @include flexbox(flex-end,normal);
+
             .text {
               h1 {
                 text-align: left;

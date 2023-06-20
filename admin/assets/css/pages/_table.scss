@@ -1,8 +1,7 @@
 #title {
   .title {
     .title-head {
-      display: flex;
-      justify-content: space-between;
+      @include flexbox();
       .add {
         border: 1px solid #008bf8;
         background-color: #008bf8;

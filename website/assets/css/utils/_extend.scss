@@ -238,10 +238,8 @@
       transition: transform 5s ease;              
     }
     .card-text {
-      display: flex;
+      @include flexbox(center,center);
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       gap: 5px;
       @extend %stars;
     }

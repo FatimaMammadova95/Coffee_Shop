@@ -32,15 +32,12 @@ header {
             color: white;
             border: none;
             transition: all 0.5s ease-in-out;
-            display: flex;
-            align-items: center;
+            @include flexbox(flex-start,center);
             .icon {
               font-size: 18px;
               position: absolute;
               width: 70px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
+              @include flexbox(center,center);
               transition: all 0.5s;
             }
             .text {

@@ -133,9 +133,9 @@ header.dark .header .mode-profile .dropdown .dropdown-menu li a:hover {
 .col-2 #menu .menu {
   padding: 10px 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .col-2 #menu .menu img {
   max-width: 250px;
@@ -360,6 +360,7 @@ header.dark .header .mode-profile .dropdown .dropdown-menu li a:hover {
 #title .title .title-head {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 #title .title .title-head .add {
   border: 1px solid #008bf8;
@@ -429,9 +430,9 @@ header.dark .header .mode-profile .dropdown .dropdown-menu li a:hover {
 }
 #signin .signin form {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 #signin .signin form label {
   padding: 20px 0 5px 0;

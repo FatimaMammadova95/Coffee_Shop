@@ -9,10 +9,8 @@
       background-image: url("../../../photo/background/h1-bacground-img-1.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      display: flex;
+      @include flexbox(center,center);
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       border: 5px dashed #5d4335;
       h1 {
         font-size: 48px;
@@ -20,9 +18,8 @@
         color: #5d4335;
       }
       form {
-        display: flex;
+        @include flexbox(center,normal);     
         flex-direction: column;
-        justify-content: center;
         gap: 40px;
         .select-person {
           width: 240px;

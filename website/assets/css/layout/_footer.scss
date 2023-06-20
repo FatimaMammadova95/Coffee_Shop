@@ -19,8 +19,8 @@ footer {
           }
           &.opening {
             a {
-              display: flex;
-              justify-content: space-between;
+              @include flexbox;
+
               padding-right: 10px;
             }
           }

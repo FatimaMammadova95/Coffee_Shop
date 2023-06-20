@@ -6,10 +6,8 @@
         background-size: cover;
         background-position: center;
         padding: 150px 0;
-        display: flex;
+        @include flexbox(center,center);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: 30px;
         .emblem {
           max-width: 200px;

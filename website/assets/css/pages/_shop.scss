@@ -3,8 +3,7 @@
     padding: 50px 0;
     .col-9 {
       .sorting {
-        display: flex;
-        justify-content: space-between;
+        @include flexbox();
         .sort {
           .dropdown-menu {
             background-color: white;
@@ -102,8 +101,7 @@
         }
         .min-max {
           padding: 5px;
-          display: flex;
-          justify-content: space-between;
+          @include flexbox();
           .numberVal {
             input {
               color: #5d4335;

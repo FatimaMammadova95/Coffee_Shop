@@ -12,10 +12,8 @@
       color: #c29f7be1;
     }
     form {
-      display: flex;
+      @include flexbox(center,center);
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       label {
         padding: 20px 0 5px 0;
         font-size: 18px;

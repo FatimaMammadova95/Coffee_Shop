@@ -1,9 +1,7 @@
 #favorite{
     .favorite{
       .sort-search{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flexbox();
         padding: 10px 0;
       }
       .card-row{

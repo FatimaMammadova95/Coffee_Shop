@@ -18,25 +18,24 @@
         a {
           color: white;
         }
-        .dropdown{
+        .dropdown {
           border: none;
-          button{
+          button {
             color: #fff;
             background-color: transparent;
-            --bs-btn-border-color:none;
-            &::after{
-              display: none
-            }           
+            --bs-btn-border-color: none;
+            &::after {
+              display: none;
+            }
           }
-          ul{
+          ul {
             --bs-dropdown-bg: rgba(0, 0, 0, 0.362);
             & > li > a {
               font-size: 15px;
-              align-items: center;
+              @include flexbox(flex-start, center);
               background-color: transparent;
               color: #fff;
               cursor: pointer;
-              display: flex;
               outline: 0;
               border: 0;
               padding: 10px 5px;

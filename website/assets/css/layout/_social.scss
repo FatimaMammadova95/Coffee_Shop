@@ -42,9 +42,7 @@
     }
     .icons-input {
       padding: 25px 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flexbox;
       .social {
         ul {
           display: flex;
@@ -110,8 +108,7 @@
       }
       .subscribe {
         .input-group {
-          display: flex;
-          align-items: center;
+          @include flexbox(flex-start,center);
           .input {
             min-height: 50px;
             max-width: 500px;
@@ -167,8 +164,7 @@
         }
         .subscribe {
           .input-group {
-            display: flex;
-            align-items: center;
+            @include flexbox(flex-start,center);
             .input {
               min-height: 40px;
             }
@@ -195,8 +191,7 @@
         }
         .subscribe {
           .input-group {
-            display: flex;
-            align-items: center;
+            @include flexbox(flex-start,center);
             .input {
               min-height: 35px;
             }
@@ -223,8 +218,7 @@
         }
         .subscribe {
           .input-group {
-            display: flex;
-            align-items: center;
+            @include flexbox(flex-start,center);
             .input {
               min-height: 30px;
             }

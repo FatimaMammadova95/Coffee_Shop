@@ -312,9 +312,9 @@ body::-webkit-scrollbar-thumb {
 }
 #favorite .favorite .card-row .col .card .card-text, #products .products .col-9 .product-cards .col .card .card-text {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 5px;
 }
 #favorite .favorite .card-row .col .card .add, #products .products .col-9 .product-cards .col .card .add {
@@ -345,11 +345,12 @@ body::-webkit-scrollbar-thumb {
 }
 .dropdown-header .dropdown-menu > li > a {
   font-size: 15px;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
   background-color: transparent;
   color: #fff;
   cursor: pointer;
-  display: flex;
   outline: 0;
   border: 0;
   padding: 10px 5px;
@@ -390,12 +391,13 @@ body::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
 .accordion-div .accordion-item .accordion-body ul > li > a {
-  font-size: 15px;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
+  font-size: 15px;
   background-color: transparent;
   color: #fff;
   cursor: pointer;
-  display: flex;
   outline: 0;
   border: 0;
   padding: 10px 5px;
@@ -547,6 +549,7 @@ header .header .basket-fav-profile .icon-ul li .btn {
   border: none;
   transition: all 0.5s ease-in-out;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 header .header .basket-fav-profile .icon-ul li .btn .icon {
@@ -646,7 +649,7 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
 #burger-menu .basket-fav-profile .b-f-p-ul li .dropdown button {
   color: #fff;
   background-color: transparent;
-  --bs-btn-border-color:none;
+  --bs-btn-border-color: none;
 }
 #burger-menu .basket-fav-profile .b-f-p-ul li .dropdown button::after {
   display: none;
@@ -656,11 +659,12 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
 }
 #burger-menu .basket-fav-profile .b-f-p-ul li .dropdown ul > li > a {
   font-size: 15px;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
   background-color: transparent;
   color: #fff;
   cursor: pointer;
-  display: flex;
   outline: 0;
   border: 0;
   padding: 10px 5px;
@@ -717,9 +721,9 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   background-position: center;
   padding: 150px 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 30px;
 }
 #hero .hero .swiper .swiper-slide .emblem {
@@ -802,15 +806,16 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
 #capabilities .capabilities .row {
   display: flex;
   justify-content: center;
+  align-items: normal;
 }
 #capabilities .capabilities .row > * {
   padding: 0;
 }
 #capabilities .capabilities .row .text-col {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 50px;
 }
 #capabilities .capabilities .row .text-col #row {
@@ -836,7 +841,6 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
 }
 #capabilities .capabilities .row .text-col.text-col-left #row {
   display: flex;
-  justify-content: flex-start;
 }
 #capabilities .capabilities .row .text-col.text-col-left #row .text h1 {
   text-align: right;
@@ -847,6 +851,7 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
 #capabilities .capabilities .row .text-col.text-col-right #row {
   display: flex;
   justify-content: flex-end;
+  align-items: normal;
 }
 #capabilities .capabilities .row .text-col.text-col-right #row .text h1 {
   text-align: left;
@@ -970,9 +975,9 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
 }
 #product .product .heading {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 50px;
   border-bottom: 1px solid #888d9c;
 }
@@ -996,9 +1001,9 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
 }
 #product .product #product-swiper .swiper-slide {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 20px;
 }
 #product .product #product-swiper .swiper-slide img {
@@ -1100,9 +1105,9 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
 #counter .counter .row .col-12 {
   margin: 15px 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 20px;
 }
 #counter .counter .row .col-12 .count {
@@ -1365,6 +1370,7 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
 }
 #social-subscribe .social-subscribe .icons-input .subscribe .input-group {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 #social-subscribe .social-subscribe .icons-input .subscribe .input-group .input {
@@ -1421,6 +1427,7 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   }
   #social-subscribe .social-subscribe .icons-input .subscribe .input-group {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
   }
   #social-subscribe .social-subscribe .icons-input .subscribe .input-group .input {
@@ -1445,6 +1452,7 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   }
   #social-subscribe .social-subscribe .icons-input .subscribe .input-group {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
   }
   #social-subscribe .social-subscribe .icons-input .subscribe .input-group .input {
@@ -1469,6 +1477,7 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   }
   #social-subscribe .social-subscribe .icons-input .subscribe .input-group {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
   }
   #social-subscribe .social-subscribe .icons-input .subscribe .input-group .input {
@@ -1493,9 +1502,9 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border: 5px dashed #5d4335;
 }
 #reservation .reservation .col-12 h1 {
@@ -1505,8 +1514,9 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
 }
 #reservation .reservation .col-12 form {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: normal;
+  flex-direction: column;
   gap: 40px;
 }
 #reservation .reservation .col-12 form .select-person {
@@ -1657,6 +1667,7 @@ footer .footer .up-footer ul li a {
 footer .footer .up-footer ul li.opening a {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-right: 10px;
 }
 @media only screen and (max-width: 991px) {
@@ -1753,6 +1764,7 @@ footer .footer .down-footer {
 #products .products .col-9 .sorting {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 #products .products .col-9 .sorting .sort .dropdown-menu {
   background-color: white;
@@ -1848,6 +1860,7 @@ footer .footer .down-footer {
   padding: 5px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 #products .products .col-3 .range .min-max .numberVal input {
   color: #5d4335;
@@ -2102,9 +2115,9 @@ footer .footer .down-footer {
 }
 #signup .signup form {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 #signup .signup form label {
   padding: 20px 0 5px 0;
@@ -2168,9 +2181,9 @@ footer .footer .down-footer {
 }
 #signin .signin form {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 #signin .signin form label {
   padding: 20px 0 5px 0;
@@ -2249,6 +2262,7 @@ footer .footer .down-footer {
 }
 #basket .basket .row .product-cards .col-12 .product-about {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   max-width: 500px;
 }
@@ -2267,6 +2281,7 @@ footer .footer .down-footer {
 }
 #basket .basket .row .product-cards .col-12 .value {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   gap: 30px;
 }
@@ -2537,8 +2552,9 @@ footer .footer .down-footer {
 }
 #about .about .row .text {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: normal;
+  flex-direction: column;
   padding: 50px;
   gap: 20px;
 }
@@ -2549,6 +2565,7 @@ footer .footer .down-footer {
 #about .about .row .text h3 {
   font-size: 18px;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   color: #888d9c;
 }
@@ -2644,6 +2661,7 @@ footer .footer .down-footer {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: normal;
 }
 #details .details .product-row .img-magnifier-container img {
   max-width: 600px;
@@ -2727,9 +2745,9 @@ footer .footer .down-footer {
 }
 #details .details .related-row .col-3 {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 10px;
 }
 #details .details .related-row .col-3 img {
