@@ -676,19 +676,61 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   text-align: left;
 }
 @media only screen and (max-width: 991px) {
+  #capabilities {
+    padding: 0;
+  }
+  #capabilities .capabilities .row .text h1 {
+    font-size: 18px;
+  }
+  #capabilities .capabilities .row .text p {
+    font-size: 14px;
+    padding: 10px 0;
+    line-height: 16px;
+  }
   #capabilities .capabilities .row .text-col {
-    gap: 200px;
+    gap: 100px;
   }
   #capabilities .capabilities .row .text-col.text-col-right {
     margin-top: 200px;
   }
 }
 @media only screen and (max-width: 767px) {
+  #capabilities {
+    padding: 50px 0;
+  }
+  #capabilities .capabilities .row #row .text h1 {
+    font-size: 16px;
+  }
+  #capabilities .capabilities .row #row .text p {
+    font-size: 12px;
+    padding: 7px 0;
+    line-height: 14px;
+  }
   #capabilities .capabilities .row .text-col {
     gap: 25px;
   }
   #capabilities .capabilities .row .text-col.text-col-right {
     margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #capabilities {
+    padding: 25px 0;
+  }
+  #capabilities .capabilities .row .text-col {
+    gap: 15px;
+  }
+  #capabilities .capabilities .row .text-col #row .text h1 {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  #capabilities .capabilities .row .text-col #row .text p {
+    font-size: 10px;
+    padding: 5px 0;
+    line-height: 12px;
+  }
+  #capabilities .capabilities .row .text-col.text-col-right {
+    margin-top: 30px;
   }
 }
 

@@ -64,10 +64,21 @@
     }
   }
   @media only screen and (max-width: 991px) {
+    padding: 0;
     .capabilities {
       .row {
+        .text {
+          h1 {
+           font-size: 18px;
+          }
+          p {
+            font-size: 14px;
+            padding: 10px 0;
+            line-height: 16px;
+          }
+        }
         .text-col {
-          gap: 200px;
+          gap: 100px;
           &.text-col-right {
             margin-top: 200px;
           }
@@ -76,12 +87,51 @@
     }
   }
   @media only screen and (max-width: 767px) {
+    padding: 50px 0;
     .capabilities {
       .row {
+        #row {
+          .text {
+            h1 {
+             font-size: 16px;
+            }
+            p {
+              font-size: 12px;
+              padding: 7px 0;
+              line-height: 14px;
+            }
+          }
+        }
         .text-col {
           gap: 25px;
           &.text-col-right {
             margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    padding: 25px 0;
+    .capabilities {
+      .row {
+        .text-col {
+          gap: 15px;
+          #row {
+            .text {
+              h1 {
+               font-size: 12px;
+               letter-spacing: 1px;
+              }
+              p {
+                font-size: 10px;
+                padding: 5px 0;
+                line-height: 12px;
+              }
+            }
+          }
+          &.text-col-right {
+            margin-top: 30px;
           }
         }
       }
