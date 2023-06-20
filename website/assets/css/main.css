@@ -1085,7 +1085,7 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   padding: 100px 0;
 }
 #reservation .reservation .col-12 {
-  padding: 100px 100px;
+  padding: 100px;
   background-image: url("../../../photo/background/h1-bacground-img-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1097,14 +1097,14 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
 }
 #reservation .reservation .col-12 h1 {
   font-size: 48px;
-  padding: 0 0 50px 0;
+  padding: 0 0 40px 0;
   color: #5d4335;
 }
 #reservation .reservation .col-12 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 50px;
+  gap: 40px;
 }
 #reservation .reservation .col-12 form .select-person {
   width: 240px;
@@ -1131,7 +1131,79 @@ header .header .basket-fav-profile .icon-ul li.menu a i {
   color: #5d4335;
   font-weight: bold;
   border-color: #c29e7b;
-  padding: 10px 15px;
+  padding: 15px;
+}
+@media only screen and (max-width: 991px) {
+  #reservation .reservation {
+    padding: 70px 0;
+  }
+  #reservation .reservation .col-12 {
+    padding: 70px;
+  }
+  #reservation .reservation .col-12 h1 {
+    font-size: 42px;
+    padding: 0 0 40px 0;
+  }
+  #reservation .reservation .col-12 form {
+    gap: 30px;
+  }
+  #reservation .reservation .col-12 form .select-person {
+    padding: 10px 12px;
+  }
+  #reservation .reservation .col-12 form .select-time {
+    padding: 10px 12px;
+  }
+  #reservation .reservation .col-12 form .reserve {
+    padding: 10px 12px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #reservation .reservation {
+    padding: 40px 0;
+  }
+  #reservation .reservation .col-12 {
+    padding: 40px;
+  }
+  #reservation .reservation .col-12 h1 {
+    font-size: 36px;
+    padding: 0 0 20px 0;
+  }
+  #reservation .reservation .col-12 form {
+    gap: 20px;
+  }
+  #reservation .reservation .col-12 form .select-person {
+    padding: 8px 10px;
+  }
+  #reservation .reservation .col-12 form .select-time {
+    padding: 8px 10px;
+  }
+  #reservation .reservation .col-12 form .reserve {
+    padding: 8px 10px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #reservation .reservation {
+    padding: 10px 0;
+  }
+  #reservation .reservation .col-12 {
+    padding: 10px;
+  }
+  #reservation .reservation .col-12 h1 {
+    font-size: 28px;
+    padding: 0 0 10px 0;
+  }
+  #reservation .reservation .col-12 form {
+    gap: 10px;
+  }
+  #reservation .reservation .col-12 form .select-person {
+    padding: 6px 8px;
+  }
+  #reservation .reservation .col-12 form .select-time {
+    padding: 6px 8px;
+  }
+  #reservation .reservation .col-12 form .reserve {
+    padding: 6px 8px;
+  }
 }
 
 #partners .partners {

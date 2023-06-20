@@ -5,7 +5,7 @@
   .reservation {
     padding: 100px 0;
     .col-12 {
-      padding: 100px 100px;
+      padding: 100px;
       background-image: url("../../../photo/background/h1-bacground-img-1.jpg");
       background-repeat: no-repeat;
       background-size: cover;
@@ -16,14 +16,14 @@
       border: 5px dashed #5d4335;
       h1 {
         font-size: 48px;
-        padding: 0 0 50px 0;
+        padding: 0 0 40px 0;
         color: #5d4335;
       }
       form {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 50px;
+        gap: 40px;
         .select-person {
           width: 240px;
           margin: 10px;
@@ -44,12 +44,82 @@
           cursor: pointer;
           outline: none;
         }
-        .reserve{
-            background-color: #c29e7b;
-            color: #5d4335;
-            font-weight: bold;
-            border-color: #c29e7b;
-            padding: 10px 15px;
+        .reserve {
+          background-color: #c29e7b;
+          color: #5d4335;
+          font-weight: bold;
+          border-color: #c29e7b;
+          padding: 15px;
+        }
+      }
+    }
+    @media only screen and (max-width: 991px) {
+      padding: 70px 0;
+      .col-12 {
+        padding: 70px;
+        h1 {
+          font-size: 42px;
+          padding: 0 0 40px 0;
+        }
+        form{
+          gap: 30px;
+          .select-person{
+            padding: 10px 12px;
+          }
+          .select-time{
+            padding: 10px 12px;
+          }
+          .reserve{
+            padding: 10px 12px;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      padding: 40px 0;
+      .col-12 {
+        padding: 40px;
+        h1 {
+          font-size: 36px;
+          padding: 0 0 20px 0;
+        }
+        form{
+          gap: 20px;
+          .select-person{
+            padding: 8px 10px;
+          }
+          .select-time{
+            padding: 8px 10px;
+
+          }
+          .reserve{
+            padding: 8px 10px;
+
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 575px) {
+      padding: 10px 0;
+      .col-12 {
+        padding: 10px;
+        h1 {
+          font-size: 28px;
+          padding: 0 0 10px 0;
+        }
+        form{
+          gap: 10px;
+          .select-person{
+            padding: 6px 8px;
+          }
+          .select-time{
+            padding: 6px 8px;
+
+          }
+          .reserve{
+            padding: 6px 8px;
+
+          }
         }
       }
     }
