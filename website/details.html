@@ -124,21 +124,41 @@
     <!-- Burger-Menu -->
     <div id="burger-menu">
       <div class="basket-fav-profile">
-        <ul>
+        <ul class="b-f-p-ul">
           <li>
-            <a href="#"><i class="fa-solid fa-store"></i></a>
+            <a href="shop.html"><i class="fa-solid fa-store"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+            <a href="favorite.html"><i class="fa-regular fa-bookmark"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-regular fa-user icon"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="signup.html">Sign Up</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="signin.html">Sign In </a>
+                </li>
+                <li>
+                  <a class="dropdown-item logout" href="#">Log Out</a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
       <nav>
         <ul class="nav-ul">
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li class="accordion-div">
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">
@@ -170,9 +190,9 @@
               </div>
             </div>
           </li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Shop</a></li>
+          <li><a href="galery.html">Galery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="notfound.html">Not Found 404</a></li>
         </ul>
       </nav>
     </div>
