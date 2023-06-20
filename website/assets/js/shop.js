@@ -31,14 +31,14 @@ function createCard(arr) {
   arr.forEach((element) => {
     row.innerHTML += `
       <div class="col-12 col-md-6 col-lg-4">
-       <div onclick=details(${element.id}) class="card">
+       <div class="card">
          <div class="card card-image">
            <img
             src="${element.image}"
             alt=""
            />           
          </div>
-         <div class="card-text">
+         <div class="card-text" onclick=details(${element.id}) >
           <h1>${element.name}</h1>
           <div class="stars" style="--rating: ${element.rating}"></div>
           <div class="price">${element.price}$</div>

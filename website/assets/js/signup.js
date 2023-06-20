@@ -9,8 +9,8 @@ Array.prototype.slice.call(forms).forEach(function (form) {
   form.addEventListener(
     "submit",
     function (event) {
+      event.preventDefault();
       if (!form.checkValidity()) {
-        event.preventDefault();
         event.stopPropagation();
       } else {
         async function addUser() {
