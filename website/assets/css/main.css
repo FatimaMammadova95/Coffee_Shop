@@ -1880,6 +1880,74 @@ footer .footer .down-footer {
 #menu .menu .menu-row .col-12:hover .nutrition {
   display: block;
 }
+@media only screen and (max-width: 991px) {
+  #menu .menu {
+    padding: 40px 0;
+  }
+  #menu .menu .our-menu {
+    font-size: 36px;
+    padding: 15px 0;
+  }
+  #menu .menu .menu-row .col-12 {
+    padding: 20px;
+    max-width: 100%;
+  }
+  #menu .menu .menu-row .col-12 .coffee-image img {
+    max-width: 65px;
+    height: 65px;
+  }
+  #menu .menu .menu-row .col-12 .coffee-text .coffee-name h1 {
+    font-size: 26px;
+  }
+  #menu .menu .menu-row .col-12 .coffee-text .description {
+    padding: 15px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #menu .menu {
+    padding: 20px 0;
+  }
+  #menu .menu .our-menu {
+    font-size: 30px;
+    padding: 10px 0;
+  }
+  #menu .menu .menu-row .col-12 {
+    padding: 15px;
+    max-width: 100%;
+  }
+  #menu .menu .menu-row .col-12 .coffee-image img {
+    max-width: 60px;
+    height: 60px;
+  }
+  #menu .menu .menu-row .col-12 .coffee-text .coffee-name h1 {
+    font-size: 24px;
+  }
+  #menu .menu .menu-row .col-12 .coffee-text .description {
+    padding: 10px 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #menu .menu {
+    padding: 10px 0;
+  }
+  #menu .menu .our-menu {
+    font-size: 24px;
+    padding: 5px 0;
+  }
+  #menu .menu .menu-row .col-12 {
+    padding: 10px;
+  }
+  #menu .menu .menu-row .col-12 .coffee-image img {
+    max-width: 50px;
+    height: 50px;
+  }
+  #menu .menu .menu-row .col-12 .coffee-text .coffee-name h1 {
+    font-size: 22px;
+  }
+  #menu .menu .menu-row .col-12 .coffee-text .description {
+    padding: 5px 0;
+  }
+}
 
 #signup .signup {
   padding: 100px 0;

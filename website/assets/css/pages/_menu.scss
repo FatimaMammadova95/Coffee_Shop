@@ -31,7 +31,6 @@
             display: flex;
             h1 {
               font-size: 28px;
-              // color: #5d4335;
             }
             .line {
               flex-grow: 1;
@@ -43,7 +42,6 @@
           }
           .description {
             padding: 10px 0;
-            // color: #c29e7b;
             span {
               font-weight: bold;
               color: #5d4335;
@@ -78,6 +76,89 @@
         &:hover {
           .nutrition {
             display: block;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 991px) {
+      padding: 40px 0;
+      .our-menu {
+        font-size: 36px;
+        padding: 15px 0;
+      }
+      .menu-row {
+        .col-12 {
+          padding: 20px;
+          max-width: 100%;
+          .coffee-image {
+            img {
+              max-width: 65px;
+              height: 65px;
+            }
+          }
+          .coffee-text {
+            .coffee-name {
+              h1 {
+                font-size: 26px;
+              }
+            }
+            .description {
+              padding: 15px 0;            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      padding: 20px 0;
+      .our-menu {
+        font-size: 30px;
+        padding: 10px 0;
+      }
+      .menu-row {
+        .col-12 {
+          padding: 15px;
+          max-width: 100%;
+          .coffee-image {
+            img {
+              max-width: 60px;
+              height: 60px;
+            }
+          }
+          .coffee-text {
+            .coffee-name {
+              h1 {
+                font-size: 24px;
+              }
+            }
+            .description {
+              padding: 10px 0;            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 575px) {
+      padding: 10px 0;
+      .our-menu {
+        font-size: 24px;
+        padding: 5px 0;
+      }
+      .menu-row {
+        .col-12 {
+          padding: 10px;
+          .coffee-image {
+            img {
+              max-width: 50px;
+              height: 50px;
+            }
+          }
+          .coffee-text {
+            .coffee-name {
+              h1 {
+                font-size: 22px;
+              }
+            }
+            .description {
+              padding: 5px 0;            }
           }
         }
       }
